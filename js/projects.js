@@ -91,7 +91,7 @@ window.PROJECTS = [
   },
   {
     "slug": "pepperoni-pizza",
-    "title": "Pepperoni Pizza",
+    "title": "[NC AI] Pepperoni Pizza",
     "sub": "AI Animation Film",
     "date": "2026.08",
     "cats": [
