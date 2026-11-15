@@ -2,7 +2,6 @@
 window.PROJECTS = [
   {
     "slug": "kt-wiz",
-    "hidden": true,
     "title": "kt wiz 미디어월 AI 영상",
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
     "date": "2026.07",
@@ -11,15 +10,11 @@ window.PROJECTS = [
       "Animation"
     ],
     "client": "kt wiz",
-    "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 연구원",
+    "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 학부연구원",
     "tools": "Kling 3.0 · Photoshop · Topaz · Premiere Pro",
     "desc": "수원 kt wiz 파크의 미디어파사드와 미디어월에 송출된 생성형 AI 영상 제작 프로젝트입니다. 2025년 겨울부터 2026년 여름까지 진행했고, 건물 외벽에 프로젝터로 투사하는 미디어파사드와 복도를 따라 길게 세워진 LED 미디어월 영상을 만들었습니다. 여기서는 그중 미디어월 ‘바캉스’ 영상을 소개합니다. 낮과 밤이 바뀌고 다시 처음으로 돌아오는 약 30초 길이의 바닷가 루핑 영상입니다.",
-    "cover": "assets/projects/kt-wiz/wall-2.jpg",
-    "images": [
-      "assets/projects/kt-wiz/wall-1.jpg",
-      "assets/projects/kt-wiz/wall-2.jpg",
-      "assets/projects/kt-wiz/wall-3.jpg"
-    ],
+    "cover": "assets/projects/kt-wiz/2026-11-16-4-45-31.png",
+    "images": [],
     "process": [
       {
         "t": "Scope",
@@ -53,7 +48,7 @@ window.PROJECTS = [
       },
       {
         "t": "Video & upscale",
-        "d": "구간별로 영상을 생성한 뒤 Topaz로 HD에서 11K까지 업스케일했습니다. 연산량이 커서 연구실 워크스테이션에서 작업했습니다.",
+        "d": "구간별로 영상을 생성한 뒤 Topaz로 HD에서 11K까지 업스케일했습니다. 연산량이 커서 연구실 워크스테이션 환경에서 작업했습니다.",
         "imgs": [
           "assets/projects/kt-wiz/clips.jpg"
         ]
@@ -64,9 +59,17 @@ window.PROJECTS = [
       },
       {
         "t": "On site",
-        "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다."
+        "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다.",
+        "img": "assets/projects/kt-wiz/IMG_0500.jpg",
+        "imgs": [
+          "assets/projects/kt-wiz/IMG_0630.jpg",
+          "assets/projects/kt-wiz/SE-ff538c35-ee69-4fcd-956f-fecaa18ce259.jpg",
+          "assets/projects/kt-wiz/SE-e2dece12-a39f-4ecc-a917-0efe7fcaa170.jpg",
+          "assets/projects/kt-wiz/SE-e4c4241e-64b4-4056-9c65-8e239d0732d8.jpg"
+        ]
       }
-    ]
+    ],
+    "compact": true
   },
   {
     "slug": "pepperoni-pizza",
