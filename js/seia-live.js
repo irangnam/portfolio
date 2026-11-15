@@ -141,7 +141,6 @@ const EMOTE_LEN = 3.6;
 /* ── tracking ── */
 let face = null, pose = null, hands = null, tracking = false, lastVideoTime = -1, mode = "idle", emote = null, emoteT0 = 0;
 const tracked = { head: [0, 0, 0], L: null, R: null, handL: null, handR: null, curlL: null, curlR: null, expr: {} };
-const held = { L: null, R: null, tL: 0, tR: 0 };            // last good arm pose, kept briefly when the tracker loses the arm
 const mouse = { x: 0, y: 0 };
 addEventListener("pointermove", e => { mouse.x = e.clientX / innerWidth - .5; mouse.y = e.clientY / innerHeight - .5; });
 const cam = $("#cam");
@@ -214,15 +213,7 @@ function track(now) {
       const u = conv(w[el], w[sh]).normalize();
       return [u, w[wr].visibility > .5 ? conv(w[wr], w[el]).normalize() : u.clone()];
     };
-    for (const [key, sh, el, wr] of [["L", 12, 14, 16], ["R", 11, 13, 15]]) {
-      let d = side(sh, el, wr);
-      if (d) {                                             // smooth jitter, remember the pose
-        const p = held[key];
-        if (p && now - held["t" + key] < 400) { d[0].lerp(p[0], 0.45).normalize(); d[1].lerp(p[1], 0.45).normalize(); }
-        held[key] = [d[0].clone(), d[1].clone()]; held["t" + key] = now;
-      } else if (held[key] && now - held["t" + key] < 900) d = [held[key][0].clone(), held[key][1].clone()];   // brief dropout: hold, don't snap back
-      tracked[key] = d;
-    }
+    tracked.L = side(12, 14, 16); tracked.R = side(11, 13, 15);
     const hr = hands && n2 ? hands.detectForVideo(cam, now) : null;
     for (let i = 0; i < (hr?.landmarks?.length || 0); i++) {
       const hn = hr.landmarks[i], hw = hr.worldLandmarks[i];
