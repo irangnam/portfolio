@@ -247,7 +247,8 @@ window.PROJECTS = [
     "banner": "assets/seia/banner2.jpg",
     "live": "seia.html",
     "tallImages": true,
-    "featured": true
+    "featured": true,
+    "liveBg": "assets/seia/live_bg.jpg"
   },
   {
     "slug": "scream",
