@@ -17,7 +17,7 @@ window.PROJECTS = [
     "videos": [
       "assets/projects/animation-02/pepperoni-pizza.mp4",
       "assets/projects/animation-02/out-of-the-rubble.mp4",
-      "assets/projects/animation-02/pizza-up.mp4"
+      "assets/projects/pepperoni-pizza/2-2.mp4"
     ],
     "images": [
       "assets/projects/pepperoni-pizza/Instagram-post---2.png",
