@@ -2,7 +2,7 @@
 window.PROJECTS = [
   {
     "slug": "seia",
-    "title": "SEIA",
+    "title": "버추얼 아바타 SEIA",
     "sub": "Virtual Idol Warrior — Original VTuber Avatar",
     "date": "2026.11",
     "cats": [
@@ -12,8 +12,7 @@ window.PROJECTS = [
     ],
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
-    "cover": "assets/seia/seia_bust.png",
-    "coverFit": "contain",
+    "cover": "assets/projects/seia/image.png",
     "desc": "가상의 아이돌이자 전사, 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 진행했습니다. Try it live에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수 있습니다.",
     "images": [
       "assets/seia/seia_full.png",
