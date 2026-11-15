@@ -29,6 +29,10 @@
   }
   let cat = "All";
   const cats = ["All", ...new Set(P.flatMap(p => p.cats))];
+  function press(p) {                                     // related articles: open in a new tab
+    const ls = (p.links || []).filter(l => /^https?:\/\//i.test(l.url || ""));
+    return ls.length ? `<dt>Press</dt><dd class="press">${ls.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])} ↗</a>`).join("")}</dd>` : "";
+  }
   function renderFeature() {                             // one project marked featured:true gets a wide banner above the grid
     const p = P.find(q => q.featured), box = $("#feature"); box.innerHTML = "";
     if (!p) return;
@@ -68,7 +72,7 @@
         <h1>${esc(p.title)}</h1>
         <div class="sheet-top">
           <p class="desc">${esc(p.desc)}</p>
-          <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}</dl>
+          <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}${press(p)}</dl>
         </div>
         ${p.live ? `<div class="live-box">${p.banner ? `<i class="lb-bg" style="background-image:url('${esc(p.banner)}')"></i>` : ""}<p>춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.</p><a class="btn" href="${esc(p.live)}?v=1794753934">Try it live →</a></div>` : ""}
         <div class="gal" id="gal"></div>

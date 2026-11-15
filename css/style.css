@@ -92,6 +92,7 @@ ul{list-style:none}
 .kv dt,.kv dd{padding:13px 0;border-top:1px solid var(--line)}
 .kv dt{font-size:13px;color:var(--soft)}
 .kv dd{word-break:keep-all}
+.kv .press{display:flex;flex-direction:column;align-items:flex-start;gap:6px}.kv .press a{border-bottom:1px solid var(--pink);padding-bottom:1px}.kv .press a:hover{color:var(--pink)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--line);border-radius:99px;padding:1px 10px;font-size:13px}
 
 /* PATH */
