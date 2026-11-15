@@ -433,13 +433,14 @@ window.PROJECTS = [
     "client": "국민대학교 WINDMILLS",
     "images": [
       "assets/projects/windmills/1-2.png",
+      "assets/projects/windmills/3-_1.png",
       "assets/projects/windmills/01.jpg",
       "assets/projects/windmills/02.jpg",
-      "assets/projects/windmills/3-_1.png",
       "assets/projects/windmills/1-3.png",
-      "assets/projects/windmills/2026-11-16-7-39-24.png"
+      "assets/projects/windmills/2026-11-16-7-39-24.png",
+      "assets/projects/windmills/Kusf-3.png"
     ],
-    "ribbon": "with WINDMILLS"
+    "ribbon": ""
   },
   {
     "slug": "open-gallery",
