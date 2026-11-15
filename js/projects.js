@@ -125,8 +125,24 @@ window.PROJECTS = [
         "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
       },
       {
-        "label": "개인 블로그",
+        "label": "남이랑 개인 블로그",
         "url": "https://blog.naver.com/rima_05/224410157143"
+      },
+      {
+        "label": "한겨레",
+        "url": "https://www.hani.co.kr/arti/economy/biznews/1278574.html"
+      },
+      {
+        "label": "중앙일보",
+        "url": "https://www.joongang.co.kr/article/25463602"
+      },
+      {
+        "label": "스마트경제",
+        "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130022"
+      },
+      {
+        "label": "뉴시스",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260922_0003800613"
       }
     ]
   },
