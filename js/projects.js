@@ -112,7 +112,8 @@ window.PROJECTS = [
     "date": "2026.11",
     "cats": [
       "3D",
-      "Character"
+      "Character",
+      "Virtual"
     ],
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
