@@ -20,7 +20,7 @@ window.PROJECTS = [
       "assets/projects/animation-02/pizza-up.mp4"
     ],
     "images": [
-      "assets/projects/animation-02/workflow.jpg",
+      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
       "assets/projects/animation-02/asset-pizza-box.jpg",
       "assets/projects/animation-02/asset-ruin-interior.jpg",
       "assets/projects/animation-02/asset-ruin-house.jpg",
