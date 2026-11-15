@@ -73,7 +73,21 @@ window.PROJECTS = [
         ]
       }
     ],
-    "compact": true
+    "compact": true,
+    "links": [
+      {
+        "label": "국민대학교 국민NEW&HOT",
+        "url": "https://kookmin.ac.kr/comm/board/user/be8e117863cfd580d7ed5931a799207c/view.do?dataSeq=1076905"
+      },
+      {
+        "label": "국민대학교 AI디자인랩",
+        "url": "https://ai-design.kookmin.ac.kr/ai-design/etc-board/lab-news.do?mode=view&articleNo=5936989"
+      },
+      {
+        "label": "",
+        "url": ""
+      }
+    ]
   },
   {
     "slug": "pepperoni-pizza",
