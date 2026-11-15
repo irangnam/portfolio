@@ -1,6 +1,74 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
+    "slug": "kt-wiz",
+    "hidden": true,
+    "title": "kt wiz 미디어월 AI 영상",
+    "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
+    "date": "2026.07",
+    "cats": [
+      "AI",
+      "Animation"
+    ],
+    "client": "kt wiz",
+    "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 연구원",
+    "tools": "Kling 3.0 · Photoshop · Topaz · Premiere Pro",
+    "desc": "수원 kt wiz 파크의 미디어파사드와 미디어월에 송출된 생성형 AI 영상 제작 프로젝트입니다. 2025년 겨울부터 2026년 여름까지 진행했고, 건물 외벽에 프로젝터로 투사하는 미디어파사드와 복도를 따라 길게 세워진 LED 미디어월 영상을 만들었습니다. 여기서는 그중 미디어월 ‘바캉스’ 영상을 소개합니다. 낮과 밤이 바뀌고 다시 처음으로 돌아오는 약 30초 길이의 바닷가 루핑 영상입니다.",
+    "cover": "assets/projects/kt-wiz/wall-2.jpg",
+    "images": [
+      "assets/projects/kt-wiz/wall-1.jpg",
+      "assets/projects/kt-wiz/wall-2.jpg",
+      "assets/projects/kt-wiz/wall-3.jpg"
+    ],
+    "process": [
+      {
+        "t": "Scope",
+        "d": "초반 테스트로 시나리오를 확정한 뒤 제작 → 수정 → 최종본 → 송출 순서로 진행했습니다. 미디어파사드와 미디어월을 합쳐 여러 편의 영상을 맡았습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/folders.jpg"
+        ]
+      },
+      {
+        "t": "Layout",
+        "d": "미디어월이 매우 길어 화면을 3분할로 설계했습니다. 좌우에는 낮과 밤이 반복되는 바닷가 루핑 영상을 길게 두고, 가운데에는 16:9 비율의 메탈 로고 루핑 영상을 배치해 총 2개의 영상을 만들었습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/plan.jpg"
+        ]
+      },
+      {
+        "t": "Key frames",
+        "d": "Kling 3.0으로 제작했습니다. 안정성을 높이기 위해 첫 프레임과 마지막 프레임 이미지를 먼저 만들고 그 사이를 영상으로 채우는 방식을 썼습니다. 바람의 방향이나 파도 모양처럼 두 프레임 사이에 변화를 주어야 영상으로 만들었을 때 움직임이 자연스럽습니다. 이미지는 11K로 렌더링했습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/key-day.jpg",
+          "assets/projects/kt-wiz/key-sunset.jpg"
+        ]
+      },
+      {
+        "t": "Compositing",
+        "d": "이렇게 긴 비율의 이미지를 한 번에 오류 없이 생성할 수 있는 모델이 없어, 이미지를 3분할로 나눠 만들거나 오브젝트를 따로 만들어 Photoshop에서 합성해 최종 이미지를 완성했습니다. 이후 배경을 검정으로 채워 21:9 비율로 맞췄습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/comp-1.jpg",
+          "assets/projects/kt-wiz/comp-2.jpg"
+        ]
+      },
+      {
+        "t": "Video & upscale",
+        "d": "구간별로 영상을 생성한 뒤 Topaz로 HD에서 11K까지 업스케일했습니다. 연산량이 커서 연구실 워크스테이션에서 작업했습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/clips.jpg"
+        ]
+      },
+      {
+        "t": "Edit & loop",
+        "d": "업스케일한 클립을 Premiere Pro에서 이어 붙였습니다. 용량이 커서 미리보기 재생이 되지 않아, 중간중간 저품질로 인코딩해 타이밍을 확인하며 맞췄습니다. 낮에서 밤으로 바뀌고 다시 처음 화면으로 돌아오는 약 30초 루핑 영상으로 완성했습니다."
+      },
+      {
+        "t": "On site",
+        "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다."
+      }
+    ]
+  },
+  {
     "slug": "pepperoni-pizza",
     "title": "Pepperoni Pizza",
     "sub": "AI Animation Film",
@@ -20,7 +88,7 @@ window.PROJECTS = [
       "assets/projects/pepperoni-pizza/2-2.mp4"
     ],
     "images": [
-      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
+      "assets/projects/animation-02/workflow-hd.jpg",
       "assets/projects/animation-02/asset-pizza-box.jpg",
       "assets/projects/animation-02/asset-ruin-interior.jpg",
       "assets/projects/animation-02/asset-ruin-house.jpg",
