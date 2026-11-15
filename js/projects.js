@@ -2,7 +2,6 @@
 window.PROJECTS = [
   {
     "slug": "bathbomb-wrap-xr",
-    "hidden": true,
     "title": "배스밤 선물 포장 XR 모듈",
     "sub": "WebXR Gift-Wrapping Interaction Prototype",
     "date": "2026.11",
@@ -13,8 +12,9 @@ window.PROJECTS = [
     "role": "Interaction design · 3D · WebXR prototype",
     "tools": "Blender · three.js (WebXR) · Claude (AI agent)",
     "desc": "크리스마스 시즌의 배스밤 선물 포장을 XR 환경에서 직접 해 보는 인터랙션 모듈입니다. 포장지 롤 랙에서 종이를 당겨 뽑고, 자르고, 배스밤을 감싸고, 리본을 붙이고, 램프를 켜는 과정을 손동작으로 조작하도록 설계했습니다. 핸드 트래킹 제스처(핀치, 주먹, 가위 손, 두 손으로 감싸기)를 기준으로 만들었고, VR 기기가 없어도 PC에서 마우스와 키보드로 같은 흐름을 체험할 수 있습니다. 모델은 Blender에서 만들고, 인터랙션은 Claude와 함께 WebXR로 구현했습니다.",
-    "cover": "assets/projects/paper-roll-rack-xr/overview.jpg",
+    "cover": "assets/projects/paper-roll-rack-xr/render-closeup.jpg",
     "images": [
+      "assets/projects/paper-roll-rack-xr/render-closeup.jpg",
       "assets/projects/paper-roll-rack-xr/overview.jpg"
     ],
     "live": "https://irangnam.github.io/paper-roll-rack-xr/index.html",
