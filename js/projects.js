@@ -1,74 +1,6 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
-    "slug": "jamong",
-    "title": "자몽 재개관 영상",
-    "sub": "AI Character Film for a Youth Center Reopening",
-    "date": "2026.11",
-    "cats": [
-      "AI",
-      "Animation",
-      "Character"
-    ],
-    "client": "군산 청소년 자치배움터 자몽",
-    "role": "Character design · AI video production · Sound",
-    "tools": "Nano Banana Pro (Higgsfield) · Kling · Seedance",
-    "desc": "군산 청소년 자치배움터 ‘자몽’의 재개관과 자치페스타 행사를 위해 만든 영상입니다. 자몽을 닮은 캐릭터를 디자인하고, 캐릭터가 영화관, 댄스 연습실, 밴드실, 당구대, 스튜디오 같은 공간을 돌아다니며 즐기는 모습을 담았습니다. 손그림 질감의 캐릭터가 실제 공간 안에 자연스럽게 녹아들도록 합성하는 데 집중했고, 음향에도 공을 들였습니다.",
-    "cover": "assets/projects/jamong/popcorn.jpg",
-    "compact": true,
-    "videos": [
-      "assets/projects/jamong/jamong-film.mp4"
-    ],
-    "images": [
-      "assets/projects/jamong/billiards.jpg",
-      "assets/projects/jamong/dance-room.jpg",
-      "assets/projects/jamong/band-room.jpg",
-      "assets/projects/jamong/studio.jpg",
-      "assets/projects/jamong/lounge.jpg",
-      "assets/projects/jamong/cinema-seat.jpg",
-      "assets/projects/jamong/popcorn.jpg",
-      "assets/projects/jamong/cinema-joy.jpg",
-      "assets/projects/jamong/cinema-screen.jpg",
-      "assets/projects/jamong/coming-soon.jpg"
-    ],
-    "process": [
-      {
-        "t": "Character",
-        "d": "자몽을 모티프로 한 캐릭터를 디자인했습니다. 크레용과 망점 느낌의 손그림 질감, 큰 눈, 짧은 팔다리로 친근한 인상을 잡았습니다.",
-        "imgs": [
-          "assets/projects/jamong/studio.jpg"
-        ]
-      },
-      {
-        "t": "Backgrounds",
-        "d": "캐릭터가 등장할 공간별 배경 이미지를 확보했습니다."
-      },
-      {
-        "t": "Compositing",
-        "d": "Higgsfield에서 Nano Banana Pro로 배경 위에 캐릭터를 합성했습니다. 공간의 조명 방향과 색, 그림자, 초점 흐림을 캐릭터에 맞춰 그림체가 다른 캐릭터가 배경에 녹아들게 했습니다.",
-        "imgs": [
-          "assets/projects/jamong/billiards.jpg",
-          "assets/projects/jamong/dance-room.jpg",
-          "assets/projects/jamong/band-room.jpg",
-          "assets/projects/jamong/lounge.jpg"
-        ]
-      },
-      {
-        "t": "Video",
-        "d": "합성한 이미지를 Kling과 Seedance로 컷별 영상으로 만들었습니다.",
-        "imgs": [
-          "assets/projects/jamong/cinema-seat.jpg",
-          "assets/projects/jamong/popcorn.jpg",
-          "assets/projects/jamong/cinema-screen.jpg"
-        ]
-      },
-      {
-        "t": "Sound",
-        "d": "영상의 분위기가 살도록 음향 작업에 공을 들였습니다."
-      }
-    ]
-  },
-  {
     "slug": "kt-wiz",
     "title": "kt wiz 미디어월 AI 영상",
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
@@ -342,36 +274,72 @@ window.PROJECTS = [
     "liveBg": "assets/seia/live_bg.jpg"
   },
   {
-    "slug": "yeogi-mr",
-    "title": "여기어때 MR 리디자인",
-    "sub": "visionOS App Design Proposal",
-    "date": "2026.04",
+    "slug": "jamong",
+    "title": "자몽 재개관&자치페스타 영상",
+    "sub": "AI Character Film for a Youth Center Reopening",
+    "date": "2026.11",
     "cats": [
-      "UI",
-      "UX"
+      "AI",
+      "Animation",
+      "Character"
     ],
-    "role": "UX · UI design",
-    "cover": "assets/projects/yeogi-mr/cover.jpg",
-    "desc": "MR 공간에서의 유저 경험을 바탕으로 Vision OS에서 작동하는 여기어때 어플리케이션 디자인 제안입니다. 공간 컴퓨팅 환경에 최적화된 인터페이스와 사용자 경험을 설계했습니다.",
-    "client": "개인 작업",
+    "client": "군산 청소년 자치배움터 자몽",
+    "role": "Character design · AI video production · Sound",
+    "tools": "Nano Banana Pro (Higgsfield) · Kling · Seedance",
+    "desc": "군산 청소년 자치배움터 ‘자몽’의 재개관과 자치페스타 행사를 위해 만든 영상입니다. 자몽을 닮은 캐릭터를 디자인하고, 캐릭터가 영화관, 댄스 연습실, 밴드실, 당구대, 스튜디오 같은 공간을 돌아다니며 즐기는 모습을 담았습니다. 손그림 질감의 캐릭터가 실제 공간 안에 자연스럽게 녹아들도록 합성하는 데 집중했고, 음향에도 공을 들였습니다.",
+    "cover": "assets/projects/jamong/popcorn.jpg",
+    "compact": true,
+    "videos": [
+      "assets/projects/jamong/jamong-film.mp4"
+    ],
     "images": [
-      "assets/projects/yeogi-mr/01.jpg",
-      "assets/projects/yeogi-mr/02.jpg",
-      "assets/projects/yeogi-mr/03.jpg",
-      "assets/projects/yeogi-mr/04.jpg",
-      "assets/projects/yeogi-mr/05.jpg",
-      "assets/projects/yeogi-mr/06.jpg",
-      "assets/projects/yeogi-mr/07.jpg",
-      "assets/projects/yeogi-mr/08.jpg",
-      "assets/projects/yeogi-mr/09.jpg",
-      "assets/projects/yeogi-mr/10.jpg",
-      "assets/projects/yeogi-mr/11.jpg",
-      "assets/projects/yeogi-mr/12.jpg",
-      "assets/projects/yeogi-mr/13.jpg",
-      "assets/projects/yeogi-mr/14.jpg",
-      "assets/projects/yeogi-mr/15.jpg"
+      "assets/projects/jamong/billiards.jpg",
+      "assets/projects/jamong/dance-room.jpg",
+      "assets/projects/jamong/band-room.jpg",
+      "assets/projects/jamong/studio.jpg",
+      "assets/projects/jamong/lounge.jpg",
+      "assets/projects/jamong/cinema-seat.jpg",
+      "assets/projects/jamong/popcorn.jpg",
+      "assets/projects/jamong/cinema-joy.jpg",
+      "assets/projects/jamong/cinema-screen.jpg",
+      "assets/projects/jamong/coming-soon.jpg"
     ],
-    "tools": "Figma, Blender"
+    "process": [
+      {
+        "t": "Character",
+        "d": "자몽을 모티프로 한 캐릭터를 디자인했습니다. 크레용과 망점 느낌의 손그림 질감, 큰 눈, 짧은 팔다리로 친근한 인상을 잡았습니다.",
+        "imgs": [
+          "assets/projects/jamong/studio.jpg"
+        ]
+      },
+      {
+        "t": "Backgrounds",
+        "d": "캐릭터가 등장할 공간별 배경 이미지를 확보했습니다."
+      },
+      {
+        "t": "Compositing",
+        "d": "Higgsfield에서 Nano Banana Pro로 배경 위에 캐릭터를 합성했습니다. 공간의 조명 방향과 색, 그림자, 초점 흐림을 캐릭터에 맞춰 그림체가 다른 캐릭터가 배경에 녹아들게 했습니다.",
+        "imgs": [
+          "assets/projects/jamong/billiards.jpg",
+          "assets/projects/jamong/dance-room.jpg",
+          "assets/projects/jamong/band-room.jpg",
+          "assets/projects/jamong/lounge.jpg"
+        ]
+      },
+      {
+        "t": "Video",
+        "d": "합성한 이미지를 Kling과 Seedance로 컷별 영상으로 만들었습니다.",
+        "imgs": [
+          "assets/projects/jamong/cinema-seat.jpg",
+          "assets/projects/jamong/popcorn.jpg",
+          "assets/projects/jamong/cinema-screen.jpg"
+        ]
+      },
+      {
+        "t": "Sound",
+        "d": "영상의 분위기가 살도록 음향 작업에 공을 들였습니다."
+      }
+    ]
   },
   {
     "slug": "kdl",
@@ -412,6 +380,38 @@ window.PROJECTS = [
       "assets/projects/scream/03.jpg",
       "assets/projects/scream/04.jpg"
     ]
+  },
+  {
+    "slug": "yeogi-mr",
+    "title": "여기어때 MR 리디자인",
+    "sub": "visionOS App Design Proposal",
+    "date": "2026.04",
+    "cats": [
+      "UI",
+      "UX"
+    ],
+    "role": "UX · UI design",
+    "cover": "assets/projects/yeogi-mr/cover.jpg",
+    "desc": "MR 공간에서의 유저 경험을 바탕으로 Vision OS에서 작동하는 여기어때 어플리케이션 디자인 제안입니다. 공간 컴퓨팅 환경에 최적화된 인터페이스와 사용자 경험을 설계했습니다.",
+    "client": "개인 작업",
+    "images": [
+      "assets/projects/yeogi-mr/01.jpg",
+      "assets/projects/yeogi-mr/02.jpg",
+      "assets/projects/yeogi-mr/03.jpg",
+      "assets/projects/yeogi-mr/04.jpg",
+      "assets/projects/yeogi-mr/05.jpg",
+      "assets/projects/yeogi-mr/06.jpg",
+      "assets/projects/yeogi-mr/07.jpg",
+      "assets/projects/yeogi-mr/08.jpg",
+      "assets/projects/yeogi-mr/09.jpg",
+      "assets/projects/yeogi-mr/10.jpg",
+      "assets/projects/yeogi-mr/11.jpg",
+      "assets/projects/yeogi-mr/12.jpg",
+      "assets/projects/yeogi-mr/13.jpg",
+      "assets/projects/yeogi-mr/14.jpg",
+      "assets/projects/yeogi-mr/15.jpg"
+    ],
+    "tools": "Figma, Blender"
   },
   {
     "slug": "windmills",
