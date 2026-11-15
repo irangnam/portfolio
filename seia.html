@@ -36,18 +36,7 @@
   #pl-toggle{flex:none;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center}
   #pl-toggle:hover{background:var(--pink)}
   #pl-toggle svg{width:14px;height:14px;fill:currentColor}
-  /* main action: the dance */
-  .cta{position:fixed;left:50%;bottom:var(--pad);transform:translateX(-50%);z-index:6;width:min(400px,calc(100vw - 40px));display:flex;flex-direction:column;gap:10px}
-  #dance{display:flex;align-items:center;justify-content:center;gap:14px;height:68px;border-radius:99px;background:var(--pink);color:#0a0a0b;box-shadow:0 12px 44px rgba(255,77,157,.45);transition:transform .2s,box-shadow .2s,background .2s}
-  #dance:hover:not([disabled]){transform:translateY(-2px);box-shadow:0 16px 54px rgba(255,77,157,.6)}
-  #dance[disabled]{opacity:.45;cursor:default;box-shadow:none}
-  #dance svg{width:20px;height:20px;fill:currentColor}
-  #dance span{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
-  #dance b{font-family:var(--disp);font-weight:600;font-size:21px;letter-spacing:-.02em}
-  #dance small{font-size:12px;opacity:.75}
-  body.dancing #dance{height:46px;background:rgba(18,18,20,.78);color:var(--ink);border:1px solid var(--line);box-shadow:none;backdrop-filter:blur(16px)}
-  body.dancing #dance small,body.dancing #dance svg{display:none}body.dancing #dance b{font-size:15px}
-  @media (max-width:900px){.dock{bottom:calc(var(--pad) + 84px)}body.dancing .dock{display:none}.ctrl .note:not(#status){display:none}}
+  #dance{grid-column:1/-1}
   /* controls */
   .ctrl{padding:14px;display:flex;flex-direction:column;gap:10px}
   .ctrl h1{font-family:var(--disp);font-weight:500;font-size:15px;letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:baseline}
@@ -82,7 +71,7 @@
   <nav><a href="index.html#/work/seia">← Back to project</a></nav>
 </header>
 <div id="stage3d"></div>
-<div class="cta">
+<div class="dock">
   <div id="player" class="pane" aria-live="polite">
     <div class="art" aria-hidden="true"><div class="eq"><i></i><i></i><i></i></div></div>
     <div class="trk">
@@ -91,15 +80,13 @@
     </div>
     <button id="pl-toggle" aria-label="Pause dance"><svg viewBox="0 0 16 16"><path d="M3 2h4v12H3zM9 2h4v12H9z"/></svg></button>
   </div>
-  <button id="dance" data-needs-vrm disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z"/></svg><span><b>Dance</b><small>HEART CRUSH! · 안무 보기</small></span></button>
-</div>
-<div class="dock">
   <div class="ctrl pane">
     <h1>SEIA <small>drag to turn</small></h1>
     <div id="bar"><i></i></div>
     <div class="row">
-      <button data-expr="wink" class="btn" data-needs-vrm disabled>Wink</button>
       <button id="go" class="btn" disabled>Loading…</button>
+      <button data-expr="wink" class="btn" data-needs-vrm disabled>Wink</button>
+      <button id="dance" class="btn main" data-needs-vrm disabled>Dance</button>
     </div>
     <div class="opts">
       <label><input type="checkbox" id="showcam" checked> Show camera</label>
@@ -110,6 +97,6 @@
   </div>
 </div>
 <video id="cam" playsinline muted hidden></video>
-<script type="module" src="js/seia-live.js?v=1794763023"></script>
+<script type="module" src="js/seia-live.js?v=1794763211"></script>
 </body>
 </html>

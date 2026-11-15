@@ -292,7 +292,7 @@ function loop() {
       for (const [mesh, back, perk] of earMorphs) { mesh.morphTargetInfluences[back] = w * 0.9; if (perk != null) mesh.morphTargetInfluences[perk] = (1 - w) * 0.6; }
     }
   }
-  camGoal.z = (mode === "dance" ? 5.4 : 1.62) * (camera.aspect < 0.8 ? 1.5 : 1); camGoal.y = mode === "dance" ? 0.9 : 1.37; camGoal.look = mode === "dance" ? 0.5 : 1.33;
+  camGoal.z = (mode === "dance" ? 4.6 : 1.62) * (camera.aspect < 0.8 ? 1.5 : 1); camGoal.y = mode === "dance" ? 1.05 : 1.37; camGoal.look = mode === "dance" ? 0.92 : 1.33;
   for (const n in camNow) camNow[n] += (camGoal[n] - camNow[n]) * 0.06;
   camera.position.set(0, camNow.y, camNow.z); camera.lookAt(0, camNow.look, 0);
   composer.render();
@@ -300,7 +300,7 @@ function loop() {
 loop();
 
 /* ── buttons ── */
-const danceBtn = $("#dance"), danceLabel = danceBtn.querySelector("b");
+const danceBtn = $("#dance");
 const mmss = t => Math.floor(t / 60) + ":" + String(Math.floor(t % 60)).padStart(2, "0");
 const ICON = { pause: "M3 2h4v12H3zM9 2h4v12H9z", play: "M4 2l10 6-10 6z" };
 function setToggle() {
@@ -313,7 +313,7 @@ function stopDance() {
   if (mode !== "dance") return;
   document.body.classList.remove("dancing", "paused");
   mode = "idle"; mixer.stopAllAction(); vrm.humanoid.resetNormalizedPose(); B.hips.position.copy(hipRest);
-  danceLabel.textContent = "Dance";
+  danceBtn.textContent = "Dance";
 }
 danceBtn.onclick = async () => {
   if (mode === "dance") { stopDance(); return; }
@@ -324,7 +324,7 @@ danceBtn.onclick = async () => {
     emote = null; danceAction.reset().play(); mode = "dance";
     danceAction.paused = false; document.body.classList.remove("paused"); document.body.classList.add("dancing");
     $("#pl-len").textContent = mmss(danceAction.getClip().duration); setToggle();
-    danceLabel.textContent = "Stop"; status("");
+    danceBtn.textContent = "Stop"; status("");
   } catch (e) { console.error(e); status("Couldn't load the dance."); }
   danceBtn.disabled = false;
 };

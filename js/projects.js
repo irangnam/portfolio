@@ -1,111 +1,6 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
-    "slug": "pepperoni-pizza",
-    "title": "Pepperoni Pizza",
-    "sub": "AI Animation Film",
-    "date": "2026.08",
-    "cats": [
-      "3D",
-      "Animation",
-      "AI"
-    ],
-    "role": "Team project — 조유빈, 남이랑",
-    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
-    "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
-    "cover": "assets/projects/animation-02/cover.jpg",
-    "videos": [
-      "assets/projects/animation-02/pepperoni-pizza.mp4",
-      "assets/projects/animation-02/out-of-the-rubble.mp4",
-      "assets/projects/pepperoni-pizza/2-2.mp4"
-    ],
-    "images": [
-      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
-      "assets/projects/animation-02/asset-pizza-box.jpg",
-      "assets/projects/animation-02/asset-ruin-interior.jpg",
-      "assets/projects/animation-02/asset-ruin-house.jpg",
-      "assets/projects/animation-02/asset-tower.jpg",
-      "assets/projects/animation-02/asset-building.jpg",
-      "assets/projects/animation-02/asset-shadow-crowd.jpg"
-    ],
-    "client": "NC",
-    "compact": true
-  },
-  {
-    "slug": "kdl",
-    "title": "Kookmin Dream League",
-    "sub": "KDL 2026 Season Promotion",
-    "date": "2026.04",
-    "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing"
-    ],
-    "role": "Visual design · Promotion",
-    "cover": "assets/projects/kdl/cover.jpg",
-    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/kdl/01.jpg",
-      "assets/projects/kdl/02.jpg",
-      "assets/projects/kdl/03.jpg"
-    ]
-  },
-  {
-    "slug": "yeogi-mr",
-    "title": "여기어때 MR 리디자인",
-    "sub": "visionOS App Design Proposal",
-    "date": "2026.04",
-    "cats": [
-      "UI",
-      "UX"
-    ],
-    "role": "UX · UI design",
-    "cover": "assets/projects/yeogi-mr/cover.jpg",
-    "desc": "MR 공간에서의 유저 경험을 바탕으로 Vision OS에서 작동하는 여기어때 어플리케이션 디자인 제안입니다. 공간 컴퓨팅 환경에 최적화된 인터페이스와 사용자 경험을 설계했습니다.",
-    "client": "개인 작업",
-    "images": [
-      "assets/projects/yeogi-mr/01.jpg",
-      "assets/projects/yeogi-mr/02.jpg",
-      "assets/projects/yeogi-mr/03.jpg",
-      "assets/projects/yeogi-mr/04.jpg",
-      "assets/projects/yeogi-mr/05.jpg",
-      "assets/projects/yeogi-mr/06.jpg",
-      "assets/projects/yeogi-mr/07.jpg",
-      "assets/projects/yeogi-mr/08.jpg",
-      "assets/projects/yeogi-mr/09.jpg",
-      "assets/projects/yeogi-mr/10.jpg",
-      "assets/projects/yeogi-mr/11.jpg",
-      "assets/projects/yeogi-mr/12.jpg",
-      "assets/projects/yeogi-mr/13.jpg",
-      "assets/projects/yeogi-mr/14.jpg",
-      "assets/projects/yeogi-mr/15.jpg"
-    ],
-    "tools": "Figma, Blender"
-  },
-  {
-    "slug": "windmills",
-    "title": "WINDMILLS",
-    "sub": "Contents Design",
-    "date": "2026.03",
-    "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing"
-    ],
-    "role": "SNS renewal · Graphic",
-    "cover": "assets/projects/windmills/cover.jpg",
-    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/windmills/01.jpg",
-      "assets/projects/windmills/02.jpg",
-      "assets/projects/windmills/03.jpg",
-      "assets/projects/windmills/04.jpg",
-      "assets/projects/windmills/05.jpg"
-    ]
-  },
-  {
     "slug": "seia",
     "title": "SEIA",
     "sub": "Virtual Idol Warrior — Original VTuber Avatar",
@@ -187,6 +82,37 @@ window.PROJECTS = [
     "featured": true
   },
   {
+    "slug": "pepperoni-pizza",
+    "title": "Pepperoni Pizza",
+    "sub": "AI Animation Film",
+    "date": "2026.08",
+    "cats": [
+      "3D",
+      "Animation",
+      "AI"
+    ],
+    "role": "Team project — 조유빈, 남이랑",
+    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
+    "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
+    "cover": "assets/projects/animation-02/cover.jpg",
+    "videos": [
+      "assets/projects/animation-02/pepperoni-pizza.mp4",
+      "assets/projects/animation-02/out-of-the-rubble.mp4",
+      "assets/projects/pepperoni-pizza/2-2.mp4"
+    ],
+    "images": [
+      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
+      "assets/projects/animation-02/asset-pizza-box.jpg",
+      "assets/projects/animation-02/asset-ruin-interior.jpg",
+      "assets/projects/animation-02/asset-ruin-house.jpg",
+      "assets/projects/animation-02/asset-tower.jpg",
+      "assets/projects/animation-02/asset-building.jpg",
+      "assets/projects/animation-02/asset-shadow-crowd.jpg"
+    ],
+    "client": "NC",
+    "compact": true
+  },
+  {
     "slug": "scream",
     "title": "SCREAM!",
     "sub": "Festival Design",
@@ -204,6 +130,80 @@ window.PROJECTS = [
       "assets/projects/scream/02.jpg",
       "assets/projects/scream/03.jpg",
       "assets/projects/scream/04.jpg"
+    ]
+  },
+  {
+    "slug": "kdl",
+    "title": "Kookmin Dream League",
+    "sub": "KDL 2026 Season Promotion",
+    "date": "2026.04",
+    "cats": [
+      "Branding",
+      "Graphic",
+      "Marketing"
+    ],
+    "role": "Visual design · Promotion",
+    "cover": "assets/projects/kdl/cover.jpg",
+    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/kdl/01.jpg",
+      "assets/projects/kdl/02.jpg",
+      "assets/projects/kdl/03.jpg"
+    ]
+  },
+  {
+    "slug": "yeogi-mr",
+    "title": "여기어때 MR 리디자인",
+    "sub": "visionOS App Design Proposal",
+    "date": "2026.04",
+    "cats": [
+      "UI",
+      "UX"
+    ],
+    "role": "UX · UI design",
+    "cover": "assets/projects/yeogi-mr/cover.jpg",
+    "desc": "MR 공간에서의 유저 경험을 바탕으로 Vision OS에서 작동하는 여기어때 어플리케이션 디자인 제안입니다. 공간 컴퓨팅 환경에 최적화된 인터페이스와 사용자 경험을 설계했습니다.",
+    "client": "개인 작업",
+    "images": [
+      "assets/projects/yeogi-mr/01.jpg",
+      "assets/projects/yeogi-mr/02.jpg",
+      "assets/projects/yeogi-mr/03.jpg",
+      "assets/projects/yeogi-mr/04.jpg",
+      "assets/projects/yeogi-mr/05.jpg",
+      "assets/projects/yeogi-mr/06.jpg",
+      "assets/projects/yeogi-mr/07.jpg",
+      "assets/projects/yeogi-mr/08.jpg",
+      "assets/projects/yeogi-mr/09.jpg",
+      "assets/projects/yeogi-mr/10.jpg",
+      "assets/projects/yeogi-mr/11.jpg",
+      "assets/projects/yeogi-mr/12.jpg",
+      "assets/projects/yeogi-mr/13.jpg",
+      "assets/projects/yeogi-mr/14.jpg",
+      "assets/projects/yeogi-mr/15.jpg"
+    ],
+    "tools": "Figma, Blender"
+  },
+  {
+    "slug": "windmills",
+    "title": "WINDMILLS",
+    "sub": "Contents Design",
+    "date": "2026.03",
+    "cats": [
+      "Branding",
+      "Graphic",
+      "Marketing"
+    ],
+    "role": "SNS renewal · Graphic",
+    "cover": "assets/projects/windmills/cover.jpg",
+    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/windmills/01.jpg",
+      "assets/projects/windmills/02.jpg",
+      "assets/projects/windmills/03.jpg",
+      "assets/projects/windmills/04.jpg",
+      "assets/projects/windmills/05.jpg"
     ]
   },
   {
