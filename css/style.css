@@ -139,6 +139,7 @@ body.has-strip{padding-top:44px}body.has-strip .nav{top:44px}
 .sheet-in{position:relative;max-width:1360px;margin:0 auto;padding:clamp(40px,7vw,90px) var(--pad) 90px}
 .sheet h1{font-family:var(--disp);font-weight:500;font-size:clamp(38px,6vw,92px);line-height:1;letter-spacing:-.04em;margin:14px 0 clamp(30px,5vw,60px);word-break:keep-all}
 .sheet-top{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,110px)}
+.sheet-top{margin-bottom:clamp(44px,6vw,96px)}
 .sheet .desc{font-size:clamp(17px,1.5vw,21px);line-height:1.65;word-break:keep-all}
 .embed{position:relative;margin-top:40px;aspect-ratio:16/9;max-height:82vh;width:100%;border-radius:var(--r);overflow:hidden;background:#111 center/cover no-repeat;border:1px solid var(--line)}
 .embed::before{content:"";position:absolute;inset:0;background:rgba(10,10,11,.45);transition:background .3s}.embed:hover::before{background:rgba(10,10,11,.3)}.embed.on::before{display:none}
