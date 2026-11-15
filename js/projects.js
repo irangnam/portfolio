@@ -418,25 +418,28 @@ window.PROJECTS = [
   },
   {
     "slug": "windmills",
-    "title": "WINDMILLS",
+    "title": "WINDMILLS SNS",
     "sub": "Contents Design",
     "date": "2026.03",
     "cats": [
       "Branding",
       "Graphic",
-      "Marketing"
+      "Marketing",
+      "AI"
     ],
     "role": "SNS renewal · Graphic",
-    "cover": "assets/projects/windmills/cover.jpg",
+    "cover": "assets/projects/windmills/1-4.png",
     "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
     "client": "국민대학교 WINDMILLS",
     "images": [
+      "assets/projects/windmills/1-2.png",
       "assets/projects/windmills/01.jpg",
       "assets/projects/windmills/02.jpg",
-      "assets/projects/windmills/03.jpg",
-      "assets/projects/windmills/04.jpg",
-      "assets/projects/windmills/05.jpg"
-    ]
+      "assets/projects/windmills/3-_1.png",
+      "assets/projects/windmills/1-3.png",
+      "assets/projects/windmills/2026-11-16-7-39-24.png"
+    ],
+    "ribbon": "with WINDMILLS"
   },
   {
     "slug": "open-gallery",
