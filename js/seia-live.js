@@ -38,53 +38,9 @@ const floor = new THREE.Mesh(new THREE.CircleGeometry(1.6, 48), soft(0xff4d9d, 0
 floor.rotation.x = -Math.PI / 2; floor.position.y = 0.006;
 const shadow = new THREE.Mesh(new THREE.CircleGeometry(0.34, 32), soft(0x000000, 0.55));
 shadow.rotation.x = -Math.PI / 2; shadow.position.y = 0.009;
-scene.add(floor, shadow);
-// stage set, modelled in Blender (assets/seia/stage.glb): LED wall, truss ring, pillars. The screens and light beams are animated here.
-const screenCv = document.createElement("canvas"); screenCv.width = 512; screenCv.height = 288;
-const sg = screenCv.getContext("2d"), screenTex = new THREE.CanvasTexture(screenCv); screenTex.colorSpace = THREE.SRGBColorSpace; screenTex.flipY = false;   // glTF UVs
-function drawScreen(t, hot) {
-  const W = 512, H = 288, g = sg.createLinearGradient(0, 0, 0, H);
-  g.addColorStop(0, "#1a0612"); g.addColorStop(1, hot ? "#5a1038" : "#2a0a1c"); sg.fillStyle = g; sg.fillRect(0, 0, W, H);
-  for (let i = 0; i < 32; i++) {                         // equaliser bars
-    const k = 0.5 + 0.5 * Math.sin(t * (hot ? 5.2 : 1.1) + i * 0.9) * Math.cos(t * (hot ? 2.3 : 0.6) + i * 0.37);
-    const h = (hot ? 30 + k * 150 : 14 + k * 46);
-    sg.fillStyle = `rgba(255,${60 + (i % 3) * 30},${150 + (i % 2) * 60},${hot ? 0.55 : 0.3})`; sg.fillRect(i * 16 + 3, H - h, 10, h);
-  }
-  sg.textAlign = "center"; sg.textBaseline = "middle"; sg.shadowColor = "#ff4d9d"; sg.shadowBlur = 14;
-  sg.fillStyle = "#ffd9ea"; sg.font = "600 58px 'Bricolage Grotesque', sans-serif"; sg.fillText("SEIA", W / 2, H * 0.36);
-  sg.shadowBlur = 0; sg.fillStyle = "rgba(255,255,255,.75)"; sg.font = "500 15px 'Bricolage Grotesque', sans-serif";
-  sg.fillText(hot ? "♪  HEART CRUSH!" : "VIRTUAL IDOL WARRIOR", W / 2, H * 0.52);
-  screenTex.needsUpdate = true;
-}
-drawScreen(0, false);
-const beams = [], beamFade = (() => { const c = document.createElement("canvas"); c.width = 4; c.height = 128; const x = c.getContext("2d"), gr = x.createLinearGradient(0, 0, 0, 128); gr.addColorStop(0, "#fff"); gr.addColorStop(0.5, "#444"); gr.addColorStop(1, "#000"); x.fillStyle = gr; x.fillRect(0, 0, 4, 128); return new THREE.CanvasTexture(c); })();
-const beamGeo = new THREE.CylinderGeometry(0.03, 0.34, 7.5, 20, 1, true).translate(0, -3.75, 0).rotateX(-Math.PI / 2);   // apex at the lamp, beam along +Z
-new GLTFLoader().load("assets/seia/stage.glb?v=1794762636", g => {
-  const screenMat = new THREE.MeshBasicMaterial({ map: screenTex, color: 0xb0b0b0, side: THREE.DoubleSide, toneMapped: false });
-  g.scene.traverse(o => {
-    if (o.isMesh && o.name.startsWith("Screen")) o.material = screenMat;
-    else if (o.isMesh && /LEDWhite/.test(o.material.name)) { o.material.emissive.set(0xff9cc8); o.material.emissiveIntensity = 0.5; }
-    else if (o.isMesh && /LED/.test(o.material.name)) o.material.emissiveIntensity = 1.6;
-    if (o.name.startsWith("Spot_")) {
-      const i = beams.length, color = [0xff4d9d, 0xffd9ea, 0x8a4dff][i % 3];
-      const m = new THREE.Mesh(beamGeo, new THREE.MeshBasicMaterial({ color, alphaMap: beamFade, transparent: true, opacity: 0.04, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide }));
-      o.getWorldPosition(m.position); m.userData.ph = i * 1.7; beams.push(m);
-    }
-  });
-  scene.add(g.scene, ...beams);
-}, undefined, e => console.warn("stage", e));
-let stageHeat = 0, screenTick = 0;
-const aim = new THREE.Vector3();
-function stageUpdate(t, dt, hot) {
-  stageHeat += ((hot ? 1 : 0) - stageHeat) * Math.min(1, dt * 3);
-  const sp = 0.35 + stageHeat * 1.5;
-  for (const b of beams) {
-    const p = b.userData.ph;
-    aim.set(Math.sin(t * sp * 0.9 + p) * 2.6, 0.2, 0.4 + Math.cos(t * sp * 0.7 + p * 1.3) * 2.0); b.lookAt(aim);
-    b.material.opacity = 0.035 + stageHeat * (0.06 + 0.03 * Math.sin(t * 6 + p));
-  }
-  if (++screenTick % 4 === 0) drawScreen(t, stageHeat > 0.5);
-}
+const glow = new THREE.Mesh(new THREE.PlaneGeometry(7, 7), soft(0xff4d9d, 0.05));
+glow.position.set(0, 1.0, -2.2);
+scene.add(floor, shadow, glow);
 // soft bloom: bright areas (skin, gems, gold) glow a little, which also softens the surface
 const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(4, 4, { type: THREE.HalfFloatType, samples: 4 }));
 composer.addPass(new RenderPass(scene, camera));
@@ -338,7 +294,6 @@ function loop() {
   }
   camGoal.z = (mode === "dance" ? 5.4 : 1.62) * (camera.aspect < 0.8 ? 1.5 : 1); camGoal.y = mode === "dance" ? 0.9 : 1.37; camGoal.look = mode === "dance" ? 0.5 : 1.33;
   for (const n in camNow) camNow[n] += (camGoal[n] - camNow[n]) * 0.06;
-  stageUpdate(t, dt, mode === "dance" && danceAction && !danceAction.paused);
   camera.position.set(0, camNow.y, camNow.z); camera.lookAt(0, camNow.look, 0);
   composer.render();
 }
