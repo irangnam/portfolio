@@ -61,6 +61,9 @@ ul{list-style:none}
 .card:hover .thumb img,.card:hover .thumb .ph{transform:scale(1.035)}
 .card:hover .thumb img.contain{transform:scale(1.56)}
 .card .tag{position:absolute;left:14px;top:14px;z-index:2;display:flex;align-items:center;gap:7px;background:rgba(10,10,11,.7);backdrop-filter:blur(8px);border-radius:99px;padding:5px 11px;font-size:12px}
+.card .clogo{position:absolute;right:14px;top:14px;z-index:2;display:flex;align-items:center;background:rgba(10,10,11,.62);backdrop-filter:blur(8px);border-radius:10px;padding:8px 12px}
+.card .clogo img{display:block;height:20px;width:auto;max-width:120px;object-fit:contain;filter:brightness(0) invert(1)}
+.card .clogo.color{background:rgba(255,255,255,.94)}.card .clogo.color img{filter:none}
 .card .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--pink)}
 .card .meta{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding-top:14px}
 .card h3{font-family:var(--disp);font-weight:500;font-size:clamp(18px,1.7vw,23px);letter-spacing:-.025em;line-height:1.2;transition:color .2s}

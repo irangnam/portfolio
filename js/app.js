@@ -52,6 +52,7 @@
       const a = el("a", "card rv"); a.href = "#/work/" + p.slug;
       const th = el("div", "thumb"); th.append(cover(p, i));
       if (p.live) th.append(el("span", "tag", "Try it live"));
+      if (p.logo) { const lg = el("span", "clogo" + (p.logoColor ? " color" : "")), li = new Image(); li.src = p.logo; li.alt = p.client || "client"; li.draggable = false; li.onerror = () => lg.remove(); lg.append(li); th.append(lg); }
       if (p.hidden) th.append(el("span", "tag", "Draft · 비공개"));
       a.append(th, el("div", "meta", `<h3>${esc(p.title)}</h3><span class="cats">${esc(p.cats.join(" · "))}<br>${esc(p.date)}</span>`));
       g.append(a);
