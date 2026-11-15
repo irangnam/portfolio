@@ -88,8 +88,11 @@ window.PROJECTS = [
         "url": ""
       }
     ],
-    "logo": "assets/projects/kt-wiz/image-58.png",
-    "logoColor": true
+    "logoColor": true,
+    "logos": [
+      "assets/projects/kt-wiz/image-58.png",
+      "assets/projects/kt-wiz/image-59-2.png"
+    ]
   },
   {
     "slug": "pepperoni-pizza",
