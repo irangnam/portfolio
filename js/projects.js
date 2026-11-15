@@ -345,6 +345,32 @@ window.PROJECTS = [
     "liveText": "웹캠을 켜면 세이아가 당신의 표정과 손을 따라 합니다."
   },
   {
+    "slug": "windmills",
+    "title": "WINDMILLS SNS",
+    "sub": "Contents Design",
+    "date": "2026.03",
+    "cats": [
+      "Branding",
+      "Graphic",
+      "Marketing",
+      "AI"
+    ],
+    "role": "SNS renewal · Graphic",
+    "cover": "assets/projects/windmills/1-4.png",
+    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/windmills/1-2.png",
+      "assets/projects/windmills/3-_1.png",
+      "assets/projects/windmills/01.jpg",
+      "assets/projects/windmills/02.jpg",
+      "assets/projects/windmills/1-3.png",
+      "assets/projects/windmills/2026-11-16-7-39-24.png",
+      "assets/projects/windmills/Kusf-3.png"
+    ],
+    "ribbon": ""
+  },
+  {
     "slug": "kdl",
     "title": "Kookmin Dream League",
     "sub": "KDL 2026 Season Promotion",
@@ -420,32 +446,6 @@ window.PROJECTS = [
       "assets/projects/yeogi-mr/15.jpg"
     ],
     "tools": "Figma, Blender"
-  },
-  {
-    "slug": "windmills",
-    "title": "WINDMILLS SNS",
-    "sub": "Contents Design",
-    "date": "2026.03",
-    "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing",
-      "AI"
-    ],
-    "role": "SNS renewal · Graphic",
-    "cover": "assets/projects/windmills/1-4.png",
-    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/windmills/1-2.png",
-      "assets/projects/windmills/3-_1.png",
-      "assets/projects/windmills/01.jpg",
-      "assets/projects/windmills/02.jpg",
-      "assets/projects/windmills/1-3.png",
-      "assets/projects/windmills/2026-11-16-7-39-24.png",
-      "assets/projects/windmills/Kusf-3.png"
-    ],
-    "ribbon": ""
   },
   {
     "slug": "open-gallery",
