@@ -29,7 +29,17 @@ window.PROJECTS = [
       "assets/projects/animation-02/asset-shadow-crowd.jpg"
     ],
     "client": "NC",
-    "compact": true
+    "compact": true,
+    "links": [
+      {
+        "label": "국민대학교 뉴스플러스",
+        "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
+      },
+      {
+        "label": "개인 블로그",
+        "url": "https://blog.naver.com/rima_05/224410157143"
+      }
+    ]
   },
   {
     "slug": "kdl",
