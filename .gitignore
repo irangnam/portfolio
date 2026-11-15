@@ -1,0 +1,9 @@
+admin.html
+serve.py
+js/backups/
+assets/seia/dance.mp4
+assets/seia/dance.json
+assets/seia/dance.fbx
+assets/seia/dance_poster.jpg
+.DS_Store
+__pycache__/
