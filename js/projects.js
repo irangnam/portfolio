@@ -63,7 +63,7 @@ window.PROJECTS = [
     ],
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
-    "cover": "assets/projects/seia/image.png",
+    "cover": "assets/seia/cover2.jpg",
     "desc": "가상의 아이돌이자 전사, 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 진행했습니다. Try it live에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수 있습니다.",
     "images": [
       "assets/seia/seia_full.png",
@@ -126,7 +126,7 @@ window.PROJECTS = [
         "d": "모델을 63MB에서 13MB로 줄이고, three-vrm과 MediaPipe로 브라우저 안에서 표정·고개·팔을 따라 하게 만들었습니다. 설치 없이 이 사이트에서 바로 체험할 수 있습니다."
       }
     ],
-    "banner": "assets/seia/banner.jpg",
+    "banner": "assets/seia/banner2.jpg",
     "live": "seia.html",
     "tallImages": true,
     "featured": true

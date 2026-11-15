@@ -117,8 +117,8 @@ ul{list-style:none}
 .sheet-top{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,6vw,110px)}
 .sheet .desc{font-size:clamp(17px,1.5vw,21px);line-height:1.65;word-break:keep-all}
 .live-box{position:relative;overflow:hidden;isolation:isolate;margin-top:40px;padding:34px 26px;border-radius:var(--r);border:1px solid var(--pink);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
-.live-box::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--live-bg) right 34%/max(100%,900px) auto no-repeat;opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000 62%,#000 84%,rgba(0,0,0,.35));mask-image:linear-gradient(90deg,transparent 30%,#000 62%,#000 84%,rgba(0,0,0,.35));transition:opacity .3s}
-.live-box:hover::before{opacity:.72}
+.lb-bg{position:absolute;inset:0;z-index:-1;background:right 34%/max(100%,900px) auto no-repeat;opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000 62%,#000 84%,rgba(0,0,0,.35));mask-image:linear-gradient(90deg,transparent 30%,#000 62%,#000 84%,rgba(0,0,0,.35));transition:opacity .3s}
+.live-box:hover .lb-bg{opacity:.72}
 .live-box p{font-family:var(--disp);font-weight:500;font-size:clamp(18px,1.8vw,24px);letter-spacing:-.02em}
 .live-box .btn{background:var(--pink);border-color:var(--pink);color:#000}.live-box .btn:hover{background:var(--ink);border-color:var(--ink)}
 .gal{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,20px);margin-top:44px}
