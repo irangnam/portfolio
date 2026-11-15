@@ -368,7 +368,13 @@ window.PROJECTS = [
       "assets/projects/windmills/2026-11-16-7-39-24.png",
       "assets/projects/windmills/Kusf-3.png"
     ],
-    "ribbon": ""
+    "ribbon": "",
+    "links": [
+      {
+        "label": "윈드밀스 인스타그램",
+        "url": "https://www.instagram.com/kmu_windmills/"
+      }
+    ]
   },
   {
     "slug": "kdl",
@@ -393,6 +399,13 @@ window.PROJECTS = [
       "assets/projects/kdl/image.png",
       "assets/projects/kdl/2.png",
       "assets/projects/kdl/image-2.png"
+    ],
+    "live": "",
+    "links": [
+      {
+        "label": "KDL 인스타그램",
+        "url": "https://www.instagram.com/kookmin_dreamleague/"
+      }
     ]
   },
   {
