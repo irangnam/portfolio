@@ -8,8 +8,11 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   /* intro + about */
-  $("#bio").textContent = `디자이너 ${ME.nameKo}입니다. ${ME.bio}`;
-  $("#bio2").textContent = `${ME.education[0]}에서 공부하며, 지금은 ${ME.quests[0][1]}에서 ${ME.quests[0][2].split(" · ")[0]}로 일하고 있습니다.`;
+  $("#bio").textContent = ME.bio;
+  const em = t => esc(t).replace(/\[([^\]]+)\]/g, "<em>$1</em>");   // [text] = pink emphasis
+  if (ME.heroLine) $("#hero-line").innerHTML = em(ME.heroLine);
+  if (ME.aboutLine) $("#about-line").innerHTML = em(ME.aboutLine);
+  $("#bio2").textContent = ME.bio2 || "";
   $("#facts").innerHTML =
     `<dt>Focus</dt><dd>${esc(ME.focus)}</dd>` +
     `<dt>Education</dt><dd>${ME.education.map(esc).join("<br>")}</dd>` +

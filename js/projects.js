@@ -485,17 +485,17 @@ window.PLAYER = {
   "name": "IRANG NAM",
   "nameKo": "남이랑",
   "klass": "DESIGNER",
-  "bio": "리서치부터 브랜딩, 그래픽, 영상, 실물 제작까지 연결하는 디자이너입니다.",
-  "focus": "UX/UI · BI · Graphic · AI Design",
+  "bio": "디자이너 남이랑입니다. 캐릭터를 기획하고, AI 영상과 3D, 실시간 아바타로 살아 움직이게 만듭니다.",
+  "focus": "Virtual Character · AI Video · 3D · XR",
   "education": [
     "국민대학교 조형대학 AI디자인학과",
-    "국민대학교 경영대학 경영학과 (복수전공) — 재학중"
+    "국민대학교 경영대학 경영학과 (복수전공)"
   ],
   "quests": [
     [
-      "2025 — NOW",
+      "2025 — 2026",
       "미대입시 전문 정보센터 그리날다",
-      "편집디자이너 · 입시 정보 콘텐츠 편집 및 디자인, 브랜드 아이덴티티 관리"
+      "편집디자이너 · 입시 정보 콘텐츠 편집 및 디자인"
     ],
     [
       "2025",
@@ -535,5 +535,8 @@ window.PLAYER = {
     ]
   ],
   "email": "skadlfkd0203@gmail.com",
-  "instagram": "nytrcak"
+  "instagram": "nytrcak",
+  "heroLine": "Irang Nam is a designer who builds characters and [brings them to life] — with AI video, 3D and real-time avatars.",
+  "aboutLine": "캐릭터를 기획하고 만드는 데서 그치지 않고, [직접 움직이고 반응하게] 만듭니다.",
+  "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트를 진행했고, 버추얼 아바타 SEIA는 캐릭터 기획부터 3D, 리깅, 웹캠 트래킹까지 혼자 만들었습니다."
 };
