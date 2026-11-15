@@ -361,7 +361,12 @@ window.PROJECTS = [
     "images": [
       "assets/projects/kdl/01.jpg",
       "assets/projects/kdl/02.jpg",
-      "assets/projects/kdl/03.jpg"
+      "assets/projects/kdl/29.png",
+      "assets/projects/kdl/image-3.png",
+      "assets/projects/kdl/03.jpg",
+      "assets/projects/kdl/image.png",
+      "assets/projects/kdl/2.png",
+      "assets/projects/kdl/image-2.png"
     ]
   },
   {
