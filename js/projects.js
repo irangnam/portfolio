@@ -339,7 +339,8 @@ window.PROJECTS = [
         "t": "Sound",
         "d": "영상의 분위기가 살도록 음향 작업에 공을 들였습니다."
       }
-    ]
+    ],
+    "ribbon": ""
   },
   {
     "slug": "kdl",
