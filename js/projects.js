@@ -269,7 +269,8 @@ window.PROJECTS = [
     "cats": [
       "3D",
       "Character",
-      "Virtual"
+      "Virtual",
+      "AI"
     ],
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
@@ -466,7 +467,8 @@ window.PROJECTS = [
     "sub": "Exhibition · Buenos Aires",
     "date": "2025.06",
     "cats": [
-      "Art"
+      "Art",
+      "AI"
     ],
     "role": "AI artwork ‘SUPER HERO’",
     "cover": "assets/projects/open-gallery/cover.jpg",
