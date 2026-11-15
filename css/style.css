@@ -123,6 +123,18 @@ ul{list-style:none}
 .gal figure{grid-column:span 3;border-radius:var(--r);overflow:hidden;background:var(--raise)}
 .gal figure.wide{grid-column:span 6}.gal figure.tall{grid-column:span 2;background:radial-gradient(circle at 50% 30%,#2a1420,#111 70%)}
 .gal img,.gal video{width:100%;height:auto}
+.gal figure.long{grid-column:span 6;justify-self:center;width:min(100%,760px)}   /* very tall process sheets: one centred column */
+.gal figure.vid{position:relative;background:#000;order:0}.gal figure.vid video{display:block;cursor:pointer}
+.gal figure.half{grid-column:span 3;order:2}.gal figure.long{order:1}
+.gal figure.tile{grid-column:span 1;order:3;aspect-ratio:1;cursor:zoom-in}.gal figure.tile img{width:100%;height:100%;object-fit:cover}
+.vplay{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;border:0;background:rgba(10,10,11,.6);backdrop-filter:blur(6px);cursor:pointer;transition:opacity .2s}
+.vplay::before{content:"";position:absolute;left:26px;top:20px;border-left:18px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.vid.on .vplay{opacity:0;pointer-events:none}
+.vbar{position:absolute;left:0;right:0;bottom:0;height:14px;cursor:pointer;background:linear-gradient(transparent 10px,rgba(255,255,255,.22) 10px)}.vbar i{position:absolute;left:0;bottom:0;height:4px;background:var(--pink)}
+.vsnd{position:absolute;right:12px;bottom:22px;border:0;border-radius:99px;padding:6px 12px;font:500 11px/1 inherit;color:#fff;background:rgba(10,10,11,.6);backdrop-filter:blur(6px);cursor:pointer;opacity:0;transition:opacity .2s}.vid:hover .vsnd{opacity:1}
+.zoom{position:fixed;inset:0;z-index:50;background:rgba(10,10,11,.92);display:grid;place-items:center;padding:4vmin;cursor:zoom-out}.zoom img{max-width:100%;max-height:92vh;width:auto;height:auto;border-radius:var(--r)}
+img,video{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none}
+video::-webkit-media-controls{display:none!important}
 .gal .soon{grid-column:span 6;border:1px dashed var(--line);border-radius:var(--r);padding:44px;text-align:center;font-size:14px;color:var(--soft);background:none}
 .proc{margin-top:clamp(60px,8vw,110px)}
 .proc ol{list-style:none}
@@ -143,6 +155,7 @@ ul{list-style:none}
   .cards{grid-template-columns:1fr}
   .rows li{grid-template-columns:1fr;gap:0}
   .gal figure,.gal figure.tall{grid-column:span 6}
+  .gal figure.tile{grid-column:span 2}.vsnd{opacity:1}
   .proc li{grid-template-columns:1fr;gap:4px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}

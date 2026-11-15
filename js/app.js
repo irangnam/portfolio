@@ -1,5 +1,8 @@
 (() => {
-  const P = window.PROJECTS, ME = window.PLAYER;
+  document.addEventListener("contextmenu", e => { if (e.target.closest("img,video,figure")) e.preventDefault(); });
+  document.addEventListener("dragstart", e => { if (e.target.closest("img,video")) e.preventDefault(); });
+  const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
+  const P = window.PROJECTS.filter(p => !p.hidden || LOCAL), ME = window.PLAYER;   // hidden: true = draft; only visible in the local preview
   const $ = (s, r = document) => r.querySelector(s);
   const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -45,6 +48,7 @@
       const a = el("a", "card rv"); a.href = "#/work/" + p.slug;
       const th = el("div", "thumb"); th.append(cover(p, i));
       if (p.live) th.append(el("span", "tag", "Try it live"));
+      if (p.hidden) th.append(el("span", "tag", "Draft · 비공개"));
       a.append(th, el("div", "meta", `<h3>${esc(p.title)}</h3><span class="cats">${esc(p.cats.join(" · "))}<br>${esc(p.date)}</span>`));
       g.append(a);
     });
@@ -72,19 +76,29 @@
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
       </div>`;
     const gal = $("#gal");
-    if (p.video) {
-      const f = el("figure", "wide"), v = el("video"); v.controls = true; v.loop = true; v.playsInline = true; v.preload = "metadata"; v.muted = true; if (p.poster) v.poster = p.poster; v.src = p.video;
-      v.onerror = () => { f.className = "soon"; f.textContent = "Dance cut — coming soon"; };
-      f.append(v); gal.append(f);
-    }
+    (p.videos || (p.video ? [p.video] : [])).forEach((src, k) => {      // own minimal player: play/pause, seek bar, sound — no time, no fullscreen, no download button
+      const f = el("figure", "vid " + (p.compact && k ? "half" : "wide")), v = el("video");
+      v.playsInline = true; v.preload = "metadata"; v.disablePictureInPicture = true; v.setAttribute("controlsList", "nodownload nofullscreen noremoteplayback");
+      v.src = src + "#t=0.1"; v.onerror = () => f.remove();
+      const play = el("button", "vplay"), bar = el("div", "vbar"), fill = el("i"), snd = el("button", "vsnd", "Sound on");
+      play.setAttribute("aria-label", "Play / pause"); bar.append(fill);
+      const toggle = () => { if (v.paused) { document.querySelectorAll("#gal video").forEach(o => o !== v && o.pause()); v.play(); } else v.pause(); };
+      v.onclick = play.onclick = toggle;
+      v.onplay = () => f.classList.add("on"); v.onpause = v.onended = () => f.classList.remove("on");
+      v.ontimeupdate = () => (fill.style.width = (v.currentTime / (v.duration || 1)) * 100 + "%");
+      bar.onclick = e => { const r = bar.getBoundingClientRect(); v.currentTime = ((e.clientX - r.left) / r.width) * (v.duration || 0); };
+      snd.onclick = () => { v.muted = !v.muted; snd.textContent = v.muted ? "Sound off" : "Sound on"; };
+      f.append(v, play, bar, snd); gal.append(f);
+    });
     (p.images || []).forEach((src, k) => {
-      const f = el("figure", p.tallImages ? "tall" : "");
-      const im = new Image(); im.alt = `${p.title} — image ${k + 1}`; im.onerror = () => f.remove();
-      im.onload = () => { if (!p.tallImages && im.naturalWidth > im.naturalHeight * 1.15) f.classList.add("wide"); };   // landscape fills the row, portrait sits two-up
+      const f = el("figure", p.tallImages ? "tall" : p.compact ? "tile" : "");
+      const im = new Image(); im.alt = `${p.title} — image ${k + 1}`; im.draggable = false; im.onerror = () => f.remove();
+      im.onload = () => { if (p.tallImages) return; if (im.naturalHeight > im.naturalWidth * 2.5) { f.classList.remove("tile"); f.classList.add("long"); } else if (!p.compact && im.naturalWidth > im.naturalHeight * 1.15) f.classList.add("wide"); };   // landscape fills the row, portrait sits two-up
       im.src = src;
+      if (p.compact) f.onclick = () => { if (!f.classList.contains("tile")) return; const z = el("div", "zoom"), zi = new Image(); zi.src = src; zi.draggable = false; z.append(zi); z.onclick = () => z.remove(); s.append(z); };
       f.append(im); gal.append(f);
     });
-    if (!p.video && !(p.images || []).length) gal.append(el("div", "soon", "Images coming soon"));
+    if (!(p.videos || []).length && !p.video && !(p.images || []).length) gal.append(el("div", "soon", "Images coming soon"));
     s.hidden = false; s.scrollTop = 0; document.body.style.overflow = "hidden";
   }
   function route() {
