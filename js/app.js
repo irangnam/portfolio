@@ -94,7 +94,7 @@
           <p class="desc">${esc(p.desc)}</p>
           <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}${press(p)}</dl>
         </div>
-        ${p.live ? `<div class="live-box">${p.banner ? `<i class="lb-bg" style="background-image:url('${esc(p.banner)}')"></i>` : ""}<p>춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.</p><a class="btn" href="${esc(p.live)}?v=1794753934">Try it live →</a></div>` : ""}
+        ${p.live ? `<a class="live-box" href="${esc(p.live)}?v=1794775014">${p.banner ? `<i class="lb-bg" style="background-image:url('${esc(p.banner)}')"></i>` : ""}<i class="sheen"></i><p>춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.</p><span class="btn">Try it live →</span></a>` : ""}
         <div class="gal" id="gal"></div>
         ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}${(s.imgs || []).length ? `<div class="thumbs">${s.imgs.map(u => `<img loading="lazy" draggable="false" src="${esc(u)}" alt="${esc(s.t)}" onerror="this.remove()">`).join("")}</div>` : ""}</div></li>`).join("")}</ol></section>` : ""}
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
