@@ -94,8 +94,9 @@
           <p class="desc">${esc(p.desc)}</p>
           <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}${press(p)}</dl>
         </div>
-        ${p.live ? (/^https?:/i.test(p.live) ? `<div class="embed" data-src="${esc(p.live)}"${p.cover ? ` style="background-image:url('${esc(p.cover)}')"` : ""}><button class="embed-go"><b>▶ ${esc(p.liveBtn || "데모 시작")}</b><span>${esc(p.liveText || "")}</span></button></div><p class="embed-note"><a href="${esc(p.live)}" target="_blank" rel="noopener">새 탭에서 크게 열기 ↗</a></p>` : `<div class="embed auto" data-src="${esc(p.live)}?embed=1&v=1794781427" data-allow="camera" style="background-image:url('${esc(p.liveBg || p.banner || p.cover || "")}')"><span class="embed-load">Loading SEIA…</span></div>
-        <div class="live-row">${p.demoVideo ? `<video class="demo" src="${esc(p.demoVideo)}" autoplay muted loop playsinline disablepictureinpicture></video>` : ""}<div><h3>${esc(p.liveText || "춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.")}</h3><p>위 화면의 세이아는 지금 실시간으로 움직이고 있습니다. Dance를 누르면 춤을 추고, Use my camera를 누르면 표정과 고개, 팔, 손가락을 따라 합니다. 카메라 영상은 브라우저 안에서만 처리되고 어디에도 전송되지 않습니다.</p><a class="btn" href="${esc(p.live)}">전체 화면으로 해보기 →</a></div></div>`) : ""}
+        ${p.live ? (/^https?:/i.test(p.live) ? `<div class="embed" data-src="${esc(p.live)}"${p.cover ? ` style="background-image:url('${esc(p.cover)}')"` : ""}><button class="embed-go"><b>▶ ${esc(p.liveBtn || "데모 시작")}</b><span>${esc(p.liveText || "")}</span></button></div><p class="embed-note"><a href="${esc(p.live)}" target="_blank" rel="noopener">새 탭에서 크게 열기 ↗</a></p>` : `<div class="live-head"><div><h3>${esc(p.liveText || "춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.")}</h3><p>아래 화면에서 바로 테스트해 보세요. 세이아는 지금 실시간으로 움직이고 있습니다. Dance를 누르면 춤을 추고, Use my camera를 누르면 표정과 고개, 팔, 손가락을 따라 합니다. 카메라 영상은 브라우저 안에서만 처리되고 어디에도 전송되지 않습니다.</p></div><a class="btn" href="${esc(p.live)}">전체 화면으로 해보기 →</a></div>
+        <div class="embed auto" data-src="${esc(p.live)}?embed=1&v=1794781733" data-allow="camera" style="background-image:url('${esc(p.liveBg || p.banner || p.cover || "")}')"><span class="embed-load">Loading SEIA…</span></div>
+        ${p.demoVideo ? `<figure class="demo-fig"><video class="demo" data-src="${esc(p.demoVideo)}" muted loop playsinline disablepictureinpicture preload="none"></video><figcaption>웹캠 체험 녹화 — 표정, 고개, 손을 따라 하는 모습</figcaption></figure>` : ""}`) : ""}
         <div class="gal" id="gal"></div>
         ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}${(s.imgs || []).length ? `<div class="thumbs">${s.imgs.map(u => `<img loading="lazy" draggable="false" src="${esc(u)}" alt="${esc(s.t)}" onerror="this.remove()">`).join("")}</div>` : ""}</div></li>`).join("")}</ol></section>` : ""}
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
@@ -109,6 +110,9 @@
       };
       if (box.classList.contains("auto")) setTimeout(start, 350);          // our own avatar page: alive as soon as the project opens
       else box.querySelector(".embed-go").onclick = () => { start(); box.classList.add("on"); };   // outside demos load only when asked for
+    });
+    s.querySelectorAll("video.demo").forEach(v => {          // the recording only decodes while it is on screen
+      new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause(); }), { root: s, threshold: 0.35 }).observe(v);
     });
     const gal = $("#gal");
     (p.videos || (p.video ? [p.video] : [])).forEach((src, k) => {      // own minimal player: play/pause, seek bar, sound — no time, no fullscreen, no download button
