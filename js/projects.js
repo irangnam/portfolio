@@ -12,7 +12,7 @@ window.PROJECTS = [
     ],
     "role": "Team project | 조유빈, 남이랑",
     "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
-    "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
+    "desc": "NC와 함께하는 AI 영상 제작 프로젝트.\n3D 모델 생성 툴인 VARCO 3D를 활용한 작업물로, NC AI 본사 미디어월에 게시되었다.",
     "cover": "assets/projects/animation-02/cover.jpg",
     "videos": [
       "assets/projects/animation-02/pepperoni-pizza.mp4",
