@@ -16,8 +16,8 @@ window.PROJECTS = [
     "cover": "assets/projects/kt-wiz/2026-11-16-4-47-40.png",
     "images": [
       "assets/projects/kt-wiz/2026-11-16-4-49-15.png",
-      "assets/projects/kt-wiz/2026-11-16-4-49-30.png",
-      "assets/projects/kt-wiz/2026-11-16-4-49-44.png"
+      "assets/projects/kt-wiz/2026-11-16-4-51-01.png",
+      "assets/projects/kt-wiz/2026-11-16-4-51-17.png"
     ],
     "process": [
       {
