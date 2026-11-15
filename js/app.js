@@ -43,6 +43,7 @@
   function renderFeature() {                             // one project marked featured:true gets a wide banner above the grid
     const p = P.find(q => q.featured), box = $("#feature"); box.innerHTML = "";
     if (!p) return;
+    box.append(el("div", "sec-head", `<h2>${p.live ? "Try it live" : "Latest"}</h2>`));   // same header style as "Selected work"
     const a = el("a", "feature rv"); a.href = "#/work/" + p.slug;
     const src = p.banner || p.cover;
     if (src) {
@@ -51,7 +52,7 @@
       a.onmouseleave = () => (im.style.transform = "");
     }
     a.append(el("i", "sheen"));
-    a.append(el("div", "ft", `<span class="tag">Latest${p.live ? " · Try it live" : ""}</span><h3>${esc(p.title)}</h3><p>${esc(p.sub || "")}</p><span class="more">View project →</span>`),
+    a.append(el("div", "ft", `<h3>${esc(p.title)}</h3><p>${esc(p.sub || "")}</p><span class="more">View project →</span>`),
       el("span", "fd", `${esc(p.cats.join(" · "))}<br>${esc(p.date)}`));
     box.append(a);
   }
