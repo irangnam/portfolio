@@ -340,7 +340,9 @@ window.PROJECTS = [
     "live": "seia.html",
     "tallImages": true,
     "featured": true,
-    "liveBg": "assets/seia/live_bg.jpg"
+    "liveBg": "assets/seia/live_bg.jpg",
+    "demoVideo": "assets/seia/webcam-demo.mp4",
+    "liveText": "웹캠을 켜면 세이아가 당신의 표정과 손을 따라 합니다."
   },
   {
     "slug": "kdl",

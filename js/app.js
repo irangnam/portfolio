@@ -82,7 +82,7 @@
   /* detail sheet */
   function openSheet(slug) {
     const i = P.findIndex(p => p.slug === slug), s = $("#sheet");
-    if (i < 0) { s.hidden = true; document.body.style.overflow = ""; return; }
+    if (i < 0) { s.hidden = true; s.querySelectorAll("iframe,video").forEach(x => x.remove()); document.body.style.overflow = ""; return; }
     const p = P[i], nx = P[(i + 1) % P.length], bn = p.banner || (p.coverFit !== "contain" && p.coverOk ? p.cover : "");
     s.innerHTML = `
       <div class="sheet-bar"><a href="#work">← All work</a><span>${String(i + 1).padStart(2, "0")} / ${String(P.length).padStart(2, "0")}</span></div>
@@ -94,16 +94,22 @@
           <p class="desc">${esc(p.desc)}</p>
           <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}${press(p)}</dl>
         </div>
-        ${p.live ? (/^https?:/i.test(p.live) ? `<div class="embed" data-src="${esc(p.live)}"${p.cover ? ` style="background-image:url('${esc(p.cover)}')"` : ""}><button class="embed-go"><b>▶ ${esc(p.liveBtn || "데모 시작")}</b><span>${esc(p.liveText || "")}</span></button></div><p class="embed-note"><a href="${esc(p.live)}" target="_blank" rel="noopener">새 탭에서 크게 열기 ↗</a></p>` : `<a class="live-box" href="${esc(p.live)}"${/^https?:/i.test(p.live) ? ' target="_blank" rel="noopener"' : ""}>${p.liveBg || p.banner ? `<i class="lb-bg${p.liveBg ? " art" : ""}" style="background-image:url('${esc(p.liveBg || p.banner)}')"></i>` : ""}<i class="sheen"></i><p>${esc(p.liveText || "춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.")}</p><span class="btn">Try it live →</span></a>`) : ""}
+        ${p.live ? (/^https?:/i.test(p.live) ? `<div class="embed" data-src="${esc(p.live)}"${p.cover ? ` style="background-image:url('${esc(p.cover)}')"` : ""}><button class="embed-go"><b>▶ ${esc(p.liveBtn || "데모 시작")}</b><span>${esc(p.liveText || "")}</span></button></div><p class="embed-note"><a href="${esc(p.live)}" target="_blank" rel="noopener">새 탭에서 크게 열기 ↗</a></p>` : `<div class="embed auto" data-src="${esc(p.live)}?embed=1&v=1794781427" data-allow="camera" style="background-image:url('${esc(p.liveBg || p.banner || p.cover || "")}')"><span class="embed-load">Loading SEIA…</span></div>
+        <div class="live-row">${p.demoVideo ? `<video class="demo" src="${esc(p.demoVideo)}" autoplay muted loop playsinline disablepictureinpicture></video>` : ""}<div><h3>${esc(p.liveText || "춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.")}</h3><p>위 화면의 세이아는 지금 실시간으로 움직이고 있습니다. Dance를 누르면 춤을 추고, Use my camera를 누르면 표정과 고개, 팔, 손가락을 따라 합니다. 카메라 영상은 브라우저 안에서만 처리되고 어디에도 전송되지 않습니다.</p><a class="btn" href="${esc(p.live)}">전체 화면으로 해보기 →</a></div></div>`) : ""}
         <div class="gal" id="gal"></div>
         ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}${(s.imgs || []).length ? `<div class="thumbs">${s.imgs.map(u => `<img loading="lazy" draggable="false" src="${esc(u)}" alt="${esc(s.t)}" onerror="this.remove()">`).join("")}</div>` : ""}</div></li>`).join("")}</ol></section>` : ""}
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
       </div>`;
     s.querySelectorAll(".thumbs img").forEach(t => (t.onclick = () => { const z = el("div", "zoom"), zi = new Image(); zi.src = t.src; zi.draggable = false; z.append(zi); z.onclick = () => z.remove(); s.append(z); }));
-    s.querySelectorAll(".embed").forEach(box => (box.querySelector(".embed-go").onclick = () => {   // the demo loads only when asked for
-      const f = el("iframe"); f.src = box.dataset.src; f.allow = "xr-spatial-tracking; fullscreen; gamepad"; f.allowFullscreen = true; f.title = "Live demo";
-      box.classList.add("on"); box.replaceChildren(f); f.focus();
-    }));
+    s.querySelectorAll(".embed").forEach(box => {
+      const start = () => {
+        const f = el("iframe"); f.src = box.dataset.src; f.allow = (box.dataset.allow ? box.dataset.allow + "; " : "") + "xr-spatial-tracking; fullscreen; gamepad"; f.allowFullscreen = true; f.title = "Live demo";
+        f.onload = () => box.classList.add("on"); box.append(f);
+        box.querySelector(".embed-go")?.remove();
+      };
+      if (box.classList.contains("auto")) setTimeout(start, 350);          // our own avatar page: alive as soon as the project opens
+      else box.querySelector(".embed-go").onclick = () => { start(); box.classList.add("on"); };   // outside demos load only when asked for
+    });
     const gal = $("#gal");
     (p.videos || (p.video ? [p.video] : [])).forEach((src, k) => {      // own minimal player: play/pause, seek bar, sound — no time, no fullscreen, no download button
       const f = el("figure", "vid " + (p.compact && k ? "half" : "wide")), v = el("video");
@@ -133,7 +139,7 @@
   function route() {
     const m = location.hash.match(/^#\/work\/(.+)$/);
     if (m) openSheet(decodeURIComponent(m[1]));
-    else { $("#sheet").hidden = true; document.body.style.overflow = ""; }
+    else { $("#sheet").hidden = true; $("#sheet").querySelectorAll("iframe,video").forEach(x => x.remove()); document.body.style.overflow = ""; }
   }
   addEventListener("hashchange", route);
   addEventListener("keydown", e => { if (e.key === "Escape" && !$("#sheet").hidden) location.hash = "#work"; });

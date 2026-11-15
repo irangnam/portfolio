@@ -37,6 +37,7 @@
   #pl-toggle:hover{background:var(--pink)}
   #pl-toggle svg{width:14px;height:14px;fill:currentColor}
   #dance{grid-column:1/-1}
+  body.embed .nav{display:none}body.embed .dock{left:16px;bottom:16px;width:min(270px,calc(100vw - 32px))}body.embed #cam{right:16px;bottom:16px;width:140px}
   /* controls */
   .ctrl{padding:14px;display:flex;flex-direction:column;gap:10px}
   .ctrl h1{font-family:var(--disp);font-weight:500;font-size:15px;letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:baseline}
@@ -97,6 +98,7 @@
   </div>
 </div>
 <video id="cam" playsinline muted hidden></video>
+<script>if (/[?&]embed=1/.test(location.search)) document.body.classList.add("embed");</script>
 <script type="module" src="js/seia-live.js?v=1794780183"></script>
 </body>
 </html>
