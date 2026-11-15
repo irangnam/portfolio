@@ -1,6 +1,57 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
+    "slug": "pepperoni-pizza",
+    "title": "Pepperoni Pizza",
+    "sub": "AI Animation Film",
+    "date": "2026.08",
+    "cats": [
+      "3D",
+      "Animation",
+      "AI"
+    ],
+    "role": "Team project — 조유빈, 남이랑",
+    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
+    "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
+    "cover": "assets/projects/animation-02/cover.jpg",
+    "videos": [
+      "assets/projects/animation-02/pepperoni-pizza.mp4",
+      "assets/projects/animation-02/out-of-the-rubble.mp4",
+      "assets/projects/pepperoni-pizza/2-2.mp4"
+    ],
+    "images": [
+      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
+      "assets/projects/animation-02/asset-pizza-box.jpg",
+      "assets/projects/animation-02/asset-ruin-interior.jpg",
+      "assets/projects/animation-02/asset-ruin-house.jpg",
+      "assets/projects/animation-02/asset-tower.jpg",
+      "assets/projects/animation-02/asset-building.jpg",
+      "assets/projects/animation-02/asset-shadow-crowd.jpg"
+    ],
+    "client": "NC",
+    "compact": true
+  },
+  {
+    "slug": "kdl",
+    "title": "Kookmin Dream League",
+    "sub": "KDL 2026 Season Promotion",
+    "date": "2026.04",
+    "cats": [
+      "Branding",
+      "Graphic",
+      "Marketing"
+    ],
+    "role": "Visual design · Promotion",
+    "cover": "assets/projects/kdl/cover.jpg",
+    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/kdl/01.jpg",
+      "assets/projects/kdl/02.jpg",
+      "assets/projects/kdl/03.jpg"
+    ]
+  },
+  {
     "slug": "seia",
     "title": "버추얼 아바타 SEIA",
     "sub": "Virtual Idol Warrior — Original VTuber Avatar",
@@ -12,7 +63,7 @@ window.PROJECTS = [
     ],
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
-    "cover": "assets/seia/cover2.jpg",
+    "cover": "assets/projects/seia/image.png",
     "desc": "가상의 아이돌이자 전사, 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 진행했습니다. Try it live에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수 있습니다.",
     "images": [
       "assets/seia/seia_full.png",
@@ -75,41 +126,10 @@ window.PROJECTS = [
         "d": "모델을 63MB에서 13MB로 줄이고, three-vrm과 MediaPipe로 브라우저 안에서 표정·고개·팔을 따라 하게 만들었습니다. 설치 없이 이 사이트에서 바로 체험할 수 있습니다."
       }
     ],
-    "banner": "assets/seia/banner2.jpg",
+    "banner": "assets/seia/banner.jpg",
     "live": "seia.html",
     "tallImages": true,
     "featured": true
-  },
-  {
-    "slug": "pepperoni-pizza",
-    "title": "Pepperoni Pizza",
-    "sub": "AI Animation Film",
-    "date": "2026.08",
-    "cats": [
-      "3D",
-      "Animation",
-      "AI"
-    ],
-    "role": "Team project — 조유빈, 남이랑",
-    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
-    "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
-    "cover": "assets/projects/animation-02/cover.jpg",
-    "videos": [
-      "assets/projects/animation-02/pepperoni-pizza.mp4",
-      "assets/projects/animation-02/out-of-the-rubble.mp4",
-      "assets/projects/pepperoni-pizza/2-2.mp4"
-    ],
-    "images": [
-      "assets/projects/pepperoni-pizza/Instagram-post---2.png",
-      "assets/projects/animation-02/asset-pizza-box.jpg",
-      "assets/projects/animation-02/asset-ruin-interior.jpg",
-      "assets/projects/animation-02/asset-ruin-house.jpg",
-      "assets/projects/animation-02/asset-tower.jpg",
-      "assets/projects/animation-02/asset-building.jpg",
-      "assets/projects/animation-02/asset-shadow-crowd.jpg"
-    ],
-    "client": "NC",
-    "compact": true
   },
   {
     "slug": "scream",
@@ -129,26 +149,6 @@ window.PROJECTS = [
       "assets/projects/scream/02.jpg",
       "assets/projects/scream/03.jpg",
       "assets/projects/scream/04.jpg"
-    ]
-  },
-  {
-    "slug": "kdl",
-    "title": "Kookmin Dream League",
-    "sub": "KDL 2026 Season Promotion",
-    "date": "2026.04",
-    "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing"
-    ],
-    "role": "Visual design · Promotion",
-    "cover": "assets/projects/kdl/cover.jpg",
-    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/kdl/01.jpg",
-      "assets/projects/kdl/02.jpg",
-      "assets/projects/kdl/03.jpg"
     ]
   },
   {
