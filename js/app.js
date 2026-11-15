@@ -47,7 +47,7 @@
     const src = p.banner || p.cover;
     if (src) {
       const im = new Image(); im.alt = ""; im.draggable = false; im.onerror = () => im.remove(); im.src = src; a.append(im);
-      a.onmousemove = e => { const r = a.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5; im.style.transform = `scale(1.08) translate(${(-x * 2.2).toFixed(2)}%,${(-y * 2.2).toFixed(2)}%)`; };
+      a.onmousemove = e => { const r = a.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5; im.style.transform = `scale(1.035) translate(${(-x * 0.9).toFixed(2)}%,${(-y * 0.9).toFixed(2)}%)`; };
       a.onmouseleave = () => (im.style.transform = "");
     }
     a.append(el("i", "sheen"));
@@ -63,6 +63,7 @@
       if (cat !== "All" && !p.cats.includes(cat)) return;
       const a = el("a", "card rv"); a.href = "#/work/" + p.slug;
       const th = el("div", "thumb"); th.append(cover(p, i));
+      if (p.ribbon) { th.classList.add("has-ribbon"); th.append(el("span", "ribbon", esc(p.ribbon))); }   // pink strip across the top of the thumbnail
       if (p.live) th.append(el("span", "tag", "Try it live"));
       const logos = (p.logos || []).concat(p.logo ? [p.logo] : []).map(l => (typeof l === "string" ? { src: l, pos: "tr" } : l)), corner = {};
       for (const l of logos) {                             // each logo sits in the corner chosen for it
