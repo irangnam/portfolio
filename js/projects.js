@@ -64,13 +64,13 @@ window.PROJECTS = [
       {
         "t": "On site",
         "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다.",
-        "img": "assets/projects/kt-wiz/IMG_0500.jpg",
         "imgs": [
           "assets/projects/kt-wiz/IMG_0630.jpg",
           "assets/projects/kt-wiz/SE-ff538c35-ee69-4fcd-956f-fecaa18ce259.jpg",
           "assets/projects/kt-wiz/SE-e2dece12-a39f-4ecc-a917-0efe7fcaa170.jpg",
           "assets/projects/kt-wiz/SE-e4c4241e-64b4-4056-9c65-8e239d0732d8.jpg"
-        ]
+        ],
+        "img": "assets/projects/kt-wiz/IMG_0498.jpg"
       }
     ],
     "compact": true,
