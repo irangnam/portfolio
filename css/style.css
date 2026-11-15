@@ -6,7 +6,7 @@
 :root{
   --bg:#0a0a0b; --raise:#141416; --ink:#eeede9; --soft:#8b8b90; --line:rgba(255,255,255,.1);
   --pink:#ff4d9d;
-  --disp:"Bricolage Grotesque","Paperlogy","Pretendard",system-ui,sans-serif; --body:"Paperlogy","Pretendard",system-ui,sans-serif;
+  --disp:"Bricolage Grotesque","Paperlogy","Pretendard",system-ui,sans-serif; --body:"Pretendard",system-ui,sans-serif;
   --r:14px; --pad:clamp(20px,4vw,56px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
