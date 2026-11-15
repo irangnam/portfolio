@@ -129,44 +129,34 @@ window.PROJECTS = [
       {
         "t": "Concept",
         "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다.",
-        "imgs": [
-          "assets/seia/wf_concept_front.jpg",
-          "assets/seia/wf_concept_side.jpg",
-          "assets/seia/wf_concept_back.jpg",
-          "assets/seia/wf_concept_hair.jpg",
-          "assets/seia/wf_concept_hair_back.jpg",
-          "assets/seia/wf_concept_face.jpg",
-          "assets/seia/wf_concept_face_side.jpg"
-        ]
+        "imgs": []
       },
       {
         "t": "AI base mesh",
-        "d": "Tripo로 얼굴·헤어·몸·건틀릿 파츠를 따로 생성했습니다. 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없는 상태에서 출발합니다.",
+        "d": "Tripo로 얼굴, 헤어, 몸, 건틀릿 파츠를 따로 생성했습니다. 초기 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없기 때문에 파츠별 생성이 필수적입니다.",
         "imgs": [
           "assets/seia/wf_gauntlet_a.jpg",
-          "assets/seia/wf_gauntlet_b.jpg"
+          "assets/seia/wf_gauntlet_b.jpg",
+          "assets/projects/seia/hf_20261113_201654_d5fa7380-3c13-43c9-b6.png",
+          "assets/projects/seia/hf_20261113_201654_e82913ae-b1d6-4ab6-aa.png"
         ]
       },
       {
         "t": "Cleanup in Blender",
         "d": "파츠를 하나로 조립하고 목 이음새, 손목 연결부, 등 코르셋의 떠 있던 끈 조각, 어깨 비대칭, 머리끝과 치마의 겹침을 정리했습니다.",
         "img": "assets/seia/process_corset.png",
-        "imgs": [
-          "assets/seia/wf_clean_tpose.jpg"
-        ]
+        "imgs": []
       },
       {
         "t": "Rig & weights",
         "d": "휴머노이드 본에 더해 땋은 머리, 옆머리, 귀, 치마에 흔들림용 본을 추가했습니다. 팔꿈치는 분할선을 늘리고 가중치 폭을 좁혀 ‘휘는’ 대신 ‘접히게’ 고쳤고, 손가락 15개 관절을 양손 모두 리깅했습니다.",
         "img": "assets/seia/process_elbow.png",
-        "imgs": [
-          "assets/seia/wf_rig_front.jpg",
-          "assets/seia/wf_rig_back.jpg"
-        ]
+        "imgs": []
       },
       {
         "t": "Expressions",
-        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양(A·I·U·E·O), 귀 감정(쫑긋·처짐·젖힘)까지 17개 셰이프 키를 만들고 기쁨·화남·슬픔·놀람 표정으로 묶었습니다."
+        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양(A·I·U·E·O), 귀 감정(쫑긋·처짐·젖힘)까지 17개 셰이프 키를 만들고 기쁨·화남·슬픔·놀람 표정으로 묶었습니다.",
+        "img": "assets/projects/seia/2026-11-16-1-29-47.png"
       },
       {
         "t": "Texture painting",
@@ -175,7 +165,8 @@ window.PROJECTS = [
       },
       {
         "t": "Toon shading & VRM",
-        "d": "Unity에서 MToon 셰이더로 밝고 부드러운 툰 룩을 잡고, 스프링 본과 콜라이더를 세팅해 VRM 1.0으로 내보냈습니다."
+        "d": "Unity에서 MToon 셰이더로 밝고 부드러운 툰 룩을 잡고, 스프링 본과 콜라이더를 세팅해 VRM 1.0으로 내보냈습니다.",
+        "img": "assets/projects/seia/2026-11-16-1-39-01.png"
       },
       {
         "t": "Tracking test",
@@ -183,7 +174,7 @@ window.PROJECTS = [
       },
       {
         "t": "Motion",
-        "d": "댄스 모션(FBX)을 세이아의 뼈대에 맞게 리타게팅해 춤을 추게 했습니다. 가만히 있을 때의 대기 모션(숨쉬기, 눈 깜빡임, 귀 털기, 팔 흔들림)과 윙크 모션은 코드로 직접 만들었습니다."
+        "d": "아이리제의 HEART CRUSH 댄스 모션(FBX)을 세이아의 뼈대에 맞게 리타게팅해 춤을 추게 했습니다. 이외의 모션(숨쉬기, 눈 깜빡임, 귀 털기, 팔 흔들림)은 코드로 직접 만들었습니다."
       },
       {
         "t": "On the web",
