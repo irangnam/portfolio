@@ -176,7 +176,6 @@ window.PROJECTS = [
       "assets/projects/jamong/lounge.jpg",
       "assets/projects/jamong/cinema-seat.jpg",
       "assets/projects/jamong/popcorn.jpg",
-      "assets/projects/jamong/cinema-joy.jpg",
       "assets/projects/jamong/cinema-screen.jpg",
       "assets/projects/jamong/coming-soon.jpg"
     ],
