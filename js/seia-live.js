@@ -9,6 +9,7 @@ import { loadBakedMotion } from "./motion.js?v=1794753934";
 
 const MP = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14";
 const FACE_MODEL = "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task";
+const HAND_MODEL = "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task";
 const POSE_MODEL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task";
 
 const $ = s => document.querySelector(s);
@@ -138,8 +139,9 @@ const EMOTES = {
 const EMOTE_LEN = 3.6;
 
 /* ── tracking ── */
-let face = null, pose = null, tracking = false, lastVideoTime = -1, mode = "idle", emote = null, emoteT0 = 0;
-const tracked = { head: [0, 0, 0], L: null, R: null, expr: {} };
+let face = null, pose = null, hands = null, tracking = false, lastVideoTime = -1, mode = "idle", emote = null, emoteT0 = 0;
+const tracked = { head: [0, 0, 0], L: null, R: null, handL: null, handR: null, curlL: null, curlR: null, expr: {} };
+const held = { L: null, R: null, tL: 0, tR: 0 };            // last good arm pose, kept briefly when the tracker loses the arm
 const mouse = { x: 0, y: 0 };
 addEventListener("pointermove", e => { mouse.x = e.clientX / innerWidth - .5; mouse.y = e.clientY / innerHeight - .5; });
 const cam = $("#cam");
@@ -151,7 +153,7 @@ $("#go").onclick = async () => {
   stopDance(); go.disabled = true;
   try {
     status("Loading the tracker…");
-    const { FilesetResolver, FaceLandmarker, PoseLandmarker } = await import(`${MP}/vision_bundle.mjs`);
+    const { FilesetResolver, FaceLandmarker, PoseLandmarker, HandLandmarker } = await import(`${MP}/vision_bundle.mjs`);
     const files = await FilesetResolver.forVisionTasks(`${MP}/wasm`);
     face ??= await FaceLandmarker.createFromOptions(files, {
       baseOptions: { modelAssetPath: FACE_MODEL, delegate: "GPU" }, runningMode: "VIDEO",
@@ -160,6 +162,9 @@ $("#go").onclick = async () => {
     pose ??= await PoseLandmarker.createFromOptions(files, {
       baseOptions: { modelAssetPath: POSE_MODEL, delegate: "GPU" }, runningMode: "VIDEO", numPoses: 1
     });
+    try {
+      hands ??= await HandLandmarker.createFromOptions(files, { baseOptions: { modelAssetPath: HAND_MODEL, delegate: "GPU" }, runningMode: "VIDEO", numHands: 2 });
+    } catch (e) { console.warn("hand tracking unavailable", e); hands = null; }   // arms still work without it
     status("Asking for your camera…");
     cam.srcObject = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480, facingMode: "user" }, audio: false });
     await cam.play();
@@ -200,15 +205,40 @@ function track(now) {
       surprised: clamp01(s.browInnerUp * 0.9 + wide * 1.2 - 0.45) * (1 - happy)
     };
   }
-  tracked.L = tracked.R = null;
+  tracked.L = tracked.R = tracked.handL = tracked.handR = tracked.curlL = tracked.curlR = null;
   if ($("#arms").checked) {
-    const w = pose.detectForVideo(cam, now).worldLandmarks?.[0];
+    const pr = pose.detectForVideo(cam, now), w = pr.worldLandmarks?.[0], n2 = pr.landmarks?.[0];
+    const conv = (a, b) => V(-(a.x - b.x), -(a.y - b.y), -(a.z - b.z));       // camera space → SEIA's model space, mirrored
     const side = (sh, el, wr) => {                         // user's side drives SEIA's opposite side (mirror)
       if (!w || w[sh].visibility < .6 || w[el].visibility < .55) return null;
-      const u = V(-(w[el].x - w[sh].x), -(w[el].y - w[sh].y), -(w[el].z - w[sh].z)).normalize();
-      return [u, w[wr].visibility > .5 ? V(-(w[wr].x - w[el].x), -(w[wr].y - w[el].y), -(w[wr].z - w[el].z)).normalize() : u.clone()];
+      const u = conv(w[el], w[sh]).normalize();
+      return [u, w[wr].visibility > .5 ? conv(w[wr], w[el]).normalize() : u.clone()];
     };
-    tracked.L = side(12, 14, 16); tracked.R = side(11, 13, 15);
+    for (const [key, sh, el, wr] of [["L", 12, 14, 16], ["R", 11, 13, 15]]) {
+      let d = side(sh, el, wr);
+      if (d) {                                             // smooth jitter, remember the pose
+        const p = held[key];
+        if (p && now - held["t" + key] < 400) { d[0].lerp(p[0], 0.45).normalize(); d[1].lerp(p[1], 0.45).normalize(); }
+        held[key] = [d[0].clone(), d[1].clone()]; held["t" + key] = now;
+      } else if (held[key] && now - held["t" + key] < 900) d = [held[key][0].clone(), held[key][1].clone()];   // brief dropout: hold, don't snap back
+      tracked[key] = d;
+    }
+    const hr = hands && n2 ? hands.detectForVideo(cam, now) : null;
+    for (let i = 0; i < (hr?.landmarks?.length || 0); i++) {
+      const hn = hr.landmarks[i], hw = hr.worldLandmarks[i];
+      const dR = Math.hypot(hn[0].x - n2[16].x, hn[0].y - n2[16].y), dL = Math.hypot(hn[0].x - n2[15].x, hn[0].y - n2[15].y);
+      if (Math.min(dR, dL) > 0.22) continue;               // not near either wrist: ignore
+      const userRight = dR < dL, key = userRight ? "L" : "R";
+      if (!tracked[key] || tracked["hand" + key]) continue;
+      const f = conv(hw[9], hw[0]).normalize();            // wrist → middle knuckle
+      const a = conv(hw[5], hw[0]), b = conv(hw[17], hw[0]);
+      const p = a.cross(b).normalize(); if (userRight) p.negate();              // direction the palm faces (mirroring flips the handedness)
+      const curl = [[5, 6, 8], [9, 10, 12], [13, 14, 16], [17, 18, 20]].map(([m, q, t]) => {
+        const u = conv(hw[q], hw[m]).normalize(), v = conv(hw[t], hw[q]).normalize();
+        return clamp01((1 - u.dot(v)) / 1.5);
+      });
+      tracked["hand" + key] = { f, p }; tracked["curl" + key] = curl;
+    }
   }
 }
 
@@ -231,7 +261,7 @@ function idleSpec(t, dt) {
 const clock = new THREE.Clock(), qHead = new THREE.Quaternion(), qT = new THREE.Quaternion(), qHalf = new THREE.Quaternion(), ID = new THREE.Quaternion();
 const EXPR = ["blink", "blinkLeft", "blinkRight", "aa", "ou", "oh", "ih", "happy", "angry", "sad", "surprised"], cur = {};
 const sm = { spineX: 0, spineZ: 0, hipsY: 0, lift: 0, fistL: 0, fistR: 0, peaceR: 0 };
-const refPos = V(0, 0, 0);
+const refPos = V(0, 0, 0), smC = { L: [0, 0, 0, 0], R: [0, 0, 0, 0] };
 function applySpec(s, dt) {
   const k = 1 - Math.pow(0.0005, dt), kf = 1 - Math.pow(0.002, dt);
   for (const n in sm) sm[n] += ((s[n] || 0) - sm[n]) * kf;
@@ -261,8 +291,12 @@ function applySpec(s, dt) {
     orient(hand, rest, DOWN, f, p, kf);
   }
   const curl = (list, sign, amt) => list.forEach(j => j && (j.rotation.z = sign * amt));
-  FING.L.forEach(f => curl(f, -1, sm.fistL * 1.25));
-  FING.R.forEach((f, i) => curl(f, 1, Math.max(sm.fistR, i > 1 ? sm.peaceR : 0) * 1.25));
+  for (const key of ["L", "R"]) {                         // tracked fingers ease in and out per finger
+    const c = s["curl" + key];
+    for (let i = 0; i < 4; i++) smC[key][i] += ((c ? c[i] : 0) - smC[key][i]) * kf;
+  }
+  FING.L.forEach((f, i) => curl(f, -1, Math.max(sm.fistL, smC.L[i]) * 1.25));
+  FING.R.forEach((f, i) => curl(f, 1, Math.max(sm.fistR, i > 1 ? sm.peaceR : 0, smC.R[i]) * 1.25));
   const ke = 1 - Math.pow(0.00001, dt);
   for (const n of EXPR) { cur[n] = (cur[n] || 0) + ((s.expr[n] || 0) - (cur[n] || 0)) * ke; vrm.expressionManager?.setValue(n, cur[n]); }
 }
@@ -281,7 +315,7 @@ function loop() {
       const idle = idleSpec(t, dt);
       let s = idle;
       if (emote) { const te = t - emoteT0; if (te > EMOTE_LEN) emote = null; else s = { ...EMOTES[emote](te), te }; }
-      else if (tracking) s = { ...idle, head: tracked.head, L: tracked.L || idle.L, R: tracked.R || idle.R, expr: tracked.expr };
+      else if (tracking) s = { ...idle, head: tracked.head, L: tracked.L || idle.L, R: tracked.R || idle.R, handL: tracked.handL, handR: tracked.handR, curlL: tracked.curlL, curlR: tracked.curlR, expr: tracked.expr };
       if (!s.L) s.L = idle.L; if (!s.R) s.R = idle.R;
       applySpec(s, dt);
     }
