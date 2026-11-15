@@ -10,7 +10,7 @@ window.PROJECTS = [
       "Animation",
       "AI"
     ],
-    "role": "Team project — 조유빈, 남이랑",
+    "role": "Team project | 조유빈, 남이랑",
     "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
     "desc": "NC와 함께하는 AI 영상 제작 프로젝트 (2026.06 – 2026.08).",
     "cover": "assets/projects/animation-02/cover.jpg",
