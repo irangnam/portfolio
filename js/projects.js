@@ -394,5 +394,11 @@ window.PLAYER = {
     ]
   ],
   "email": "skadlfkd0203@gmail.com",
-  "instagram": "nytrcak"
+  "instagram": "nytrcak",
+  "strip": {
+    "on": true,
+    "text": "kt wiz 파크 미디어월 AI 영상 프로젝트 공개",
+    "btn": "바로가기",
+    "link": "#/work/kt-wiz"
+  }
 };

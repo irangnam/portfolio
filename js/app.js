@@ -33,12 +33,24 @@
     const ls = (p.links || []).filter(l => /^https?:\/\//i.test(l.url || ""));
     return ls.length ? `<dt>Press</dt><dd class="press">${ls.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || l.url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])} ↗</a>`).join("")}</dd>` : "";
   }
+  (function strip() {                                      // pink announcement bar under the nav (edit page → 프로필 → 띠배너)
+    const s = ME.strip; if (!s || !s.on || !s.text) return;
+    const bar = el("a", "strip"); bar.href = s.link || "#work";
+    if (/^https?:/i.test(bar.getAttribute("href"))) { bar.target = "_blank"; bar.rel = "noopener"; }
+    bar.innerHTML = `<b>${esc(s.text)}</b>${s.btn ? `<span>${esc(s.btn)}</span>` : ""}`;
+    document.body.classList.add("has-strip"); document.querySelector(".nav").after(bar);
+  })();
   function renderFeature() {                             // one project marked featured:true gets a wide banner above the grid
     const p = P.find(q => q.featured), box = $("#feature"); box.innerHTML = "";
     if (!p) return;
     const a = el("a", "feature rv"); a.href = "#/work/" + p.slug;
     const src = p.banner || p.cover;
-    if (src) { const im = new Image(); im.alt = ""; im.onerror = () => im.remove(); im.src = src; a.append(im); }
+    if (src) {
+      const im = new Image(); im.alt = ""; im.draggable = false; im.onerror = () => im.remove(); im.src = src; a.append(im);
+      a.onmousemove = e => { const r = a.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5; im.style.transform = `scale(1.08) translate(${(-x * 2.2).toFixed(2)}%,${(-y * 2.2).toFixed(2)}%)`; };
+      a.onmouseleave = () => (im.style.transform = "");
+    }
+    a.append(el("i", "sheen"));
     a.append(el("div", "ft", `<span class="tag">Latest${p.live ? " · Try it live" : ""}</span><h3>${esc(p.title)}</h3><p>${esc(p.sub || "")}</p><span class="more">View project →</span>`),
       el("span", "fd", `${esc(p.cats.join(" · "))}<br>${esc(p.date)}`));
     box.append(a);
@@ -52,8 +64,12 @@
       const a = el("a", "card rv"); a.href = "#/work/" + p.slug;
       const th = el("div", "thumb"); th.append(cover(p, i));
       if (p.live) th.append(el("span", "tag", "Try it live"));
-      const logos = (p.logos || []).concat(p.logo ? [p.logo] : []);
-      if (logos.length) { const lg = el("span", "clogo" + (p.logoColor ? " color" : "")); for (const u of logos) { const li = new Image(); li.src = u; li.alt = p.client || "client"; li.draggable = false; li.onerror = () => { li.remove(); if (!lg.children.length) lg.remove(); }; lg.append(li); } th.append(lg); }
+      const logos = (p.logos || []).concat(p.logo ? [p.logo] : []).map(l => (typeof l === "string" ? { src: l, pos: "tr" } : l)), corner = {};
+      for (const l of logos) {                             // each logo sits in the corner chosen for it
+        const pos = /^(tl|tr|bl|br)$/.test(l.pos) ? l.pos : "tr";
+        const lg = corner[pos] || (corner[pos] = th.appendChild(el("span", "clogo " + pos + (p.logoColor ? " color" : "") + (pos === "tl" && (p.live || p.hidden) ? " low" : ""))));
+        const li = new Image(); li.src = l.src; li.alt = p.client || "client"; li.draggable = false; li.onerror = () => { li.remove(); if (!lg.children.length) lg.remove(); }; lg.append(li);
+      }
       if (p.hidden) th.append(el("span", "tag", "Draft · 비공개"));
       a.append(th, el("div", "meta", `<h3>${esc(p.title)}</h3><span class="cats">${esc(p.cats.join(" · "))}<br>${esc(p.date)}</span>`));
       g.append(a);
