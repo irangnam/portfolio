@@ -72,9 +72,10 @@
         </div>
         ${p.live ? `<div class="live-box"><p>춤추는 세이아를 보거나, 웹캠으로 직접 움직여 보세요.</p><a class="btn" href="${esc(p.live)}?v=1794753934">Try it live →</a></div>` : ""}
         <div class="gal" id="gal"></div>
-        ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}</div></li>`).join("")}</ol></section>` : ""}
+        ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}${(s.imgs || []).length ? `<div class="thumbs">${s.imgs.map(u => `<img loading="lazy" draggable="false" src="${esc(u)}" alt="${esc(s.t)}" onerror="this.remove()">`).join("")}</div>` : ""}</div></li>`).join("")}</ol></section>` : ""}
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
       </div>`;
+    s.querySelectorAll(".thumbs img").forEach(t => (t.onclick = () => { const z = el("div", "zoom"), zi = new Image(); zi.src = t.src; zi.draggable = false; z.append(zi); z.onclick = () => z.remove(); s.append(z); }));
     const gal = $("#gal");
     (p.videos || (p.video ? [p.video] : [])).forEach((src, k) => {      // own minimal player: play/pause, seek bar, sound — no time, no fullscreen, no download button
       const f = el("figure", "vid " + (p.compact && k ? "half" : "wide")), v = el("video");

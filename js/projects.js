@@ -128,21 +128,41 @@ window.PROJECTS = [
     "process": [
       {
         "t": "Concept",
-        "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다."
+        "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다.",
+        "imgs": [
+          "assets/seia/wf_concept_front.jpg",
+          "assets/seia/wf_concept_side.jpg",
+          "assets/seia/wf_concept_back.jpg",
+          "assets/seia/wf_concept_hair.jpg",
+          "assets/seia/wf_concept_hair_back.jpg",
+          "assets/seia/wf_concept_face.jpg",
+          "assets/seia/wf_concept_face_side.jpg"
+        ]
       },
       {
         "t": "AI base mesh",
-        "d": "Tripo로 얼굴·헤어·몸·건틀릿 파츠를 따로 생성했습니다. 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없는 상태에서 출발합니다."
+        "d": "Tripo로 얼굴·헤어·몸·건틀릿 파츠를 따로 생성했습니다. 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없는 상태에서 출발합니다.",
+        "imgs": [
+          "assets/seia/wf_gauntlet_a.jpg",
+          "assets/seia/wf_gauntlet_b.jpg"
+        ]
       },
       {
         "t": "Cleanup in Blender",
         "d": "파츠를 하나로 조립하고 목 이음새, 손목 연결부, 등 코르셋의 떠 있던 끈 조각, 어깨 비대칭, 머리끝과 치마의 겹침을 정리했습니다.",
-        "img": "assets/seia/process_corset.png"
+        "img": "assets/seia/process_corset.png",
+        "imgs": [
+          "assets/seia/wf_clean_tpose.jpg"
+        ]
       },
       {
         "t": "Rig & weights",
         "d": "휴머노이드 본에 더해 땋은 머리, 옆머리, 귀, 치마에 흔들림용 본을 추가했습니다. 팔꿈치는 분할선을 늘리고 가중치 폭을 좁혀 ‘휘는’ 대신 ‘접히게’ 고쳤고, 손가락 15개 관절을 양손 모두 리깅했습니다.",
-        "img": "assets/seia/process_elbow.png"
+        "img": "assets/seia/process_elbow.png",
+        "imgs": [
+          "assets/seia/wf_rig_front.jpg",
+          "assets/seia/wf_rig_back.jpg"
+        ]
       },
       {
         "t": "Expressions",
