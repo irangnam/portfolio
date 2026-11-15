@@ -1,7 +1,10 @@
+@font-face{font-family:"Paperlogy";src:url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Paperlogy";src:url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Paperlogy";src:url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2") format("woff2");font-weight:600;font-display:swap}
 :root{
   --bg:#0a0a0b; --raise:#141416; --ink:#eeede9; --soft:#8b8b90; --line:rgba(255,255,255,.1);
   --pink:#ff4d9d;
-  --disp:"Bricolage Grotesque","Pretendard",system-ui,sans-serif; --body:"Pretendard",system-ui,sans-serif;
+  --disp:"Bricolage Grotesque","Paperlogy","Pretendard",system-ui,sans-serif; --body:"Pretendard",system-ui,sans-serif;
   --r:14px; --pad:clamp(20px,4vw,56px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
