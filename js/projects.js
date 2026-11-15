@@ -64,7 +64,7 @@ window.PROJECTS = [
   {
     "slug": "seia",
     "title": "버추얼 아바타 SEIA",
-    "sub": "Virtual Idol Warrior — Original VTuber Avatar",
+    "sub": "Original VTuber Avatar",
     "date": "2026.11",
     "cats": [
       "3D",
@@ -74,7 +74,7 @@ window.PROJECTS = [
     "role": "Character design · 3D · Rigging · Texture",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
     "cover": "assets/seia/cover2.jpg",
-    "desc": "가상의 아이돌이자 전사, 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 진행했습니다. Try it live에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수 있습니다.",
+    "desc": "가상 아이돌이자 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 단 이틀만에 혼자서 진행했습니다. Try it live에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수 있습니다.",
     "images": [
       "assets/seia/seia_full.png",
       "assets/seia/seia_back.png",
@@ -110,7 +110,7 @@ window.PROJECTS = [
       },
       {
         "t": "Expressions",
-        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양(A·I·U·E·O), 귀 감정(쫑긋·처짐·젖힘)까지 17개 셰이프 키를 만들고 기쁨·화남·슬픔·놀람 표정으로 묶었습니다.",
+        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양, 귀 감정 모션까지 17개 셰이프 키를 만들고 기쁨, 화남, 슬픔, 놀람 표정으로 묶었습니다.",
         "img": "assets/projects/seia/2026-11-16-1-29-47.png"
       },
       {
