@@ -485,7 +485,7 @@ window.PLAYER = {
   "name": "IRANG NAM",
   "nameKo": "남이랑",
   "klass": "DESIGNER",
-  "bio": "디자이너 남이랑입니다. 캐릭터를 기획하고, AI 영상과 3D, 실시간 아바타로 살아 움직이게 만듭니다.",
+  "bio": "캐릭터를 기획하고, AI 영상과 3D, 실시간 아바타로 살아 움직이게 만듭니다.",
   "focus": "Virtual Character · AI Video · 3D · XR",
   "education": [
     "국민대학교 조형대학 AI디자인학과",
@@ -540,7 +540,7 @@ window.PLAYER = {
   ],
   "email": "skadlfkd0203@gmail.com",
   "instagram": "nytrcak",
-  "heroLine": "Irang Nam is a designer who builds characters and [brings them to life] — with AI video, 3D and real-time avatars.",
+  "heroLine": "I design characters and [bring them to life] — with AI video, 3D and real-time avatars.",
   "aboutLine": "캐릭터를 기획하고 만드는 데서 그치지 않고, [직접 움직이고 반응하게] 만듭니다.",
   "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트를 진행했고, 버추얼 아바타 SEIA는 캐릭터 기획부터 3D, 리깅, 웹캠 트래킹까지 혼자 만들었습니다."
 };
