@@ -1,49 +1,6 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
-    "slug": "bathbomb-wrap-xr",
-    "title": "배스밤 선물 포장 XR 모듈",
-    "sub": "WebXR Gift-Wrapping Interaction Prototype",
-    "date": "2026.11",
-    "cats": [
-      "3D",
-      "UX"
-    ],
-    "role": "Interaction design · 3D · WebXR prototype",
-    "tools": "Blender · three.js (WebXR) · Claude (AI agent)",
-    "desc": "크리스마스 시즌의 배스밤 선물 포장을 XR 환경에서 직접 해 보는 인터랙션 모듈입니다. 포장지 롤 랙에서 종이를 당겨 뽑고, 자르고, 배스밤을 감싸고, 리본을 붙이고, 램프를 켜는 과정을 손동작으로 조작하도록 설계했습니다. 핸드 트래킹 제스처를 기준으로 만들었고, VR 기기가 없어도 PC에서 마우스와 키보드로 같은 흐름을 체험할 수 있습니다. 모델은 Blender에서 만들고, 인터랙션은 Claude와 함께 WebXR로 구현했습니다.",
-    "cover": "assets/projects/paper-roll-rack-xr/render-closeup.jpg",
-    "images": [],
-    "live": "https://irangnam.github.io/paper-roll-rack-xr/index.html",
-    "liveText": "배스밤을 직접 포장해 보세요. PC에서는 마우스로, VR 기기에서는 손으로 조작합니다.",
-    "process": [
-      {
-        "t": "Pull",
-        "d": "롤을 잡고 몸 쪽으로 당기면 포장지가 풀려 나옵니다. 포장할 만큼 나오면 저절로 끊어져 테이블에 놓이고, 배스밤이 그 위로 올라갑니다. VR에서는 주먹을 쥐어 종이를 잡습니다."
-      },
-      {
-        "t": "Cut",
-        "d": "검지와 중지를 편 가위 손 모양으로 세 번 자르면 종이가 잘립니다. 컨트롤러에서는 오른쪽 트리거가 가위 역할을 합니다. 손목을 돌리면 종이가 뒤집혀 뒷면이 위로 옵니다."
-      },
-      {
-        "t": "Wrap",
-        "d": "배스밤을 두 손으로 감싸 모으면 종이가 모입니다. 또는 종이의 네 모서리를 하나씩 들어 올려 배스밤 위에 내려놓아 감쌉니다."
-      },
-      {
-        "t": "Ribbon",
-        "d": "왼쪽 리본 상자의 뚜껑을 들어 올려 열고, 리본을 꺼내 포장한 선물의 목 부분에 가져가면 붙습니다."
-      },
-      {
-        "t": "Lamp",
-        "d": "오른쪽 램프의 당김 줄을 핀치하거나 톡 치면 불이 켜지고 꺼집니다."
-      },
-      {
-        "t": "Pattern editor",
-        "d": "포장지 무늬를 바꿔 볼 수 있는 패턴 편집기를 따로 두었습니다. 편집기에서 적용한 설정이 데모에 그대로 반영됩니다."
-      }
-    ]
-  },
-  {
     "slug": "kt-wiz",
     "title": "kt wiz 미디어월 AI 영상",
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
@@ -294,23 +251,46 @@ window.PROJECTS = [
     "liveBg": "assets/seia/live_bg.jpg"
   },
   {
-    "slug": "scream",
-    "title": "SCREAM!",
-    "sub": "Festival Design",
-    "date": "2025.08",
+    "slug": "bathbomb-wrap-xr",
+    "title": "배스밤 선물 포장 XR 모듈",
+    "sub": "WebXR Gift-Wrapping Interaction Prototype",
+    "date": "2026.11",
     "cats": [
-      "Branding",
-      "Graphic"
+      "3D",
+      "UX"
     ],
-    "role": "Visual identity",
-    "cover": "assets/projects/scream/cover.jpg",
-    "desc": "‘The Last Names’와 ‘BAND 404’의 연합 공연인 ‘SCREAM!’의 비주얼 아이덴티티 디자인입니다. 밴드의 열정과 힘찬 에너지 그리고 괴짜같은 면모를 유쾌하게 보여줍니다.",
-    "client": "BAND 404",
-    "images": [
-      "assets/projects/scream/01.jpg",
-      "assets/projects/scream/02.jpg",
-      "assets/projects/scream/03.jpg",
-      "assets/projects/scream/04.jpg"
+    "role": "Interaction design · 3D · WebXR prototype",
+    "tools": "Blender · three.js (WebXR) · Claude (AI agent)",
+    "desc": "크리스마스 시즌의 배스밤 선물 포장을 XR 환경에서 직접 해 보는 인터랙션 모듈입니다. 포장지 롤 랙에서 종이를 당겨 뽑고, 자르고, 배스밤을 감싸고, 리본을 붙이고, 램프를 켜는 과정을 손동작으로 조작하도록 설계했습니다. 핸드 트래킹 제스처를 기준으로 만들었고, VR 기기가 없어도 PC에서 마우스와 키보드로 같은 흐름을 체험할 수 있습니다. 모델은 Blender에서 만들고, 인터랙션은 Claude와 함께 WebXR로 구현했습니다.",
+    "cover": "assets/projects/paper-roll-rack-xr/render-closeup.jpg",
+    "images": [],
+    "live": "https://irangnam.github.io/paper-roll-rack-xr/index.html",
+    "liveText": "배스밤을 직접 포장해 보세요. PC에서는 마우스로, VR 기기에서는 손으로 조작합니다.",
+    "process": [
+      {
+        "t": "Pull",
+        "d": "롤을 잡고 몸 쪽으로 당기면 포장지가 풀려 나옵니다. 포장할 만큼 나오면 저절로 끊어져 테이블에 놓이고, 배스밤이 그 위로 올라갑니다. VR에서는 주먹을 쥐어 종이를 잡습니다."
+      },
+      {
+        "t": "Cut",
+        "d": "검지와 중지를 편 가위 손 모양으로 세 번 자르면 종이가 잘립니다. 컨트롤러에서는 오른쪽 트리거가 가위 역할을 합니다. 손목을 돌리면 종이가 뒤집혀 뒷면이 위로 옵니다."
+      },
+      {
+        "t": "Wrap",
+        "d": "배스밤을 두 손으로 감싸 모으면 종이가 모입니다. 또는 종이의 네 모서리를 하나씩 들어 올려 배스밤 위에 내려놓아 감쌉니다."
+      },
+      {
+        "t": "Ribbon",
+        "d": "왼쪽 리본 상자의 뚜껑을 들어 올려 열고, 리본을 꺼내 포장한 선물의 목 부분에 가져가면 붙습니다."
+      },
+      {
+        "t": "Lamp",
+        "d": "오른쪽 램프의 당김 줄을 핀치하거나 톡 치면 불이 켜지고 꺼집니다."
+      },
+      {
+        "t": "Pattern editor",
+        "d": "포장지 무늬를 바꿔 볼 수 있는 패턴 편집기를 따로 두었습니다. 편집기에서 적용한 설정이 데모에 그대로 반영됩니다."
+      }
     ]
   },
   {
@@ -344,6 +324,26 @@ window.PROJECTS = [
       "assets/projects/yeogi-mr/15.jpg"
     ],
     "tools": "Figma, Blender"
+  },
+  {
+    "slug": "scream",
+    "title": "SCREAM!",
+    "sub": "Festival Design",
+    "date": "2025.08",
+    "cats": [
+      "Branding",
+      "Graphic"
+    ],
+    "role": "Visual identity",
+    "cover": "assets/projects/scream/cover.jpg",
+    "desc": "‘The Last Names’와 ‘BAND 404’의 연합 공연인 ‘SCREAM!’의 비주얼 아이덴티티 디자인입니다. 밴드의 열정과 힘찬 에너지 그리고 괴짜같은 면모를 유쾌하게 보여줍니다.",
+    "client": "BAND 404",
+    "images": [
+      "assets/projects/scream/01.jpg",
+      "assets/projects/scream/02.jpg",
+      "assets/projects/scream/03.jpg",
+      "assets/projects/scream/04.jpg"
+    ]
   },
   {
     "slug": "windmills",
