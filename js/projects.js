@@ -4,7 +4,7 @@ window.PROJECTS = [
     "slug": "kt-wiz",
     "title": "kt wiz 미디어월 AI 영상",
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
-    "date": "2026.07",
+    "date": "2025.12-2026.07",
     "cats": [
       "AI",
       "Animation"
@@ -87,7 +87,9 @@ window.PROJECTS = [
         "label": "",
         "url": ""
       }
-    ]
+    ],
+    "logo": "assets/projects/kt-wiz/image-58.png",
+    "logoColor": true
   },
   {
     "slug": "pepperoni-pizza",
