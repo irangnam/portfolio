@@ -13,7 +13,7 @@ window.PROJECTS = [
     "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 학부연구원",
     "tools": "Kling 3.0 · Photoshop · Topaz · Premiere Pro",
     "desc": "수원 kt wiz 파크의 미디어파사드와 미디어월에 송출된 생성형 AI 영상 제작 프로젝트입니다. 2025년 겨울부터 2026년 여름까지 진행했고, 건물 외벽에 프로젝터로 투사하는 미디어파사드와 복도를 따라 길게 세워진 LED 미디어월 영상을 만들었습니다. 여기서는 그중 미디어월 ‘바캉스’ 영상을 소개합니다. 낮과 밤이 바뀌고 다시 처음으로 돌아오는 약 30초 길이의 바닷가 루핑 영상입니다.",
-    "cover": "assets/projects/kt-wiz/2026-11-16-4-45-31.png",
+    "cover": "assets/projects/kt-wiz/2026-11-16-4-47-40.png",
     "images": [],
     "process": [
       {
