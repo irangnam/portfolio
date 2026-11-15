@@ -23,7 +23,7 @@ renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 host.append(renderer.domElement);
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0a0a0b);
+scene.background = new THREE.Color(0x12070d);
 const camera = new THREE.PerspectiveCamera(26, 1, 0.1, 80);
 const sun = new THREE.DirectionalLight(0xffffff, Math.PI);
 sun.position.set(0.6, 1.5, 2);
@@ -34,11 +34,11 @@ function radial() {                                   // white → black falloff
   gr.addColorStop(0, "#fff"); gr.addColorStop(0.5, "#555"); gr.addColorStop(1, "#000"); g.fillStyle = gr; g.fillRect(0, 0, 256, 256); return new THREE.CanvasTexture(c);
 }
 const fall = radial(), soft = (color, opacity) => new THREE.MeshBasicMaterial({ color, alphaMap: fall, transparent: true, opacity, depthWrite: false });
-const floor = new THREE.Mesh(new THREE.CircleGeometry(1.6, 48), soft(0xff4d9d, 0.1));
+const floor = new THREE.Mesh(new THREE.CircleGeometry(1.9, 48), soft(0xff4d9d, 0.15));
 floor.rotation.x = -Math.PI / 2; floor.position.y = 0.006;
 const shadow = new THREE.Mesh(new THREE.CircleGeometry(0.34, 32), soft(0x000000, 0.55));
 shadow.rotation.x = -Math.PI / 2; shadow.position.y = 0.009;
-const glow = new THREE.Mesh(new THREE.PlaneGeometry(7, 7), soft(0xff4d9d, 0.05));
+const glow = new THREE.Mesh(new THREE.PlaneGeometry(9, 9), soft(0xff4d9d, 0.08));
 glow.position.set(0, 1.0, -2.2);
 scene.add(floor, shadow, glow);
 // soft bloom: bright areas (skin, gems, gold) glow a little, which also softens the surface
