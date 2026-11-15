@@ -53,7 +53,7 @@ window.PROJECTS = [
   },
   {
     "slug": "yeogi-mr",
-    "title": "여기어때 MR",
+    "title": "여기어때 MR 리디자인",
     "sub": "visionOS App Design Proposal",
     "date": "2026.04",
     "cats": [
@@ -80,7 +80,8 @@ window.PROJECTS = [
       "assets/projects/yeogi-mr/13.jpg",
       "assets/projects/yeogi-mr/14.jpg",
       "assets/projects/yeogi-mr/15.jpg"
-    ]
+    ],
+    "tools": "Figma, Blender"
   },
   {
     "slug": "windmills",
