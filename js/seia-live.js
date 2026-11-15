@@ -276,7 +276,12 @@ function applySpec(s, dt) {
       }
       d = ik(up, goal, d.pole.clone().applyQuaternion(vrm.scene.quaternion)).map(v => v.applyQuaternion(inv));
     }
-    const h = s["hand" + key] || {}, f = h.f || d[1], p = h.p || V(-sx, 0, 0.25);
+    const h = s["hand" + key] || {}, pd = V(-sx, 0, 0.25);
+    let f = h.f || d[1], p = h.p || pd;
+    if (s.te != null && (h.f || h.p)) {                  // emotes: the wrist only turns once the arm is most of the way there (and unwinds first on the way back),
+      const w = clamp01(Math.min(s.te / 0.6, (EMOTE_LEN - s.te) / 0.55)), e = clamp01((w - 0.35) / 0.65), e2 = e * e * (3 - 2 * e);   // so the hand doesn't lead the arm
+      f = d[1].clone().lerp(f, e2).normalize(); p = pd.clone().lerp(p, e2).normalize();
+    }
     orient(up, rest, FWD, d[0], d[1], k); up.updateMatrixWorld(true);       // elbow hinge faces the forearm
     orient(lo, rest, DOWN, d[1], p, k); lo.updateMatrixWorld(true);         // forearm twist follows the palm
     orient(hand, rest, DOWN, f, p, kf);
