@@ -28,6 +28,7 @@
     if (!p.cover) return ph;
     const img = new Image(); img.alt = ""; img.loading = "lazy";
     if (p.coverFit === "contain") img.className = "contain";
+    if (p.coverPos) img.style.objectPosition = p.coverPos;
     img.onerror = () => img.replaceWith(ph); img.onload = () => (p.coverOk = true); img.src = p.cover; return img;
   }
   let cat = "All";
