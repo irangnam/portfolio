@@ -91,6 +91,30 @@ window.PROJECTS = [
     "planNotes": "타깃 | 버추얼 아이돌을 깊이 즐기는 20~30대 여성 팬\n핵심 매력 | 바보 같은데 귀엽고, 그런데 강합니다. 엉뚱한 착각을 끝까지 진지하게 밀고 나가는 모습과, 엄마와의 애착 관계에서 오는 공감대를 중심에 둡니다.\n컬러 | 핑크(헤어와 포인트), 와인(의상), 골드(트림과 장식) 세 가지를 중심으로 씁니다.\n3D팀 전달 기준 | 손은 작게, 팔꿈치는 휘지 않고 접히게, 장갑은 팔 위로 오게, 건틀릿은 의상 팔레트에 맞춘 채도로, 얼굴은 그림자가 지지 않는 플랫 툰 셰이딩으로. 실제 제작 중에 3D 결과물을 보며 수정을 요청한 항목들입니다.\n데뷔 방송 | 오디션 현장을 다시 재현합니다. 세이아는 여전히 기사단 시험인 줄 알고, 자신의 장비와 무기를 하나씩 자랑합니다.\n주 콘텐츠 1 · 오늘의 훈련 | 게임 방송입니다. 세이아는 게임을 실전 훈련으로 믿고 임하며, 지면 “전술적 후퇴”라고 우깁니다. 방송 끝에 그날의 훈련 성과를 스스로 보고합니다.\n주 콘텐츠 2 · 엄마에게 보내는 전황 보고 | 방송을 마치며 그날 있었던 일을 엄마에게 보내는 편지로 읽습니다. 착각투성이 보고가 웃음을 만들고, 엄마 이야기가 공감대를 만듭니다.\n주 콘텐츠 3 · 아군 모집 | 시청자를 ‘아군’으로 임명해 함께 싸우는 참여형 코너입니다. 세이아가 채팅에 온 팬에게 계급과 임무를 붙여 주고, 모인 아군과 마인크래프트 같은 게임에서 팀 전투에 나섭니다. 팬 수십 명이 크리에이터와 한 팀이 되어 다른 팬덤과 겨루는 요즘의 대규모 참여 콘텐츠를 세이아의 ‘출정’으로 가져옵니다.\n하지 않는 것 | 뒤로 미루지 않습니다. 남을 욕하지 않습니다. “할 수 없다”고 말하지 않습니다.\n목소리와 연기 | 까랑까랑하고 당찬 톤. 틀린 말도 큰 소리로 자신 있게 하는 캐릭터라, 기죽지 않는 목소리가 어울립니다."
   },
   {
+    "slug": "goedam",
+    "title": "괴담극장",
+    "sub": "심야 미스터리 투어 컨셉 일러스트",
+    "date": "2026",
+    "cats": [
+      "Illustration"
+    ],
+    "role": "Concept · Hand-drawn illustration · Lettering",
+    "tools": "Procreate",
+    "desc": "군산 근대 거리 곳곳을 밤에 돌아보는 미스터리 투어 ‘괴담극장’의 컨셉 일러스트입니다. 1박 2일 여행 코스 가운데 나이트 투어를 공포 컨셉으로 풀었고, 카드와 타이틀 글자까지 모두 손으로 그렸습니다.",
+    "cover": "assets/projects/goedam/cover.jpg",
+    "images": [
+      "assets/projects/goedam/sketch-title.jpg",
+      "assets/projects/goedam/sketch-mouse.jpg"
+    ],
+    "stickers": [
+      "assets/projects/goedam/st-traveler.webp",
+      "assets/projects/goedam/st-brewery.webp",
+      "assets/projects/goedam/st-hand.webp",
+      "assets/projects/goedam/st-reservoir.webp",
+      "assets/projects/goedam/st-house.webp"
+    ]
+  },
+  {
     "slug": "jamong",
     "title": "자몽 재개관&자치페스타 영상",
     "sub": "AI Character Film for a Youth Center Reopening",
@@ -188,7 +212,8 @@ window.PROJECTS = [
       "assets/projects/animation-02/asset-ruin-house.jpg",
       "assets/projects/animation-02/asset-tower.jpg",
       "assets/projects/animation-02/asset-building.jpg",
-      "assets/projects/animation-02/asset-shadow-crowd.jpg"
+      "assets/projects/animation-02/asset-shadow-crowd.jpg",
+      "assets/projects/animation-02/nc-lobby.jpg"
     ],
     "client": "NC",
     "compact": true,
@@ -348,7 +373,9 @@ window.PROJECTS = [
       "assets/projects/windmills/02.jpg",
       "assets/projects/windmills/1-3.png",
       "assets/projects/windmills/2026-11-16-7-39-24.png",
-      "assets/projects/windmills/Kusf-3.png"
+      "assets/projects/windmills/Kusf-3.png",
+      "assets/projects/windmills/sns-posters.jpg",
+      "assets/projects/windmills/sns-booth.jpg"
     ],
     "ribbon": "",
     "links": [
@@ -378,7 +405,9 @@ window.PROJECTS = [
       "assets/projects/kdl/03.jpg",
       "assets/projects/kdl/image.png",
       "assets/projects/kdl/2.png",
-      "assets/projects/kdl/image-2.png"
+      "assets/projects/kdl/image-2.png",
+      "assets/projects/kdl/tape1.jpg",
+      "assets/projects/kdl/tape2.jpg"
     ],
     "live": "",
     "links": [

@@ -97,6 +97,7 @@
           <p class="desc">${esc(p.desc)}</p>
           <dl class="kv"><dt>Date</dt><dd>${esc(p.date)}</dd><dt>Field</dt><dd class="chips">${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</dd>${p.client ? `<dt>Client</dt><dd>${esc(p.client)}</dd>` : ""}${p.role ? `<dt>Role</dt><dd>${esc(p.role)}</dd>` : ""}${p.tools ? `<dt>Tools</dt><dd>${esc(p.tools)}</dd>` : ""}${press(p)}</dl>
         </div>
+        ${(p.stickers || []).length ? `<div class="stickers">${p.stickers.map(s => `<img src="${esc(s)}" alt="" loading="lazy" draggable="false">`).join("")}</div>` : ""}
         ${p.storyText || p.storyTraits ? `<section class="story"><div class="sec-head"><h2>Story</h2>${p.storyWorld ? `<span class="num">${esc(p.storyWorld)}</span>` : ""}</div>
           <div class="story-in"><div>${p.storyQuote ? `<p class="quote">${esc(p.storyQuote)}</p>` : ""}${(p.storyText || "").split(/\n+/).filter(Boolean).map(t => `<p>${esc(t)}</p>`).join("")}</div>
           <dl class="kv">${(p.storyTraits || "").split(/\n+/).map(l => l.split("|")).filter(x => x.length > 1).map(x => `<dt>${esc(x[0].trim())}</dt><dd>${esc(x.slice(1).join("|").trim())}</dd>`).join("")}</dl></div></section>` : ""}
