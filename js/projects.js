@@ -352,6 +352,23 @@ window.PROJECTS = [
     ]
   },
   {
+    "slug": "open-gallery",
+    "title": "The Open Gallery",
+    "sub": "Exhibition · Buenos Aires",
+    "date": "2025.06",
+    "cats": [
+      "Graphic"
+    ],
+    "role": "AI artwork ‘SUPER HERO’",
+    "cover": "assets/projects/open-gallery/cover.jpg",
+    "desc": "Grand Brizo Bel Air Hotel(Buenos Aires)에서 개최된 The Open Gallery 전시에 출품한 작품입니다. AI 생성형 아트를 활용한 창작 작업을 선보였습니다.",
+    "client": "개인 작업",
+    "images": [
+      "assets/projects/open-gallery/01.jpg",
+      "assets/projects/open-gallery/02.jpg"
+    ]
+  },
+  {
     "slug": "windmills",
     "title": "WINDMILLS SNS",
     "sub": "Contents Design",
@@ -459,23 +476,6 @@ window.PROJECTS = [
       "assets/projects/yeogi-mr/15.jpg"
     ],
     "tools": "Figma, Blender"
-  },
-  {
-    "slug": "open-gallery",
-    "title": "The Open Gallery",
-    "sub": "Exhibition · Buenos Aires",
-    "date": "2025.06",
-    "cats": [
-      "Graphic"
-    ],
-    "role": "AI artwork ‘SUPER HERO’",
-    "cover": "assets/projects/open-gallery/cover.jpg",
-    "desc": "Grand Brizo Bel Air Hotel(Buenos Aires)에서 개최된 The Open Gallery 전시에 출품한 작품입니다. AI 생성형 아트를 활용한 창작 작업을 선보였습니다.",
-    "client": "개인 작업",
-    "images": [
-      "assets/projects/open-gallery/01.jpg",
-      "assets/projects/open-gallery/02.jpg"
-    ]
   }
 ];
 
