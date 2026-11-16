@@ -186,7 +186,7 @@ body.has-strip{padding-top:44px}body.has-strip .nav{top:44px}
 img,video{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none}
 video::-webkit-media-controls{display:none!important}
 .gal .soon{grid-column:span 6;border:1px dashed var(--line);border-radius:var(--r);padding:44px;text-align:center;font-size:14px;color:var(--soft);background:none}
-.story{margin-top:clamp(60px,8vw,110px)}
+.story{margin-top:0}
 .story-in{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,110px);align-items:start}
 .story .quote{font-family:var(--disp);font-weight:500;font-size:clamp(22px,2.4vw,34px);line-height:1.25;letter-spacing:-.02em;color:var(--pink);margin-bottom:22px;word-break:keep-all}
 .story p{color:var(--soft);margin-bottom:12px;word-break:keep-all}.story .kv dt{color:var(--ink);white-space:nowrap}.story .kv dd{color:var(--soft);font-size:15px}

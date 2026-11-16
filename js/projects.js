@@ -6,15 +6,13 @@ window.PROJECTS = [
     "sub": "Original VTuber Avatar",
     "date": "2026.11",
     "cats": [
-      "3D",
       "Character",
-      "Virtual",
-      "AI"
+      "3D · XR"
     ],
-    "role": "Character design · 3D · Rigging · Texture",
+    "role": "Character concept · Story · Art direction · Texture painting",
     "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
     "cover": "assets/seia/cover2.jpg",
-    "desc": "가상 아이돌이자 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 단 이틀만에 혼자서 진행했습니다. 지금 바로 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수도 있습니다.",
+    "desc": "기사단 시험장을 잘못 찾아와 아이돌이 된 여우 소녀 ‘세이아’. 캐릭터의 설정과 성격을 기획하고, 실제로 움직이는 3D 아바타 시제품으로 만들었습니다. 아래에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠을 켜면 직접 세이아가 되어 볼 수 있습니다. 모델 정리와 리깅, 웹 구현은 AI 에이전트(Claude)와 함께 이틀 동안 진행했습니다.",
     "images": [
       "assets/seia/seia_full.png",
       "assets/seia/seia_back.png",
@@ -89,14 +87,79 @@ window.PROJECTS = [
     "storyTraits": "여우 귀 | 객석의 가장 작은 박수 소리까지 듣습니다. 기분이 귀에 다 드러나서 거짓말을 못 합니다.\n별 머리핀 | 첫 무대를 본 별 하나가 신나서 떨어졌다가 돌아가지 않고 머리에 붙어 삽니다. 세이아의 1호 팬입니다.\n땋은 머리 | 엄마와의 추억을 생각하며 매일 아침 직접 땋지만, 엄마가 땋아준 머리처럼 단정하지 못합니다.\n갑옷 의상 | 기사단인 줄 알고 단단한 갑옷을 주문해버렸습니다. 보다 못한 의상팀이 리본과 프릴을 달면 방어력이 올라간다고 설득해서 지금의 리폼된 의상을 더 좋아합니다.\n건틀릿 | 하이파이브 전용입니다. 자신의 힘 때문에 팬의 손이 아플까 봐 낀다지만 진짜인지는 알 수 없습니다.\n윙크 | 활 선생님에게 한쪽 눈을 감으면 조준이 잘된다고 배워서, 이것을 필살기로 알고 있습니다."
   },
   {
+    "slug": "jamong",
+    "title": "자몽 재개관&자치페스타 영상",
+    "sub": "AI Character Film for a Youth Center Reopening",
+    "date": "2026.11",
+    "cats": [
+      "Character",
+      "AI Video"
+    ],
+    "client": "군산 청소년 자치배움터 자몽",
+    "role": "Character design · AI video production · Sound",
+    "tools": "Nano Banana Pro (Higgsfield) · Kling · Seedance",
+    "desc": "군산 청소년 자치배움터 ‘자몽’의 재개관과 자치페스타 행사를 위해 만든 영상입니다. 자몽을 닮은 캐릭터를 디자인하고, 캐릭터가 영화관, 댄스 연습실, 밴드실, 당구대, 스튜디오 같은 공간을 돌아다니며 즐기는 모습을 담았습니다. 손그림 질감의 캐릭터가 실제 공간 안에 자연스럽게 녹아들도록 합성하는 데 집중했고, 음향에도 공을 들였습니다.",
+    "cover": "assets/projects/jamong/popcorn.jpg",
+    "compact": true,
+    "videos": [
+      "assets/projects/jamong/jamong-film.mp4"
+    ],
+    "images": [
+      "assets/projects/jamong/billiards.jpg",
+      "assets/projects/jamong/dance-room.jpg",
+      "assets/projects/jamong/band-room.jpg",
+      "assets/projects/jamong/studio.jpg",
+      "assets/projects/jamong/lounge.jpg",
+      "assets/projects/jamong/cinema-seat.jpg",
+      "assets/projects/jamong/popcorn.jpg",
+      "assets/projects/jamong/cinema-screen.jpg",
+      "assets/projects/jamong/coming-soon.jpg"
+    ],
+    "process": [
+      {
+        "t": "Character",
+        "d": "자몽을 모티프로 한 캐릭터를 디자인했습니다. 크레용과 망점 느낌의 손그림 질감, 큰 눈, 짧은 팔다리로 친근한 인상을 잡았습니다.",
+        "imgs": [
+          "assets/projects/jamong/studio.jpg"
+        ]
+      },
+      {
+        "t": "Backgrounds",
+        "d": "캐릭터가 등장할 공간별 배경 이미지를 확보했습니다."
+      },
+      {
+        "t": "Compositing",
+        "d": "Higgsfield에서 Nano Banana Pro로 배경 위에 캐릭터를 합성했습니다. 공간의 조명 방향과 색, 그림자, 초점 흐림을 캐릭터에 맞춰 그림체가 다른 캐릭터가 배경에 녹아들게 했습니다.",
+        "imgs": [
+          "assets/projects/jamong/billiards.jpg",
+          "assets/projects/jamong/dance-room.jpg",
+          "assets/projects/jamong/band-room.jpg",
+          "assets/projects/jamong/lounge.jpg"
+        ]
+      },
+      {
+        "t": "Video",
+        "d": "합성한 이미지를 Kling과 Seedance로 컷별 영상으로 만들었습니다.",
+        "imgs": [
+          "assets/projects/jamong/cinema-seat.jpg",
+          "assets/projects/jamong/popcorn.jpg",
+          "assets/projects/jamong/cinema-screen.jpg"
+        ]
+      },
+      {
+        "t": "Sound",
+        "d": "영상의 분위기가 살도록 음향 작업에 공을 들였습니다."
+      }
+    ],
+    "ribbon": ""
+  },
+  {
     "slug": "pepperoni-pizza",
     "title": "[NC AI] Pepperoni Pizza",
     "sub": "AI Animation Film",
     "date": "2026.08",
     "cats": [
-      "3D",
-      "Animation",
-      "AI"
+      "AI Video"
     ],
     "role": "Team project | 조유빈, 남이랑",
     "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
@@ -152,8 +215,7 @@ window.PROJECTS = [
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
     "date": "2025.12-2026.07",
     "cats": [
-      "AI",
-      "Animation"
+      "AI Video"
     ],
     "client": "kt wiz",
     "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 학부연구원",
@@ -238,81 +300,13 @@ window.PROJECTS = [
     "ribbon": "with kt wiz"
   },
   {
-    "slug": "jamong",
-    "title": "자몽 재개관&자치페스타 영상",
-    "sub": "AI Character Film for a Youth Center Reopening",
-    "date": "2026.11",
-    "cats": [
-      "AI",
-      "Animation",
-      "Character"
-    ],
-    "client": "군산 청소년 자치배움터 자몽",
-    "role": "Character design · AI video production · Sound",
-    "tools": "Nano Banana Pro (Higgsfield) · Kling · Seedance",
-    "desc": "군산 청소년 자치배움터 ‘자몽’의 재개관과 자치페스타 행사를 위해 만든 영상입니다. 자몽을 닮은 캐릭터를 디자인하고, 캐릭터가 영화관, 댄스 연습실, 밴드실, 당구대, 스튜디오 같은 공간을 돌아다니며 즐기는 모습을 담았습니다. 손그림 질감의 캐릭터가 실제 공간 안에 자연스럽게 녹아들도록 합성하는 데 집중했고, 음향에도 공을 들였습니다.",
-    "cover": "assets/projects/jamong/popcorn.jpg",
-    "compact": true,
-    "videos": [
-      "assets/projects/jamong/jamong-film.mp4"
-    ],
-    "images": [
-      "assets/projects/jamong/billiards.jpg",
-      "assets/projects/jamong/dance-room.jpg",
-      "assets/projects/jamong/band-room.jpg",
-      "assets/projects/jamong/studio.jpg",
-      "assets/projects/jamong/lounge.jpg",
-      "assets/projects/jamong/cinema-seat.jpg",
-      "assets/projects/jamong/popcorn.jpg",
-      "assets/projects/jamong/cinema-screen.jpg",
-      "assets/projects/jamong/coming-soon.jpg"
-    ],
-    "process": [
-      {
-        "t": "Character",
-        "d": "자몽을 모티프로 한 캐릭터를 디자인했습니다. 크레용과 망점 느낌의 손그림 질감, 큰 눈, 짧은 팔다리로 친근한 인상을 잡았습니다.",
-        "imgs": [
-          "assets/projects/jamong/studio.jpg"
-        ]
-      },
-      {
-        "t": "Backgrounds",
-        "d": "캐릭터가 등장할 공간별 배경 이미지를 확보했습니다."
-      },
-      {
-        "t": "Compositing",
-        "d": "Higgsfield에서 Nano Banana Pro로 배경 위에 캐릭터를 합성했습니다. 공간의 조명 방향과 색, 그림자, 초점 흐림을 캐릭터에 맞춰 그림체가 다른 캐릭터가 배경에 녹아들게 했습니다.",
-        "imgs": [
-          "assets/projects/jamong/billiards.jpg",
-          "assets/projects/jamong/dance-room.jpg",
-          "assets/projects/jamong/band-room.jpg",
-          "assets/projects/jamong/lounge.jpg"
-        ]
-      },
-      {
-        "t": "Video",
-        "d": "합성한 이미지를 Kling과 Seedance로 컷별 영상으로 만들었습니다.",
-        "imgs": [
-          "assets/projects/jamong/cinema-seat.jpg",
-          "assets/projects/jamong/popcorn.jpg",
-          "assets/projects/jamong/cinema-screen.jpg"
-        ]
-      },
-      {
-        "t": "Sound",
-        "d": "영상의 분위기가 살도록 음향 작업에 공을 들였습니다."
-      }
-    ],
-    "ribbon": ""
-  },
-  {
     "slug": "bathbomb-wrap-xr",
     "title": "배스밤 선물 포장 XR 모듈",
     "sub": "WebXR Gift-Wrapping Interaction Prototype",
     "date": "2026.11",
     "cats": [
-      "3D",
-      "UX"
+      "3D · XR",
+      "UX · UI"
     ],
     "role": "Interaction design · 3D · WebXR prototype",
     "tools": "Blender · three.js (WebXR) · Claude (AI agent)",
@@ -354,10 +348,7 @@ window.PROJECTS = [
     "sub": "Contents Design",
     "date": "2026.03",
     "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing",
-      "AI"
+      "Graphic"
     ],
     "role": "SNS renewal · Graphic",
     "cover": "assets/projects/windmills/1-4.png",
@@ -386,9 +377,7 @@ window.PROJECTS = [
     "sub": "KDL 2026 Season Promotion",
     "date": "2026.04",
     "cats": [
-      "Branding",
-      "Graphic",
-      "Marketing"
+      "Graphic"
     ],
     "role": "Visual design · Promotion",
     "cover": "assets/projects/kdl/cover.jpg",
@@ -418,7 +407,6 @@ window.PROJECTS = [
     "sub": "Festival Design",
     "date": "2025.08",
     "cats": [
-      "Branding",
       "Graphic"
     ],
     "role": "Visual identity",
@@ -438,8 +426,7 @@ window.PROJECTS = [
     "sub": "visionOS App Design Proposal",
     "date": "2026.04",
     "cats": [
-      "UI",
-      "UX"
+      "UX · UI"
     ],
     "role": "UX · UI design",
     "cover": "assets/projects/yeogi-mr/cover.jpg",
@@ -470,8 +457,7 @@ window.PROJECTS = [
     "sub": "Exhibition · Buenos Aires",
     "date": "2025.06",
     "cats": [
-      "Art",
-      "AI"
+      "Graphic"
     ],
     "role": "AI artwork ‘SUPER HERO’",
     "cover": "assets/projects/open-gallery/cover.jpg",
@@ -488,8 +474,8 @@ window.PLAYER = {
   "name": "IRANG NAM",
   "nameKo": "남이랑",
   "klass": "DESIGNER",
-  "bio": "캐릭터를 기획하고, AI 영상과 3D, 실시간 아바타로 살아 움직이게 만드는 디자이너 남이랑입니다.",
-  "focus": "Virtual Character · AI Video · 3D · XR",
+  "bio": "버추얼 캐릭터의 설정과 세계관을 기획하고, 영상과 3D 시제품으로 직접 만들어 확인하는 디자이너 남이랑입니다.",
+  "focus": "Character Concept · Story · Prototyping (AI video, 3D)",
   "education": [
     "국민대학교 조형대학 AI디자인학과",
     "국민대학교 경영대학 경영학과 (복수전공)"
@@ -543,7 +529,7 @@ window.PLAYER = {
   ],
   "email": "skadlfkd0203@gmail.com",
   "instagram": "nytrcak",
-  "heroLine": "I'm [Irang Nam], a designer who builds characters and brings them to life — with AI video, 3D and real-time avatars.",
-  "aboutLine": "캐릭터를 기획하고 만드는 데서 그치지 않고, [직접 움직이고 반응하게] 만듭니다.",
-  "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트를 진행했고, 버추얼 아바타 SEIA는 캐릭터 기획부터 3D, 리깅, 웹캠 트래킹까지 혼자 만들었습니다."
+  "heroLine": "I'm [Irang Nam]. I plan virtual characters — who they are, how they talk, what world they live in — and prototype them myself.",
+  "aboutLine": "캐릭터가 어떤 아이인지 정하고, [직접 움직이는 시제품]으로 만들어 봅니다.",
+  "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. 버추얼 아바타 SEIA는 캐릭터 설정부터 움직이는 시제품까지 AI 에이전트와 함께 만들었고, kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트에 참여했습니다."
 };
