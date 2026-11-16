@@ -102,7 +102,7 @@ window.PROJECTS = [
     "role": "투어 기획 · 가이드 매뉴얼 · Branding · Hand-drawn illustration · Lettering",
     "tools": "Procreate",
     "desc": "군산의 밤거리를 괴담의 무대로 바꾸는 나이트 투어 ‘움직이는 괴담극장’의 브랜딩입니다. 1박 2일 여행 코스 가운데 밤 시간을 미스터리 투어로 기획했고, 귀신이나 저승사자 대신 도시 곳곳을 돌아다니는 쥐를 해설자로 세웠습니다. 타이틀 글자와 장소 카드, 투어 지도는 AI 없이 모두 손으로 그렸습니다.",
-    "cover": "assets/projects/goedam/map.jpg",
+    "cover": "assets/projects/goedam/poster.jpg",
     "images": [
       "assets/projects/goedam/map.jpg",
       "assets/projects/goedam/poster.jpg",
