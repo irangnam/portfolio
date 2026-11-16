@@ -9,7 +9,7 @@ window.PROJECTS = [
       "Character",
       "3D · XR"
     ],
-    "role": "Character concept · Story · Art direction · Texture painting",
+    "role": "Character design · Story · Art direction · Texture painting",
     "tools": "Higgsfield · Midjourney (컨셉 아트 생성) · Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
     "cover": "assets/seia/cover2.jpg",
     "desc": "기사단 시험장을 잘못 찾아와 아이돌이 된 여우 소녀 ‘세이아’. 캐릭터의 설정과 성격을 기획하고, 실제로 움직이는 3D 아바타로 만들었습니다. 아래에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠을 켜면 직접 세이아가 되어 볼 수 있습니다. 모델 정리와 리깅, 웹 구현은 AI 에이전트(Claude)와 함께 이틀 동안 진행했습니다.",
@@ -86,7 +86,7 @@ window.PROJECTS = [
     "storyText": "커튼콜 왕국에서는 밤하늘의 별이 관객입니다. 별들은 무대가 즐거우면 박수를 치며 더 밝게 빛나고, 그 빛으로 마을에 불이 켜지고 꽃이 핍니다. 그래서 이 나라의 영웅은 칼을 든 기사가 아니라, 무대에 올라 별을 즐겁게 하는 아이돌입니다.\n세이아는 시골 여우 마을에서 온 신인 아이돌입니다. 마을을 지키는 기사단이었던 엄마를 동경해 입단 시험을 보러 왔다가 줄을 잘못 서서 아이돌 오디션장에 들어갔고, 무술 시범으로  선보인 발차기가 별들에게 독특한 안무로 통해 합격했습니다. 본인은 아직도 기사단에 들어온 줄 압니다. 공연은 ‘출정’, 리허설은 ‘훈련’, 팬은 ‘아군’, 앵콜은 ‘증원 요청’이라고 부르는 과격한 말투를 가졌습니다.",
     "storyTraits": "여우 귀 | 객석의 가장 작은 박수 소리까지 듣습니다. 기분이 귀에 다 드러나서 거짓말을 못 합니다.\n별 머리핀 | 첫 무대를 본 별 하나가 신나서 떨어졌다가 돌아가지 않고 머리에 붙어 삽니다. 세이아의 1호 팬입니다.\n땋은 머리 | 엄마와의 추억을 생각하며 매일 아침 직접 땋지만, 엄마가 땋아준 머리처럼 단정하지 못합니다.\n갑옷 의상 | 기사단인 줄 알고 단단한 갑옷을 주문해버렸습니다. 보다 못한 의상팀이 리본과 프릴을 달면 방어력이 올라간다고 설득해서 지금의 리폼된 의상을 더 좋아합니다.\n건틀릿 | 하이파이브 전용입니다. 자신의 힘 때문에 팬의 손이 아플까 봐 낀다지만 진짜인지는 알 수 없습니다.\n윙크 | 활 선생님에게 한쪽 눈을 감으면 조준이 잘된다고 배워서, 이것을 필살기로 알고 있습니다.",
     "planLabel": "현재 기획안",
-    "planNotes": "타깃 | 버추얼 아이돌을 깊이 즐기는 20~30대 여성 팬\n핵심 매력 | 바보 같은데 귀엽고, 그런데 강합니다. 엉뚱한 착각을 끝까지 진지하게 밀고 나가는 모습과, 엄마와의 애착 관계에서 오는 공감대를 중심에 둡니다.\n데뷔 방송 | 오디션 현장을 다시 재현합니다. 세이아는 여전히 기사단 시험인 줄 알고, 자신의 장비와 무기를 하나씩 자랑합니다.\n주 콘텐츠 1 · 오늘의 훈련 | 게임 방송입니다. 세이아는 게임을 실전 훈련으로 믿고 임하며, 지면 “전술적 후퇴”라고 우깁니다. 방송 끝에 그날의 훈련 성과를 스스로 보고합니다.\n주 콘텐츠 2 · 엄마에게 보내는 전황 보고 | 방송을 마치며 그날 있었던 일을 엄마에게 보내는 편지로 읽습니다. 착각투성이 보고가 웃음을 만들고, 엄마 이야기가 공감대를 만듭니다.\n주 콘텐츠 3 · 아군 모집 | 시청자를 ‘아군’으로 임명해 함께 싸우는 참여형 코너입니다. 세이아가 채팅에 온 팬에게 계급과 임무를 붙여 주고, 모인 아군과 마인크래프트 같은 게임에서 팀 전투에 나섭니다. 팬 수십 명이 크리에이터와 한 팀이 되어 다른 팬덤과 겨루는 요즘의 대규모 참여 콘텐츠를 세이아의 ‘출정’으로 가져옵니다.\n하지 않는 것 | 뒤로 미루지 않습니다. 남을 욕하지 않습니다. “할 수 없다”고 말하지 않습니다.\n목소리와 연기 | 까랑까랑하고 당찬 톤. 틀린 말도 큰 소리로 자신 있게 하는 캐릭터라, 기죽지 않는 목소리가 어울립니다."
+    "planNotes": "타깃 | 버추얼 아이돌을 깊이 즐기는 20~30대 여성 팬\n핵심 매력 | 바보 같은데 귀엽고, 그런데 강합니다. 엉뚱한 착각을 끝까지 진지하게 밀고 나가는 모습과, 엄마와의 애착 관계에서 오는 공감대를 중심에 둡니다.\n컬러 | 핑크(헤어와 포인트), 와인(의상), 골드(트림과 장식) 세 가지를 중심으로 씁니다.\n3D팀 전달 기준 | 손은 작게, 팔꿈치는 휘지 않고 접히게, 장갑은 팔 위로 오게, 건틀릿은 의상 팔레트에 맞춘 채도로, 얼굴은 그림자가 지지 않는 플랫 툰 셰이딩으로. 실제 제작 중에 3D 결과물을 보며 수정을 요청한 항목들입니다.\n데뷔 방송 | 오디션 현장을 다시 재현합니다. 세이아는 여전히 기사단 시험인 줄 알고, 자신의 장비와 무기를 하나씩 자랑합니다.\n주 콘텐츠 1 · 오늘의 훈련 | 게임 방송입니다. 세이아는 게임을 실전 훈련으로 믿고 임하며, 지면 “전술적 후퇴”라고 우깁니다. 방송 끝에 그날의 훈련 성과를 스스로 보고합니다.\n주 콘텐츠 2 · 엄마에게 보내는 전황 보고 | 방송을 마치며 그날 있었던 일을 엄마에게 보내는 편지로 읽습니다. 착각투성이 보고가 웃음을 만들고, 엄마 이야기가 공감대를 만듭니다.\n주 콘텐츠 3 · 아군 모집 | 시청자를 ‘아군’으로 임명해 함께 싸우는 참여형 코너입니다. 세이아가 채팅에 온 팬에게 계급과 임무를 붙여 주고, 모인 아군과 마인크래프트 같은 게임에서 팀 전투에 나섭니다. 팬 수십 명이 크리에이터와 한 팀이 되어 다른 팬덤과 겨루는 요즘의 대규모 참여 콘텐츠를 세이아의 ‘출정’으로 가져옵니다.\n하지 않는 것 | 뒤로 미루지 않습니다. 남을 욕하지 않습니다. “할 수 없다”고 말하지 않습니다.\n목소리와 연기 | 까랑까랑하고 당찬 톤. 틀린 말도 큰 소리로 자신 있게 하는 캐릭터라, 기죽지 않는 목소리가 어울립니다."
   },
   {
     "slug": "jamong",
@@ -309,6 +309,84 @@ window.PROJECTS = [
     "ribbon": "with kt wiz"
   },
   {
+    "slug": "scream",
+    "title": "SCREAM!",
+    "sub": "Festival Design",
+    "date": "2025.08",
+    "cats": [
+      "Brand · Graphic"
+    ],
+    "role": "Visual identity",
+    "cover": "assets/projects/scream/cover.jpg",
+    "desc": "‘The Last Names’와 ‘BAND 404’의 연합 공연인 ‘SCREAM!’의 비주얼 아이덴티티 디자인입니다. 밴드의 열정과 힘찬 에너지 그리고 괴짜같은 면모를 유쾌하게 보여줍니다.",
+    "client": "BAND 404",
+    "images": [
+      "assets/projects/scream/01.jpg",
+      "assets/projects/scream/02.jpg",
+      "assets/projects/scream/03.jpg",
+      "assets/projects/scream/04.jpg"
+    ]
+  },
+  {
+    "slug": "windmills",
+    "title": "WINDMILLS SNS",
+    "sub": "Contents Design",
+    "date": "2026.03",
+    "cats": [
+      "Brand · Graphic"
+    ],
+    "role": "SNS renewal · Graphic",
+    "cover": "assets/projects/windmills/1-4.png",
+    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/windmills/1-2.png",
+      "assets/projects/windmills/3-_1.png",
+      "assets/projects/windmills/01.jpg",
+      "assets/projects/windmills/02.jpg",
+      "assets/projects/windmills/1-3.png",
+      "assets/projects/windmills/2026-11-16-7-39-24.png",
+      "assets/projects/windmills/Kusf-3.png"
+    ],
+    "ribbon": "",
+    "links": [
+      {
+        "label": "윈드밀스 인스타그램",
+        "url": "https://www.instagram.com/kmu_windmills/"
+      }
+    ]
+  },
+  {
+    "slug": "kdl",
+    "title": "Kookmin Dream League",
+    "sub": "KDL 2026 Season Promotion",
+    "date": "2026.04",
+    "cats": [
+      "Brand · Graphic"
+    ],
+    "role": "Visual design · Promotion",
+    "cover": "assets/projects/kdl/cover.jpg",
+    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
+    "client": "국민대학교 WINDMILLS",
+    "images": [
+      "assets/projects/kdl/01.jpg",
+      "assets/projects/kdl/02.jpg",
+      "assets/projects/kdl/29.png",
+      "assets/projects/kdl/image-3.png",
+      "assets/projects/kdl/03.jpg",
+      "assets/projects/kdl/image.png",
+      "assets/projects/kdl/2.png",
+      "assets/projects/kdl/image-2.png"
+    ],
+    "live": "",
+    "links": [
+      {
+        "label": "KDL 인스타그램",
+        "url": "https://www.instagram.com/kookmin_dreamleague/"
+      }
+    ]
+  },
+  {
     "slug": "bathbomb-wrap-xr",
     "title": "배스밤 선물 포장 XR 모듈",
     "sub": "WebXR Gift-Wrapping Interaction Prototype",
@@ -357,7 +435,7 @@ window.PROJECTS = [
     "sub": "Exhibition · Buenos Aires",
     "date": "2025.06",
     "cats": [
-      "Graphic"
+      "Brand · Graphic"
     ],
     "role": "AI artwork ‘SUPER HERO’",
     "cover": "assets/projects/open-gallery/cover.jpg",
@@ -366,84 +444,6 @@ window.PROJECTS = [
     "images": [
       "assets/projects/open-gallery/01.jpg",
       "assets/projects/open-gallery/02.jpg"
-    ]
-  },
-  {
-    "slug": "windmills",
-    "title": "WINDMILLS SNS",
-    "sub": "Contents Design",
-    "date": "2026.03",
-    "cats": [
-      "Graphic"
-    ],
-    "role": "SNS renewal · Graphic",
-    "cover": "assets/projects/windmills/1-4.png",
-    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/windmills/1-2.png",
-      "assets/projects/windmills/3-_1.png",
-      "assets/projects/windmills/01.jpg",
-      "assets/projects/windmills/02.jpg",
-      "assets/projects/windmills/1-3.png",
-      "assets/projects/windmills/2026-11-16-7-39-24.png",
-      "assets/projects/windmills/Kusf-3.png"
-    ],
-    "ribbon": "",
-    "links": [
-      {
-        "label": "윈드밀스 인스타그램",
-        "url": "https://www.instagram.com/kmu_windmills/"
-      }
-    ]
-  },
-  {
-    "slug": "kdl",
-    "title": "Kookmin Dream League",
-    "sub": "KDL 2026 Season Promotion",
-    "date": "2026.04",
-    "cats": [
-      "Graphic"
-    ],
-    "role": "Visual design · Promotion",
-    "cover": "assets/projects/kdl/cover.jpg",
-    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
-    "client": "국민대학교 WINDMILLS",
-    "images": [
-      "assets/projects/kdl/01.jpg",
-      "assets/projects/kdl/02.jpg",
-      "assets/projects/kdl/29.png",
-      "assets/projects/kdl/image-3.png",
-      "assets/projects/kdl/03.jpg",
-      "assets/projects/kdl/image.png",
-      "assets/projects/kdl/2.png",
-      "assets/projects/kdl/image-2.png"
-    ],
-    "live": "",
-    "links": [
-      {
-        "label": "KDL 인스타그램",
-        "url": "https://www.instagram.com/kookmin_dreamleague/"
-      }
-    ]
-  },
-  {
-    "slug": "scream",
-    "title": "SCREAM!",
-    "sub": "Festival Design",
-    "date": "2025.08",
-    "cats": [
-      "Graphic"
-    ],
-    "role": "Visual identity",
-    "cover": "assets/projects/scream/cover.jpg",
-    "desc": "‘The Last Names’와 ‘BAND 404’의 연합 공연인 ‘SCREAM!’의 비주얼 아이덴티티 디자인입니다. 밴드의 열정과 힘찬 에너지 그리고 괴짜같은 면모를 유쾌하게 보여줍니다.",
-    "client": "BAND 404",
-    "images": [
-      "assets/projects/scream/01.jpg",
-      "assets/projects/scream/02.jpg",
-      "assets/projects/scream/03.jpg",
-      "assets/projects/scream/04.jpg"
     ]
   },
   {
@@ -483,8 +483,8 @@ window.PLAYER = {
   "name": "IRANG NAM",
   "nameKo": "남이랑",
   "klass": "DESIGNER",
-  "bio": "이야기와 세계관을 기획하고, 영상과 3D로 직접 움직여 보는 디자이너 남이랑입니다.",
-  "focus": "Concept Planning · Story · AI Video · 3D",
+  "bio": "버추얼 아티스트의 외형과 스타일, 세계관을 디자인하고 영상과 3D로 직접 움직여 보는 디자이너 남이랑입니다.",
+  "focus": "Character & IP Design · Art Direction · Brand Graphic · AI Video · 3D",
   "education": [
     "국민대학교 조형대학 AI디자인학과",
     "국민대학교 경영대학 경영학과 (복수전공)"
@@ -538,7 +538,7 @@ window.PLAYER = {
   ],
   "email": "skadlfkd0203@gmail.com",
   "instagram": "nytrcak",
-  "heroLine": "I'm [Irang Nam]. I imagine who someone could be — their story, their voice, their world — and make them real enough to meet.",
-  "aboutLine": "어떤 아이인지, 어떤 세계에 사는지 정하고 [직접 만나 볼 수 있게] 만듭니다.",
-  "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. 버추얼 아이돌 SEIA는 설정부터 움직이는 아바타까지 AI 에이전트와 함께 만들었고, kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트에 참여했습니다."
+  "heroLine": "I'm [Irang Nam], a character & IP designer. I design how a virtual artist looks, dresses and lives — and bring it to life with AI video and 3D.",
+  "aboutLine": "외형과 스타일, 세계관을 정하고 [영상과 3D로 직접 움직여] 확인합니다.",
+  "bio2": "국민대학교 조형대학 AI디자인학과에서 공부하고 있습니다. 버추얼 아이돌 SEIA는 설정부터 움직이는 아바타까지 AI 에이전트와 함께 만들었고, kt wiz 파크 미디어월 영상과 NC와 함께한 AI 영상 프로젝트에 참여했습니다. 브랜드 아이덴티티와 그래픽 작업도 함께 해 왔습니다."
 };
