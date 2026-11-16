@@ -96,7 +96,7 @@ loader.load("assets/seia_web.vrm?v=1794753934", g => {
   document.querySelectorAll("[data-needs-vrm]").forEach(b => (b.disabled = false));
   const go = $("#go"); go.disabled = false; go.textContent = "Use my camera";
   document.body.classList.add("loaded");
-}, e => { if (e.total) $("#bar i").style.width = (e.loaded / e.total * 100).toFixed(0) + "%"; },
+}, e => { if (e.total) $("#bar i").style.width = Math.min(100, e.loaded / e.total * 100).toFixed(0) + "%"; },
   err => { console.error(err); status("Couldn't load the avatar file."); });
 
 /* ── pose helpers ── */

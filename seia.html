@@ -52,7 +52,7 @@
   body.cam-on .opts{display:flex}
   .note{font-size:12px;line-height:1.5;color:var(--soft);word-break:keep-all}
   #status:empty{display:none}
-  #bar{height:2px;background:var(--line)}#bar i{display:block;height:100%;width:0;background:var(--pink);transition:width .2s}
+  #bar{height:2px;background:var(--line);overflow:hidden}#bar i{display:block;height:100%;width:0;background:var(--pink);transition:width .2s}
   body.loaded #bar{display:none}
   #cam{position:fixed;right:var(--pad);bottom:var(--pad);width:180px;aspect-ratio:4/3;object-fit:cover;transform:scaleX(-1);border-radius:var(--r);border:1px solid var(--line);z-index:5;background:#000}
   @media (max-width:820px){#cam{width:96px;bottom:auto;top:66px}}
@@ -105,6 +105,6 @@
 </div>
 <video id="cam" playsinline muted hidden></video>
 <script>if (/[?&]embed=1/.test(location.search)) document.body.classList.add("embed");</script>
-<script type="module" src="js/seia-live.js?v=1794782121"></script>
+<script type="module" src="js/seia-live.js?v=1794827851"></script>
 </body>
 </html>
