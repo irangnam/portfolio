@@ -23,7 +23,8 @@ window.PROJECTS = [
         "t": "Concept",
         "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다. 3D로 옮길 것을 처음부터 염두에 두고 디자인을 골랐습니다. 천처럼 흩날리는 요소를 줄여 리깅 부담을 낮추고, 대신 귀와 머리카락을 돋보이게 해 모션에 생동감을 줄 수 있게 했습니다. 상의가 몸에 붙는 디자인이라 메시 충돌이 적고 연산량도 줄어듭니다.",
         "imgs": [],
-        "prompt": "character turnaround sheet, the same idol champion shown in front view, side view and back view, full body, T-pose with arms straight out horizontally, fingers spread apart, legs slightly apart, neutral expression, empty hands, stylized fantasy MOBA game character, hand-painted textures, fabric tail hanging straight down, twin braids hanging behind shoulders, flat even lighting, plain white background, orthographic view, consistent proportions across views."
+        "prompt": "character turnaround sheet, the same idol champion shown in front view, side view and back view, full body, T-pose with arms straight out horizontally, fingers spread apart, legs slightly apart, neutral expression, empty hands, stylized fantasy MOBA game character, hand-painted textures, fabric tail hanging straight down, twin braids hanging behind shoulders, flat even lighting, plain white background, orthographic view, consistent proportions across views.",
+        "img": "assets/seia/wf_concept_turnaround.jpg"
       },
       {
         "t": "AI base mesh",
