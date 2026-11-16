@@ -335,9 +335,9 @@ window.PROJECTS = [
     "cats": [
       "Brand · Graphic"
     ],
-    "role": "SNS renewal · Graphic",
+    "role": "Art direction · 선수 포즈 디렉팅 · Graphic",
     "cover": "assets/projects/windmills/1-4.png",
-    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 선수들의 개성과 팀의 열정을 강조하는 비주얼 시스템을 구축했습니다.",
+    "desc": "2026 야구동아리 WINDMILLS의 SNS 콘텐츠 리뉴얼입니다. 팀 컬러와 톤을 새로 잡고, 강하고 거친 텍스처로 ‘지지 않을 것 같은 팀’의 인상을 만들고자 했습니다. 선수 한 명 한 명의 포즈는 포지션별 특성이 드러나도록 직접 디렉팅했습니다.",
     "client": "국민대학교 WINDMILLS",
     "images": [
       "assets/projects/windmills/1-2.png",
@@ -364,9 +364,9 @@ window.PROJECTS = [
     "cats": [
       "Brand · Graphic"
     ],
-    "role": "Visual design · Promotion",
+    "role": "Visual design · Hand-drawn typography · Promotion",
     "cover": "assets/projects/kdl/cover.jpg",
-    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인 및 홍보입니다. 대학 야구 리그의 열정과 젊음을 생동감 있는 타이포그래피와 밝은 컬러로 표현했습니다.",
+    "desc": "제1회 국민대배 대학드림리그 KDL의 2026시즌 비주얼 디자인과 홍보입니다. 야구를 막 시작한 신입들이 주전으로 뛰는 리그라서, 서투름과 열정, 패기를 숨기지 않고 앞세우면서도 한눈에 들어오도록 브랜딩했습니다. 메인 포스터의 글씨는 손으로 직접 그린 타이포그래피입니다.",
     "client": "국민대학교 WINDMILLS",
     "images": [
       "assets/projects/kdl/01.jpg",
