@@ -94,7 +94,7 @@ window.PROJECTS = [
     "slug": "goedam",
     "title": "움직이는 괴담극장",
     "sub": "군산 미스터리 투어 브랜딩 · 지도 일러스트",
-    "date": "2026",
+    "date": "2025",
     "cats": [
       "Illustration",
       "Brand · Graphic"
@@ -362,6 +362,33 @@ window.PROJECTS = [
     ],
     "logoColor": true,
     "ribbon": "with kt wiz"
+  },
+  {
+    "slug": "gumiho",
+    "title": "구미호 : 사라진 병기",
+    "sub": "Gumiho : The Missing Weapon",
+    "date": "2025.05",
+    "cats": [
+      "AI Video"
+    ],
+    "client": "CARAT 《다시 쓰는 전래동화 AI 기획전》",
+    "role": "2인 팀 ‘보이드볼트’ (남이랑, 도울린)",
+    "tools": "",
+    "desc": "캐럿(CARAT)이 연 《다시 쓰는 전래동화 AI 기획전》에 팀 ‘보이드볼트’로 참여해 만든 AI 단편 영상입니다. 구미호 설화를 군대 스릴러로 바꿨습니다. 폭우가 쏟아지는 막사에서 국가 기밀 병기 ‘구미호’가 탈출하고, 함께 싸워 온 동료가 진짜 전우인지 둔갑한 구미호인지 의심하게 되는 이야기입니다.",
+    "cover": "assets/projects/gumiho/cover.jpg",
+    "images": [
+      "assets/projects/gumiho/cover.jpg"
+    ],
+    "links": [
+      {
+        "label": "CARAT 블로그 · 기획전 소개",
+        "url": "https://carat.im/blog/ai-rebirth-of-folktales"
+      },
+      {
+        "label": "기획전 출품작 페이지",
+        "url": "https://carat.im/folktale-ai-film/films"
+      }
+    ]
   },
   {
     "slug": "scream",
