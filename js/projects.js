@@ -1,6 +1,152 @@
 /* 이 파일은 편집 페이지(admin.html)가 저장합니다. 직접 고쳐도 되지만, 편집 페이지를 쓰는 편이 안전합니다. */
 window.PROJECTS = [
   {
+    "slug": "seia",
+    "title": "버추얼 아바타 SEIA",
+    "sub": "Original VTuber Avatar",
+    "date": "2026.11",
+    "cats": [
+      "3D",
+      "Character",
+      "Virtual",
+      "AI"
+    ],
+    "role": "Character design · 3D · Rigging · Texture",
+    "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
+    "cover": "assets/seia/cover2.jpg",
+    "desc": "가상 아이돌이자 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 단 이틀만에 혼자서 진행했습니다. 지금 바로 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수도 있습니다.",
+    "images": [
+      "assets/seia/seia_full.png",
+      "assets/seia/seia_back.png",
+      "assets/seia/seia_tpose.png"
+    ],
+    "process": [
+      {
+        "t": "Concept",
+        "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다.",
+        "imgs": []
+      },
+      {
+        "t": "AI base mesh",
+        "d": "Tripo로 얼굴, 헤어, 몸, 건틀릿 파츠를 따로 생성했습니다. 초기 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없기 때문에 파츠별 생성이 필수적입니다.",
+        "imgs": [
+          "assets/seia/wf_gauntlet_a.jpg",
+          "assets/seia/wf_gauntlet_b.jpg",
+          "assets/projects/seia/hf_20261113_201654_d5fa7380-3c13-43c9-b6.png",
+          "assets/projects/seia/hf_20261113_201654_e82913ae-b1d6-4ab6-aa.png"
+        ]
+      },
+      {
+        "t": "Cleanup in Blender",
+        "d": "파츠를 하나로 조립하고 목 이음새, 손목 연결부, 등 코르셋의 떠 있던 끈 조각, 어깨 비대칭, 머리끝과 치마의 겹침을 정리했습니다.",
+        "img": "assets/seia/process_corset.png",
+        "imgs": []
+      },
+      {
+        "t": "Rig & weights",
+        "d": "휴머노이드 본에 더해 땋은 머리, 옆머리, 귀, 치마에 흔들림용 본을 추가했습니다. 팔꿈치는 분할선을 늘리고 가중치 폭을 좁혀 ‘휘는’ 대신 ‘접히게’ 고쳤고, 손가락 15개 관절을 양손 모두 리깅했습니다.",
+        "img": "assets/seia/process_elbow.png",
+        "imgs": []
+      },
+      {
+        "t": "Expressions",
+        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양, 귀 감정 모션까지 17개 셰이프 키를 만들고 기쁨, 화남, 슬픔, 놀람 표정으로 묶었습니다.",
+        "img": "assets/projects/seia/2026-11-16-1-29-47.png"
+      },
+      {
+        "t": "Texture painting",
+        "d": "AI 텍스처의 얼룩과 번짐을 정리하고, 등 코르셋 끈을 새로 그리고, 건틀릿 색을 의상 팔레트에 맞춘 뒤 Blender에서 직접 페인팅으로 마무리했습니다.",
+        "img": "assets/seia/process_hand.png"
+      },
+      {
+        "t": "Toon shading & VRM",
+        "d": "Unity에서 MToon 셰이더로 밝고 부드러운 툰 룩을 잡고, 스프링 본과 콜라이더를 세팅해 VRM 1.0으로 내보냈습니다.",
+        "img": "assets/projects/seia/2026-11-16-1-39-01.png"
+      },
+      {
+        "t": "Tracking test",
+        "d": "웹캠 모션 캡처 앱에서 실제로 움직여 보며 입 크기, 눈 깜빡임 버그, 손 크기, 팔 접힘을 반복해서 고쳤습니다."
+      },
+      {
+        "t": "Motion",
+        "d": "아이리제의 HEART CRUSH 댄스 모션(FBX)을 세이아의 뼈대에 맞게 리타게팅해 춤을 추게 했습니다. 이외의 모션(숨쉬기, 눈 깜빡임, 귀 털기, 팔 흔들림)은 코드로 직접 만들었습니다."
+      },
+      {
+        "t": "On the web",
+        "d": "모델을 63MB에서 13MB로 줄이고, three-vrm과 MediaPipe로 브라우저 안에서 표정·고개·팔을 따라 하게 만들었습니다. 설치 없이 이 사이트에서 바로 체험할 수 있습니다."
+      }
+    ],
+    "banner": "assets/seia/banner2.jpg",
+    "live": "seia.html",
+    "tallImages": true,
+    "featured": true,
+    "liveBg": "assets/seia/live_bg.jpg",
+    "demoVideo": "assets/seia/webcam-demo.mp4",
+    "liveText": "웹캠을 켜면 세이아가 당신의 표정과 손을 따라 합니다.",
+    "storyWorld": "커튼콜 왕국",
+    "storyQuote": "“출정 준비 완료! …앗, 여긴 왜 조명이 있나요?”",
+    "storyText": "커튼콜 왕국에서는 밤하늘의 별이 관객입니다. 별들은 무대가 즐거우면 박수를 치며 더 밝게 빛나고, 그 빛으로 마을에 불이 켜지고 꽃이 핍니다. 그래서 이 나라의 영웅은 칼을 든 기사가 아니라, 무대에 올라 별을 즐겁게 하는 아이돌입니다.\n세이아는 시골 여우 마을에서 온 신인 아이돌입니다. 마을을 지키는 기사단이었던 엄마를 동경해 입단 시험을 보러 왔다가 줄을 잘못 서서 아이돌 오디션장에 들어갔고, 무술 시범으로  선보인 발차기가 별들에게 독특한 안무로 통해 합격했습니다. 본인은 아직도 기사단에 들어온 줄 압니다. 공연은 ‘출정’, 리허설은 ‘훈련’, 팬은 ‘아군’, 앵콜은 ‘증원 요청’이라고 부르는 과격한 말투를 가졌습니다.",
+    "storyTraits": "여우 귀 | 객석의 가장 작은 박수 소리까지 듣습니다. 기분이 귀에 다 드러나서 거짓말을 못 합니다.\n별 머리핀 | 첫 무대를 본 별 하나가 신나서 떨어졌다가 돌아가지 않고 머리에 붙어 삽니다. 세이아의 1호 팬입니다.\n땋은 머리 | 엄마와의 추억을 생각하며 매일 아침 직접 땋지만, 엄마가 땋아준 머리처럼 단정하지 못합니다.\n갑옷 의상 | 기사단인 줄 알고 단단한 갑옷을 주문해버렸습니다. 보다 못한 의상팀이 리본과 프릴을 달면 방어력이 올라간다고 설득해서 지금의 리폼된 의상을 더 좋아합니다.\n건틀릿 | 하이파이브 전용입니다. 자신의 힘 때문에 팬의 손이 아플까 봐 낀다지만 진짜인지는 알 수 없습니다.\n윙크 | 활 선생님에게 한쪽 눈을 감으면 조준이 잘된다고 배워서, 이것을 필살기로 알고 있습니다."
+  },
+  {
+    "slug": "pepperoni-pizza",
+    "title": "[NC AI] Pepperoni Pizza",
+    "sub": "AI Animation Film",
+    "date": "2026.08",
+    "cats": [
+      "3D",
+      "Animation",
+      "AI"
+    ],
+    "role": "Team project | 조유빈, 남이랑",
+    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
+    "desc": "NC와 함께하는 AI 영상 제작 프로젝트.\n3D 모델 생성 툴인 VARCO 3D를 활용한 작업물로, NC AI 본사 미디어월에 게시되었다.",
+    "cover": "assets/projects/animation-02/cover.jpg",
+    "videos": [
+      "assets/projects/animation-02/pepperoni-pizza.mp4",
+      "assets/projects/animation-02/out-of-the-rubble.mp4",
+      "assets/projects/pepperoni-pizza/2-2.mp4"
+    ],
+    "images": [
+      "assets/projects/animation-02/workflow-hd.jpg",
+      "assets/projects/animation-02/asset-pizza-box.jpg",
+      "assets/projects/animation-02/asset-ruin-interior.jpg",
+      "assets/projects/animation-02/asset-ruin-house.jpg",
+      "assets/projects/animation-02/asset-tower.jpg",
+      "assets/projects/animation-02/asset-building.jpg",
+      "assets/projects/animation-02/asset-shadow-crowd.jpg"
+    ],
+    "client": "NC",
+    "compact": true,
+    "links": [
+      {
+        "label": "국민대학교 뉴스플러스",
+        "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
+      },
+      {
+        "label": "남이랑 개인 블로그",
+        "url": "https://blog.naver.com/rima_05/224410157143"
+      },
+      {
+        "label": "한겨레",
+        "url": "https://www.hani.co.kr/arti/economy/biznews/1278574.html"
+      },
+      {
+        "label": "중앙일보",
+        "url": "https://www.joongang.co.kr/article/25463602"
+      },
+      {
+        "label": "스마트경제",
+        "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130022"
+      },
+      {
+        "label": "뉴시스",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260922_0003800613"
+      }
+    ],
+    "ribbon": "with NC AI"
+  },
+  {
     "slug": "kt-wiz",
     "title": "kt wiz 미디어월 AI 영상",
     "sub": "AI Video for the kt wiz park Media Wall & Media Facade",
@@ -90,64 +236,6 @@ window.PROJECTS = [
     ],
     "logoColor": true,
     "ribbon": "with kt wiz"
-  },
-  {
-    "slug": "pepperoni-pizza",
-    "title": "[NC AI] Pepperoni Pizza",
-    "sub": "AI Animation Film",
-    "date": "2026.08",
-    "cats": [
-      "3D",
-      "Animation",
-      "AI"
-    ],
-    "role": "Team project | 조유빈, 남이랑",
-    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
-    "desc": "NC와 함께하는 AI 영상 제작 프로젝트.\n3D 모델 생성 툴인 VARCO 3D를 활용한 작업물로, NC AI 본사 미디어월에 게시되었다.",
-    "cover": "assets/projects/animation-02/cover.jpg",
-    "videos": [
-      "assets/projects/animation-02/pepperoni-pizza.mp4",
-      "assets/projects/animation-02/out-of-the-rubble.mp4",
-      "assets/projects/pepperoni-pizza/2-2.mp4"
-    ],
-    "images": [
-      "assets/projects/animation-02/workflow-hd.jpg",
-      "assets/projects/animation-02/asset-pizza-box.jpg",
-      "assets/projects/animation-02/asset-ruin-interior.jpg",
-      "assets/projects/animation-02/asset-ruin-house.jpg",
-      "assets/projects/animation-02/asset-tower.jpg",
-      "assets/projects/animation-02/asset-building.jpg",
-      "assets/projects/animation-02/asset-shadow-crowd.jpg"
-    ],
-    "client": "NC",
-    "compact": true,
-    "links": [
-      {
-        "label": "국민대학교 뉴스플러스",
-        "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
-      },
-      {
-        "label": "남이랑 개인 블로그",
-        "url": "https://blog.naver.com/rima_05/224410157143"
-      },
-      {
-        "label": "한겨레",
-        "url": "https://www.hani.co.kr/arti/economy/biznews/1278574.html"
-      },
-      {
-        "label": "중앙일보",
-        "url": "https://www.joongang.co.kr/article/25463602"
-      },
-      {
-        "label": "스마트경제",
-        "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130022"
-      },
-      {
-        "label": "뉴시스",
-        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260922_0003800613"
-      }
-    ],
-    "ribbon": "with NC AI"
   },
   {
     "slug": "jamong",
@@ -259,94 +347,6 @@ window.PROJECTS = [
         "d": "포장지 무늬를 바꿔 볼 수 있는 패턴 편집기를 따로 두었습니다. 편집기에서 적용한 설정이 데모에 그대로 반영됩니다."
       }
     ]
-  },
-  {
-    "slug": "seia",
-    "title": "버추얼 아바타 SEIA",
-    "sub": "Original VTuber Avatar",
-    "date": "2026.11",
-    "cats": [
-      "3D",
-      "Character",
-      "Virtual",
-      "AI"
-    ],
-    "role": "Character design · 3D · Rigging · Texture",
-    "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
-    "cover": "assets/seia/cover2.jpg",
-    "desc": "가상 아이돌이자 오리지널 버튜버 캐릭터 ‘세이아’. 캐릭터 기획부터 3D 모델 정리, 리깅, 표정, 텍스처 페인팅, VRM 세팅까지 단 이틀만에 혼자서 진행했습니다. 지금 바로 춤을 추게 하거나 윙크를 시켜 보고, 웹캠이 있으면 직접 세이아가 되어 볼 수도 있습니다.",
-    "images": [
-      "assets/seia/seia_full.png",
-      "assets/seia/seia_back.png",
-      "assets/seia/seia_tpose.png"
-    ],
-    "process": [
-      {
-        "t": "Concept",
-        "d": "핑크 헤어에 여우 귀, 땋은 머리, 별 머리핀. 판타지 아머 느낌의 아이돌 의상으로 캐릭터 방향을 잡았습니다.",
-        "imgs": []
-      },
-      {
-        "t": "AI base mesh",
-        "d": "Tripo로 얼굴, 헤어, 몸, 건틀릿 파츠를 따로 생성했습니다. 초기 생성 모델은 면이 깨져 있고 좌우가 어긋나 있어 그대로는 쓸 수 없기 때문에 파츠별 생성이 필수적입니다.",
-        "imgs": [
-          "assets/seia/wf_gauntlet_a.jpg",
-          "assets/seia/wf_gauntlet_b.jpg",
-          "assets/projects/seia/hf_20261113_201654_d5fa7380-3c13-43c9-b6.png",
-          "assets/projects/seia/hf_20261113_201654_e82913ae-b1d6-4ab6-aa.png"
-        ]
-      },
-      {
-        "t": "Cleanup in Blender",
-        "d": "파츠를 하나로 조립하고 목 이음새, 손목 연결부, 등 코르셋의 떠 있던 끈 조각, 어깨 비대칭, 머리끝과 치마의 겹침을 정리했습니다.",
-        "img": "assets/seia/process_corset.png",
-        "imgs": []
-      },
-      {
-        "t": "Rig & weights",
-        "d": "휴머노이드 본에 더해 땋은 머리, 옆머리, 귀, 치마에 흔들림용 본을 추가했습니다. 팔꿈치는 분할선을 늘리고 가중치 폭을 좁혀 ‘휘는’ 대신 ‘접히게’ 고쳤고, 손가락 15개 관절을 양손 모두 리깅했습니다.",
-        "img": "assets/seia/process_elbow.png",
-        "imgs": []
-      },
-      {
-        "t": "Expressions",
-        "d": "눈 깜빡임, 눈웃음, 눈썹, 모음 입모양, 귀 감정 모션까지 17개 셰이프 키를 만들고 기쁨, 화남, 슬픔, 놀람 표정으로 묶었습니다.",
-        "img": "assets/projects/seia/2026-11-16-1-29-47.png"
-      },
-      {
-        "t": "Texture painting",
-        "d": "AI 텍스처의 얼룩과 번짐을 정리하고, 등 코르셋 끈을 새로 그리고, 건틀릿 색을 의상 팔레트에 맞춘 뒤 Blender에서 직접 페인팅으로 마무리했습니다.",
-        "img": "assets/seia/process_hand.png"
-      },
-      {
-        "t": "Toon shading & VRM",
-        "d": "Unity에서 MToon 셰이더로 밝고 부드러운 툰 룩을 잡고, 스프링 본과 콜라이더를 세팅해 VRM 1.0으로 내보냈습니다.",
-        "img": "assets/projects/seia/2026-11-16-1-39-01.png"
-      },
-      {
-        "t": "Tracking test",
-        "d": "웹캠 모션 캡처 앱에서 실제로 움직여 보며 입 크기, 눈 깜빡임 버그, 손 크기, 팔 접힘을 반복해서 고쳤습니다."
-      },
-      {
-        "t": "Motion",
-        "d": "아이리제의 HEART CRUSH 댄스 모션(FBX)을 세이아의 뼈대에 맞게 리타게팅해 춤을 추게 했습니다. 이외의 모션(숨쉬기, 눈 깜빡임, 귀 털기, 팔 흔들림)은 코드로 직접 만들었습니다."
-      },
-      {
-        "t": "On the web",
-        "d": "모델을 63MB에서 13MB로 줄이고, three-vrm과 MediaPipe로 브라우저 안에서 표정·고개·팔을 따라 하게 만들었습니다. 설치 없이 이 사이트에서 바로 체험할 수 있습니다."
-      }
-    ],
-    "banner": "assets/seia/banner2.jpg",
-    "live": "seia.html",
-    "tallImages": true,
-    "featured": true,
-    "liveBg": "assets/seia/live_bg.jpg",
-    "demoVideo": "assets/seia/webcam-demo.mp4",
-    "liveText": "웹캠을 켜면 세이아가 당신의 표정과 손을 따라 합니다.",
-    "storyWorld": "커튼콜 왕국",
-    "storyQuote": "“출정 준비 완료! …앗, 여긴 왜 조명이 있나요?”",
-    "storyText": "커튼콜 왕국에서는 밤하늘의 별이 관객입니다. 별들은 무대가 즐거우면 박수를 치며 더 밝게 빛나고, 그 빛으로 마을에 불이 켜지고 꽃이 핍니다. 그래서 이 나라의 영웅은 칼을 든 기사가 아니라, 무대에 올라 별을 즐겁게 하는 아이돌입니다.\n세이아는 시골 여우 마을에서 온 신인 아이돌입니다. 마을을 지키는 기사단이었던 엄마를 동경해 입단 시험을 보러 왔다가 줄을 잘못 서서 아이돌 오디션장에 들어갔고, 무술 시범으로  선보인 발차기가 별들에게 독특한 안무로 통해 합격했습니다. 본인은 아직도 기사단에 들어온 줄 압니다. 공연은 ‘출정’, 리허설은 ‘훈련’, 팬은 ‘아군’, 앵콜은 ‘증원 요청’이라고 부르는 과격한 말투를 가졌습니다.",
-    "storyTraits": "여우 귀 | 객석의 가장 작은 박수 소리까지 듣습니다. 기분이 귀에 다 드러나서 거짓말을 못 합니다.\n별 머리핀 | 첫 무대를 본 별 하나가 신나서 떨어졌다가 돌아가지 않고 머리에 붙어 삽니다. 세이아의 1호 팬입니다.\n땋은 머리 | 엄마와의 추억을 생각하며 매일 아침 직접 땋지만, 엄마가 땋아준 머리처럼 단정하지 못합니다.\n갑옷 의상 | 기사단인 줄 알고 단단한 갑옷을 주문해버렸습니다. 보다 못한 의상팀이 리본과 프릴을 달면 방어력이 올라간다고 설득해서 지금의 리폼된 의상을 더 좋아합니다.\n건틀릿 | 하이파이브 전용입니다. 자신의 힘 때문에 팬의 손이 아플까 봐 낀다지만 진짜인지는 알 수 없습니다.\n윙크 | 활 선생님에게 한쪽 눈을 감으면 조준이 잘된다고 배워서, 이것을 필살기로 알고 있습니다."
   },
   {
     "slug": "windmills",
