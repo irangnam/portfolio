@@ -32,8 +32,7 @@ window.PROJECTS = [
         "imgs": [
           "assets/seia/wf_gauntlet_a.jpg",
           "assets/seia/wf_gauntlet_b.jpg",
-          "assets/projects/seia/hf_20261113_201654_d5fa7380-3c13-43c9-b6.png",
-          "assets/projects/seia/hf_20261113_201654_e82913ae-b1d6-4ab6-aa.png"
+          "assets/projects/seia/hf_20261113_201654_d5fa7380-3c13-43c9-b6.png"
         ]
       },
       {
