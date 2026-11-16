@@ -91,62 +91,61 @@ window.PROJECTS = [
     "planNotes": "타깃 | 버추얼 아이돌을 깊이 즐기는 20~30대 여성 팬\n핵심 매력 | 바보 같은데 귀엽고, 그런데 강합니다. 엉뚱한 착각을 끝까지 진지하게 밀고 나가는 모습과, 엄마와의 애착 관계에서 오는 공감대를 중심에 둡니다.\n컬러 | 핑크(헤어와 포인트), 와인(의상), 골드(트림과 장식) 세 가지를 중심으로 씁니다.\n3D팀 전달 기준 | 손은 작게, 팔꿈치는 휘지 않고 접히게, 장갑은 팔 위로 오게, 건틀릿은 의상 팔레트에 맞춘 채도로, 얼굴은 그림자가 지지 않는 플랫 툰 셰이딩으로. 실제 제작 중에 3D 결과물을 보며 수정을 요청한 항목들입니다.\n데뷔 방송 | 오디션 현장을 다시 재현합니다. 세이아는 여전히 기사단 시험인 줄 알고, 자신의 장비와 무기를 하나씩 자랑합니다.\n주 콘텐츠 1 · 오늘의 훈련 | 게임 방송입니다. 세이아는 게임을 실전 훈련으로 믿고 임하며, 지면 “전술적 후퇴”라고 우깁니다. 방송 끝에 그날의 훈련 성과를 스스로 보고합니다.\n주 콘텐츠 2 · 엄마에게 보내는 전황 보고 | 방송을 마치며 그날 있었던 일을 엄마에게 보내는 편지로 읽습니다. 착각투성이 보고가 웃음을 만들고, 엄마 이야기가 공감대를 만듭니다.\n주 콘텐츠 3 · 아군 모집 | 시청자를 ‘아군’으로 임명해 함께 싸우는 참여형 코너입니다. 세이아가 채팅에 온 팬에게 계급과 임무를 붙여 주고, 모인 아군과 마인크래프트 같은 게임에서 팀 전투에 나섭니다. 팬 수십 명이 크리에이터와 한 팀이 되어 다른 팬덤과 겨루는 요즘의 대규모 참여 콘텐츠를 세이아의 ‘출정’으로 가져옵니다.\n하지 않는 것 | 뒤로 미루지 않습니다. 남을 욕하지 않습니다. “할 수 없다”고 말하지 않습니다.\n목소리와 연기 | 까랑까랑하고 당찬 톤. 틀린 말도 큰 소리로 자신 있게 하는 캐릭터라, 기죽지 않는 목소리가 어울립니다."
   },
   {
-    "slug": "goedam",
-    "title": "움직이는 괴담극장",
-    "sub": "군산 미스터리 투어 브랜딩 · 지도 일러스트",
-    "date": "2025",
+    "slug": "pepperoni-pizza",
+    "title": "[NC AI] Pepperoni Pizza",
+    "sub": "AI Animation Film",
+    "date": "2026.08",
     "cats": [
-      "Illustration",
-      "Brand · Graphic"
+      "AI Video"
     ],
-    "role": "투어 기획 · 가이드 매뉴얼 · Branding · Hand-drawn illustration · Lettering",
-    "tools": "Procreate",
-    "desc": "군산의 밤거리를 괴담의 무대로 바꾸는 나이트 투어 ‘움직이는 괴담극장’의 브랜딩입니다. 1박 2일 여행 코스 가운데 밤 시간을 미스터리 투어로 기획했고, 귀신이나 저승사자 대신 도시 곳곳을 돌아다니는 쥐를 해설자로 세웠습니다. 타이틀 글자와 장소 카드, 투어 지도는 AI 없이 모두 손으로 그렸습니다.",
-    "cover": "assets/projects/goedam/poster.jpg",
+    "role": "2인 공동 작업 (조유빈, 남이랑) · 캐릭터 콘셉트, 도시 배경 제작(Blender), 셰이딩, 영상 제작, 배경음악·사운드 기획까지 전 과정을 함께 진행",
+    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
+    "desc": "NC와 함께하는 AI 영상 제작 프로젝트.\n3D 모델 생성 툴인 VARCO 3D를 활용한 작업물로, NC AI 본사 미디어월에 게시되었다.",
+    "cover": "assets/projects/animation-02/cover.jpg",
+    "videos": [
+      "assets/projects/animation-02/pepperoni-pizza.mp4",
+      "assets/projects/animation-02/out-of-the-rubble.mp4",
+      "assets/projects/pepperoni-pizza/2-2.mp4"
+    ],
     "images": [
-      "assets/projects/goedam/map.jpg",
-      "assets/projects/goedam/poster.jpg",
-      "assets/projects/goedam/title.jpg"
+      "assets/projects/animation-02/workflow-hd.jpg",
+      "assets/projects/animation-02/asset-pizza-box.jpg",
+      "assets/projects/animation-02/asset-ruin-interior.jpg",
+      "assets/projects/animation-02/asset-ruin-house.jpg",
+      "assets/projects/animation-02/asset-tower.jpg",
+      "assets/projects/animation-02/asset-building.jpg",
+      "assets/projects/animation-02/asset-shadow-crowd.jpg",
+      "assets/projects/animation-02/nc-lobby.jpg"
     ],
-    "stickers": [
-      "assets/projects/goedam/st-traveler.webp",
-      "assets/projects/goedam/st-brewery.webp",
-      "assets/projects/goedam/st-hand.webp",
-      "assets/projects/goedam/st-reservoir.webp",
-      "assets/projects/goedam/st-house.webp"
-    ],
-    "client": "국민대학교 정보디자인 수업 과제",
-    "process": [
+    "client": "NC",
+    "compact": true,
+    "links": [
       {
-        "t": "Tour planning",
-        "d": "군산역 광장에서 밝게 시작해 구 백화양조, 적산가옥으로 갈수록 긴장을 높이고, 마지막 은파(미제방죽)에서 풀어 주는 저녁 7시부터 10시 반까지의 코스를 짰습니다. 두려움이 안전하게 풀릴 때 즐거움으로 바뀐다는 점을 중심에 두고, 가이드의 말투와 의성어, 손전등 연출, 안전 체크리스트까지 가이드 매뉴얼로 정리했습니다."
+        "label": "국민대학교 뉴스플러스",
+        "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
       },
       {
-        "t": "Tone & color",
-        "d": "죽을 것 같은 공포가 아니라 감당할 수 있는 공포를 기준으로 잡았습니다. 성격 키워드는 오싹한, 유쾌한, 강렬한. 슬로건은 “막이 오르면, 도시가 무대가 된다”입니다. 근대 건축과 낡은 극장을 떠올리게 하는 짙은 녹색, 붉은색, 회백색 세 가지로 색을 좁혔습니다. 분위기를 찾는 단계에서만 AI 이미지를 참고용으로 만들어 보았습니다.",
-        "img": "assets/projects/goedam/palette.jpg"
+        "label": "남이랑 개인 블로그",
+        "url": "https://blog.naver.com/rima_05/224410157143"
       },
       {
-        "t": "Narrator",
-        "d": "귀신, 유령, 저승사자는 진부하고 군산의 근대 건축과도 어울리지 않는다고 판단했습니다. 대신 도시의 음침한 곳을 은밀하게 돌아다니는 쥐를 골라, 무대 위 해설자이자 트릭스터 역할을 맡겼습니다. 낯설고 기묘하지만 어딘가 친근한 인상을 목표로 그렸습니다.",
-        "img": "assets/projects/goedam/sketch-mouse.jpg"
+        "label": "한겨레",
+        "url": "https://www.hani.co.kr/arti/economy/biznews/1278574.html"
       },
       {
-        "t": "Lettering",
-        "d": "기성 한글 폰트를 비교해 보고 한글 블랙레터를 참고한 뒤, 타이틀 ‘괴담극장’은 직접 그렸습니다. 획 끝을 날카롭게 빼서 오래된 극장 간판 같은 느낌을 냈습니다.",
-        "img": "assets/projects/goedam/sketch-title.jpg"
+        "label": "중앙일보",
+        "url": "https://www.joongang.co.kr/article/25463602"
       },
       {
-        "t": "Cards & map",
-        "d": "장소마다 눈과 척추뼈 장식을 두른 카드를 한 장씩 그리고, 낡은 종이 지도 위에 카드와 쪽지, 쥐를 배치해 투어 지도를 완성했습니다. 쪽지에는 각 장소에서 듣게 될 이야기의 첫 문장을 적어 궁금하게 만들었습니다."
+        "label": "스마트경제",
+        "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130022"
+      },
+      {
+        "label": "뉴시스",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260922_0003800613"
       }
     ],
-    "banner": "assets/projects/goedam/poster.jpg",
-    "narrow": true,
-    "pairImages": [
-      "assets/projects/goedam/source1.jpg",
-      "assets/projects/goedam/source2.jpg"
-    ]
+    "ribbon": "with NC AI"
   },
   {
     "slug": "jamong",
@@ -223,61 +222,62 @@ window.PROJECTS = [
     "ribbon": ""
   },
   {
-    "slug": "pepperoni-pizza",
-    "title": "[NC AI] Pepperoni Pizza",
-    "sub": "AI Animation Film",
-    "date": "2026.08",
+    "slug": "goedam",
+    "title": "움직이는 괴담극장",
+    "sub": "군산 미스터리 투어 브랜딩 · 지도 일러스트",
+    "date": "2025",
     "cats": [
-      "AI Video"
+      "Illustration",
+      "Brand · Graphic"
     ],
-    "role": "2인 공동 작업 (조유빈, 남이랑) · 캐릭터 콘셉트, 도시 배경 제작(Blender), 셰이딩, 영상 제작, 배경음악·사운드 기획까지 전 과정을 함께 진행",
-    "tools": "VARCO 3D, VARCO Sound, Higgsfield, Photoshop, Blender, Premiere Pro",
-    "desc": "NC와 함께하는 AI 영상 제작 프로젝트.\n3D 모델 생성 툴인 VARCO 3D를 활용한 작업물로, NC AI 본사 미디어월에 게시되었다.",
-    "cover": "assets/projects/animation-02/cover.jpg",
-    "videos": [
-      "assets/projects/animation-02/pepperoni-pizza.mp4",
-      "assets/projects/animation-02/out-of-the-rubble.mp4",
-      "assets/projects/pepperoni-pizza/2-2.mp4"
-    ],
+    "role": "투어 기획 · 가이드 매뉴얼 · Branding · Hand-drawn illustration · Lettering",
+    "tools": "Procreate",
+    "desc": "군산의 밤거리를 괴담의 무대로 바꾸는 나이트 투어 ‘움직이는 괴담극장’의 브랜딩입니다. 1박 2일 여행 코스 가운데 밤 시간을 미스터리 투어로 기획했고, 귀신이나 저승사자 대신 도시 곳곳을 돌아다니는 쥐를 해설자로 세웠습니다. 타이틀 글자와 장소 카드, 투어 지도는 AI 없이 모두 손으로 그렸습니다.",
+    "cover": "assets/projects/goedam/poster.jpg",
     "images": [
-      "assets/projects/animation-02/workflow-hd.jpg",
-      "assets/projects/animation-02/asset-pizza-box.jpg",
-      "assets/projects/animation-02/asset-ruin-interior.jpg",
-      "assets/projects/animation-02/asset-ruin-house.jpg",
-      "assets/projects/animation-02/asset-tower.jpg",
-      "assets/projects/animation-02/asset-building.jpg",
-      "assets/projects/animation-02/asset-shadow-crowd.jpg",
-      "assets/projects/animation-02/nc-lobby.jpg"
+      "assets/projects/goedam/map.jpg",
+      "assets/projects/goedam/poster.jpg",
+      "assets/projects/goedam/title.jpg"
     ],
-    "client": "NC",
-    "compact": true,
-    "links": [
+    "stickers": [
+      "assets/projects/goedam/st-traveler.webp",
+      "assets/projects/goedam/st-brewery.webp",
+      "assets/projects/goedam/st-hand.webp",
+      "assets/projects/goedam/st-reservoir.webp",
+      "assets/projects/goedam/st-house.webp"
+    ],
+    "client": "국민대학교 정보디자인 수업 과제",
+    "process": [
       {
-        "label": "국민대학교 뉴스플러스",
-        "url": "https://www.kookmin.ac.kr/comm/board/user/505778f2d4a04163de6ee5fee35d9bb9/view.do?dataSeq=1077059"
+        "t": "Tour planning",
+        "d": "군산역 광장에서 밝게 시작해 구 백화양조, 적산가옥으로 갈수록 긴장을 높이고, 마지막 은파(미제방죽)에서 풀어 주는 저녁 7시부터 10시 반까지의 코스를 짰습니다. 두려움이 안전하게 풀릴 때 즐거움으로 바뀐다는 점을 중심에 두고, 가이드의 말투와 의성어, 손전등 연출, 안전 체크리스트까지 가이드 매뉴얼로 정리했습니다."
       },
       {
-        "label": "남이랑 개인 블로그",
-        "url": "https://blog.naver.com/rima_05/224410157143"
+        "t": "Tone & color",
+        "d": "죽을 것 같은 공포가 아니라 감당할 수 있는 공포를 기준으로 잡았습니다. 성격 키워드는 오싹한, 유쾌한, 강렬한. 슬로건은 “막이 오르면, 도시가 무대가 된다”입니다. 근대 건축과 낡은 극장을 떠올리게 하는 짙은 녹색, 붉은색, 회백색 세 가지로 색을 좁혔습니다. 분위기를 찾는 단계에서만 AI 이미지를 참고용으로 만들어 보았습니다.",
+        "img": "assets/projects/goedam/palette.jpg"
       },
       {
-        "label": "한겨레",
-        "url": "https://www.hani.co.kr/arti/economy/biznews/1278574.html"
+        "t": "Narrator",
+        "d": "귀신, 유령, 저승사자는 진부하고 군산의 근대 건축과도 어울리지 않는다고 판단했습니다. 대신 도시의 음침한 곳을 은밀하게 돌아다니는 쥐를 골라, 무대 위 해설자이자 트릭스터 역할을 맡겼습니다. 낯설고 기묘하지만 어딘가 친근한 인상을 목표로 그렸습니다.",
+        "img": "assets/projects/goedam/sketch-mouse.jpg"
       },
       {
-        "label": "중앙일보",
-        "url": "https://www.joongang.co.kr/article/25463602"
+        "t": "Lettering",
+        "d": "기성 한글 폰트를 비교해 보고 한글 블랙레터를 참고한 뒤, 타이틀 ‘괴담극장’은 직접 그렸습니다. 획 끝을 날카롭게 빼서 오래된 극장 간판 같은 느낌을 냈습니다.",
+        "img": "assets/projects/goedam/sketch-title.jpg"
       },
       {
-        "label": "스마트경제",
-        "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=130022"
-      },
-      {
-        "label": "뉴시스",
-        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260922_0003800613"
+        "t": "Cards & map",
+        "d": "장소마다 눈과 척추뼈 장식을 두른 카드를 한 장씩 그리고, 낡은 종이 지도 위에 카드와 쪽지, 쥐를 배치해 투어 지도를 완성했습니다. 쪽지에는 각 장소에서 듣게 될 이야기의 첫 문장을 적어 궁금하게 만들었습니다."
       }
     ],
-    "ribbon": "with NC AI"
+    "banner": "assets/projects/goedam/poster.jpg",
+    "narrow": true,
+    "pairImages": [
+      "assets/projects/goedam/source1.jpg",
+      "assets/projects/goedam/source2.jpg"
+    ]
   },
   {
     "slug": "kt-wiz",
