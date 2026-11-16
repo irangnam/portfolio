@@ -10,7 +10,7 @@ window.PROJECTS = [
       "3D · XR"
     ],
     "role": "Character concept · Story · Art direction · Texture painting",
-    "tools": "Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
+    "tools": "Higgsfield · Midjourney (컨셉 아트 생성) · Tripo · Blender · Unity · UniVRM · three.js · MediaPipe · Claude (AI agent)",
     "cover": "assets/seia/cover2.jpg",
     "desc": "기사단 시험장을 잘못 찾아와 아이돌이 된 여우 소녀 ‘세이아’. 캐릭터의 설정과 성격을 기획하고, 실제로 움직이는 3D 아바타 시제품으로 만들었습니다. 아래에서 춤을 추게 하거나 윙크를 시켜 보고, 웹캠을 켜면 직접 세이아가 되어 볼 수 있습니다. 모델 정리와 리깅, 웹 구현은 AI 에이전트(Claude)와 함께 이틀 동안 진행했습니다.",
     "images": [
@@ -227,7 +227,7 @@ window.PROJECTS = [
       "AI Video"
     ],
     "client": "kt wiz",
-    "role": "AI 영상 제작 · 국민대학교 AI디자인랩 산학 프로젝트 학부연구원",
+    "role": "스토리보드 · 사운드 · 제작 계획 수립 및 AI 영상 제작 (국민대학교 AI디자인랩 산학 프로젝트 학부연구원)",
     "tools": "Kling 3.0 · Photoshop · Topaz · Premiere Pro",
     "desc": "수원 kt wiz 파크의 미디어파사드와 미디어월에 송출된 생성형 AI 영상 제작 프로젝트입니다. 2025년 겨울부터 2026년 여름까지 진행했고, 건물 외벽에 프로젝터로 투사하는 미디어파사드와 복도를 따라 길게 세워진 LED 미디어월 영상을 만들었습니다. 여기서는 그중 미디어월 ‘바캉스’ 영상을 소개합니다. 낮과 밤이 바뀌고 다시 처음으로 돌아오는 약 30초 길이의 바닷가 루핑 영상입니다.",
     "cover": "assets/projects/kt-wiz/2026-11-16-4-47-40.png",
@@ -239,7 +239,7 @@ window.PROJECTS = [
     "process": [
       {
         "t": "Scope",
-        "d": "초반 테스트로 시나리오를 확정한 뒤 제작 → 수정 → 최종본 → 송출 순서로 진행했습니다. 미디어파사드와 미디어월을 합쳐 여러 편의 영상을 맡았습니다.",
+        "d": "PM이 kt wiz 측과 협의해 큰 콘셉트와 조건을 정했고, 그 주제에 맞는 구체적인 스토리보드와 사운드, 제작 계획은 직접 세웠습니다. 초반 테스트로 시나리오를 확정한 뒤 제작 → 수정 → 최종본 → 송출 순서로 진행했고, 미디어파사드와 미디어월을 합쳐 여러 편의 영상을 맡았습니다.",
         "imgs": [
           "assets/projects/kt-wiz/folders.jpg"
         ]
