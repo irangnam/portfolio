@@ -394,7 +394,10 @@ window.PROJECTS = [
     "live": "https://www.youtube.com/embed/aMGf1OMigl4",
     "liveBtn": "기획전 페이지 보기",
     "liveText": "캐럿이 공개한 출품작 페이지를 이 안에서 스크롤해 볼 수 있습니다.",
-    "liveAuto": true
+    "liveAuto": true,
+    "planTitle": "Synopsis & Team",
+    "planLabel": "보이드볼트 VoidVault",
+    "planNotes": "시놉시스 | 폭우 몰아치는 막사, 국가 기밀 병기 ‘구미호’가 탈출했다. 피 냄새가 번지며 옛 전장이 눈앞에 살아난다. 그런데… 생사를 함께한 동료가 수상하다. 그것은 전우인가, 위장한 구미호인가?\nSynopsis | Rain lashes the barracks as the top-secret weapon “Gumiho” escapes. The scent of blood drifts in, and the old battlefield flares back to life. But the comrade who shared my battles now feels… wrong. Is it a trusted soldier—or the shape-shifting Gumiho in disguise?\n남이랑 NAM IRANG | 안녕하세요! ‘경로당홍삼캔디도둑(@nytrcak)’으로 활동하는 크리에이터 남이랑입니다. 엉뚱하고 발칙한 아이디어부터 무겁고 진지한 주제까지 모두 즐기며, SNS를 실험실 삼아 뭐든지 도전하는 중입니다. 제 작품이 궁금하시다면 언제든 캐럿과 인스타그램을 방문해주세요! · Carat @oiiaii · Instagram @nytrcak\n도울린 DOULIN | 영화, 글, 이미지, 게임 등 여러 장르의 콘텐츠를 오래 즐겨 온 크리에이터. 글과 영상, 웹사이트부터 커뮤니티와 브랜드까지 기획하고 만듭니다. · Carat @by_doulin · Instagram @by_doulin"
   },
   {
     "slug": "scream",
