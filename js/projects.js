@@ -92,19 +92,21 @@ window.PROJECTS = [
   },
   {
     "slug": "goedam",
-    "title": "괴담극장",
-    "sub": "심야 미스터리 투어 컨셉 일러스트",
+    "title": "움직이는 괴담극장",
+    "sub": "군산 미스터리 투어 브랜딩 · 지도 일러스트",
     "date": "2026",
     "cats": [
-      "Illustration"
+      "Illustration",
+      "Brand · Graphic"
     ],
-    "role": "Concept · Hand-drawn illustration · Lettering",
+    "role": "투어 기획 · 가이드 매뉴얼 · Branding · Hand-drawn illustration · Lettering",
     "tools": "Procreate",
-    "desc": "군산 근대 거리 곳곳을 밤에 돌아보는 미스터리 투어 ‘괴담극장’의 컨셉 일러스트입니다. 1박 2일 여행 코스 가운데 나이트 투어를 공포 컨셉으로 풀었고, 카드와 타이틀 글자까지 모두 손으로 그렸습니다.",
-    "cover": "assets/projects/goedam/cover.jpg",
+    "desc": "군산의 밤거리를 괴담의 무대로 바꾸는 나이트 투어 ‘움직이는 괴담극장’의 브랜딩입니다. 1박 2일 여행 코스 가운데 밤 시간을 미스터리 투어로 기획했고, 귀신이나 저승사자 대신 도시 곳곳을 돌아다니는 쥐를 해설자로 세웠습니다. 타이틀 글자와 장소 카드, 투어 지도는 AI 없이 모두 손으로 그렸습니다.",
+    "cover": "assets/projects/goedam/map.jpg",
     "images": [
-      "assets/projects/goedam/sketch-title.jpg",
-      "assets/projects/goedam/sketch-mouse.jpg"
+      "assets/projects/goedam/map.jpg",
+      "assets/projects/goedam/poster.jpg",
+      "assets/projects/goedam/title.jpg"
     ],
     "stickers": [
       "assets/projects/goedam/st-traveler.webp",
@@ -112,6 +114,32 @@ window.PROJECTS = [
       "assets/projects/goedam/st-hand.webp",
       "assets/projects/goedam/st-reservoir.webp",
       "assets/projects/goedam/st-house.webp"
+    ],
+    "client": "국민대학교 정보디자인 수업 과제",
+    "process": [
+      {
+        "t": "Tour planning",
+        "d": "군산역 광장에서 밝게 시작해 구 백화양조, 적산가옥으로 갈수록 긴장을 높이고, 마지막 은파(미제방죽)에서 풀어 주는 저녁 7시부터 10시 반까지의 코스를 짰습니다. 두려움이 안전하게 풀릴 때 즐거움으로 바뀐다는 점을 중심에 두고, 가이드의 말투와 의성어, 손전등 연출, 안전 체크리스트까지 가이드 매뉴얼로 정리했습니다."
+      },
+      {
+        "t": "Tone & color",
+        "d": "죽을 것 같은 공포가 아니라 감당할 수 있는 공포를 기준으로 잡았습니다. 성격 키워드는 오싹한, 유쾌한, 강렬한. 슬로건은 “막이 오르면, 도시가 무대가 된다”입니다. 근대 건축과 낡은 극장을 떠올리게 하는 짙은 녹색, 붉은색, 회백색 세 가지로 색을 좁혔습니다. 분위기를 찾는 단계에서만 AI 이미지를 참고용으로 만들어 보았습니다.",
+        "img": "assets/projects/goedam/palette.jpg"
+      },
+      {
+        "t": "Narrator",
+        "d": "귀신, 유령, 저승사자는 진부하고 군산의 근대 건축과도 어울리지 않는다고 판단했습니다. 대신 도시의 음침한 곳을 은밀하게 돌아다니는 쥐를 골라, 무대 위 해설자이자 트릭스터 역할을 맡겼습니다. 낯설고 기묘하지만 어딘가 친근한 인상을 목표로 그렸습니다.",
+        "img": "assets/projects/goedam/sketch-mouse.jpg"
+      },
+      {
+        "t": "Lettering",
+        "d": "기성 한글 폰트를 비교해 보고 한글 블랙레터를 참고한 뒤, 타이틀 ‘괴담극장’은 직접 그렸습니다. 획 끝을 날카롭게 빼서 오래된 극장 간판 같은 느낌을 냈습니다.",
+        "img": "assets/projects/goedam/sketch-title.jpg"
+      },
+      {
+        "t": "Cards & map",
+        "d": "장소마다 눈과 척추뼈 장식을 두른 카드를 한 장씩 그리고, 낡은 종이 지도 위에 카드와 쪽지, 쥐를 배치해 투어 지도를 완성했습니다. 쪽지에는 각 장소에서 듣게 될 이야기의 첫 문장을 적어 궁금하게 만들었습니다."
+      }
     ]
   },
   {
