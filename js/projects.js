@@ -142,7 +142,11 @@ window.PROJECTS = [
       }
     ],
     "banner": "assets/projects/goedam/poster.jpg",
-    "narrow": true
+    "narrow": true,
+    "pairImages": [
+      "assets/projects/goedam/source1.jpg",
+      "assets/projects/goedam/source2.jpg"
+    ]
   },
   {
     "slug": "jamong",
