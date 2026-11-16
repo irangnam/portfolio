@@ -106,7 +106,7 @@
         ${p.demoVideo ? `<figure class="demo-fig"><video class="demo" data-src="${esc(p.demoVideo)}" muted loop playsinline disablepictureinpicture preload="none"></video><figcaption>웹캠 체험 녹화 — 표정, 고개, 손을 따라 하는 모습</figcaption></figure>` : ""}`) : ""}
         ${p.planNotes ? `<section class="story plan"><div class="sec-head"><h2>Planning</h2>${p.planLabel ? `<span class="num">${esc(p.planLabel)}</span>` : ""}</div>
           <dl class="kv">${p.planNotes.split(/\n+/).map(l => l.split("|")).filter(x => x.length > 1).map(x => `<dt>${esc(x[0].trim())}</dt><dd>${esc(x.slice(1).join("|").trim())}</dd>`).join("")}</dl></section>` : ""}
-        <div class="gal" id="gal"></div>
+        <div class="gal${p.narrow ? " narrow" : ""}" id="gal"></div>
         ${p.process ? `<section class="proc"><div class="sec-head"><h2>Workflow</h2><span class="num">${p.process.length} steps</span></div><ol>${p.process.map((s, k) => `<li><span class="n">${String(k + 1).padStart(2, "0")}</span><div><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>${s.prompt ? `<div class="prompt"><span>Prompt</span>${esc(s.prompt)}</div>` : ""}${s.img ? `<img loading="lazy" src="${esc(s.img)}" alt="${esc(s.t)}" onerror="this.remove()">` : ""}${(s.imgs || []).length ? `<div class="thumbs">${s.imgs.map(u => `<img loading="lazy" draggable="false" src="${esc(u)}" alt="${esc(s.t)}" onerror="this.remove()">`).join("")}</div>` : ""}</div></li>`).join("")}</ol></section>` : ""}
         <div class="next"><span>Next project</span><a href="#/work/${nx.slug}">${esc(nx.title)} →</a></div>
       </div>`;

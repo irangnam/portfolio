@@ -140,7 +140,9 @@ window.PROJECTS = [
         "t": "Cards & map",
         "d": "장소마다 눈과 척추뼈 장식을 두른 카드를 한 장씩 그리고, 낡은 종이 지도 위에 카드와 쪽지, 쥐를 배치해 투어 지도를 완성했습니다. 쪽지에는 각 장소에서 듣게 될 이야기의 첫 문장을 적어 궁금하게 만들었습니다."
       }
-    ]
+    ],
+    "banner": "assets/projects/goedam/poster.jpg",
+    "narrow": true
   },
   {
     "slug": "jamong",
