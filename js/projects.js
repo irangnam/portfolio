@@ -391,7 +391,7 @@ window.PROJECTS = [
         "url": "https://carat.im/folktale-ai-film/films"
       }
     ],
-    "live": "https://carat.im/folktale-ai-film/films",
+    "live": "https://www.youtube.com/embed/aMGf1OMigl4",
     "liveBtn": "기획전 페이지 보기",
     "liveText": "캐럿이 공개한 출품작 페이지를 이 안에서 스크롤해 볼 수 있습니다.",
     "liveAuto": true
