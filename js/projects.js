@@ -299,6 +299,36 @@ window.PROJECTS = [
     ],
     "process": [
       {
+        "t": "On site",
+        "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다.",
+        "imgs": [
+          "assets/projects/kt-wiz/IMG_0630.jpg",
+          "assets/projects/kt-wiz/SE-ff538c35-ee69-4fcd-956f-fecaa18ce259.jpg",
+          "assets/projects/kt-wiz/SE-e2dece12-a39f-4ecc-a917-0efe7fcaa170.jpg",
+          "assets/projects/kt-wiz/SE-e4c4241e-64b4-4056-9c65-8e239d0732d8.jpg"
+        ],
+        "img": "assets/projects/kt-wiz/IMG_0498.jpg"
+      }
+    ],
+    "compact": true,
+    "links": [
+      {
+        "label": "국민대학교 국민NEW&HOT",
+        "url": "https://kookmin.ac.kr/comm/board/user/be8e117863cfd580d7ed5931a799207c/view.do?dataSeq=1076905"
+      },
+      {
+        "label": "국민대학교 AI디자인랩",
+        "url": "https://ai-design.kookmin.ac.kr/ai-design/etc-board/lab-news.do?mode=view&articleNo=5936989"
+      },
+      {
+        "label": "",
+        "url": ""
+      }
+    ],
+    "logoColor": true,
+    "ribbon": "with kt wiz",
+    "processHidden": [
+      {
         "t": "Scope",
         "d": "PM이 kt wiz 측과 협의해 큰 콘셉트와 조건을 정했고, 그 주제에 맞는 구체적인 스토리보드와 사운드, 제작 계획은 직접 세웠습니다. 초반 테스트로 시나리오를 확정한 뒤 제작 → 수정 → 최종본 → 송출 순서로 진행했고, 미디어파사드와 미디어월을 합쳐 여러 편의 영상을 맡았습니다.",
         "imgs": [
@@ -338,36 +368,8 @@ window.PROJECTS = [
       {
         "t": "Edit & loop",
         "d": "업스케일한 클립을 Premiere Pro에서 이어 붙였습니다. 용량이 커서 미리보기 재생이 되지 않아, 중간중간 저품질로 인코딩해 타이밍을 확인하며 맞췄습니다. 낮에서 밤으로 바뀌고 다시 처음 화면으로 돌아오는 약 30초 루핑 영상으로 완성했습니다."
-      },
-      {
-        "t": "On site",
-        "d": "시즌 개막 약 2주 뒤부터 kt wiz 파크 미디어월에서 송출을 시작했습니다. 현장 점검차 방문했을 때 관람객들이 영상 앞에서 사진을 찍고 가는 모습을 볼 수 있었습니다.",
-        "imgs": [
-          "assets/projects/kt-wiz/IMG_0630.jpg",
-          "assets/projects/kt-wiz/SE-ff538c35-ee69-4fcd-956f-fecaa18ce259.jpg",
-          "assets/projects/kt-wiz/SE-e2dece12-a39f-4ecc-a917-0efe7fcaa170.jpg",
-          "assets/projects/kt-wiz/SE-e4c4241e-64b4-4056-9c65-8e239d0732d8.jpg"
-        ],
-        "img": "assets/projects/kt-wiz/IMG_0498.jpg"
       }
-    ],
-    "compact": true,
-    "links": [
-      {
-        "label": "국민대학교 국민NEW&HOT",
-        "url": "https://kookmin.ac.kr/comm/board/user/be8e117863cfd580d7ed5931a799207c/view.do?dataSeq=1076905"
-      },
-      {
-        "label": "국민대학교 AI디자인랩",
-        "url": "https://ai-design.kookmin.ac.kr/ai-design/etc-board/lab-news.do?mode=view&articleNo=5936989"
-      },
-      {
-        "label": "",
-        "url": ""
-      }
-    ],
-    "logoColor": true,
-    "ribbon": "with kt wiz"
+    ]
   },
   {
     "slug": "gumiho",
